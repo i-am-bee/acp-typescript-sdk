@@ -1088,10 +1088,7 @@ export const ListAgentsResultSchema = PaginatedResultSchema.extend({
  * The server's response to a agent run.
  */
 export const RunAgentResultSchema = ResultSchema.extend({
-  content: z.array(
-    z.union([TextContentSchema, ImageContentSchema, EmbeddedResourceSchema]),
-  ),
-  isError: z.boolean().default(false).optional(),
+  text: z.string(),
 });
 
 /**
@@ -1101,7 +1098,7 @@ export const RunAgentRequestSchema = RequestSchema.extend({
   method: z.literal("agents/run"),
   params: BaseRequestParamsSchema.extend({
     name: z.string(),
-    arguments: z.optional(z.record(z.unknown())),
+    prompt: z.string(),
   }),
 });
 

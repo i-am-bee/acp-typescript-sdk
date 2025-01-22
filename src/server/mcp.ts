@@ -481,20 +481,8 @@ export class McpServer {
           );
         }
 
-        const cb = agent.callback as AgentCallback<undefined>;
-        try {
-          return await Promise.resolve(cb(extra));
-        } catch (error) {
-          return {
-            content: [
-              {
-                type: "text",
-                text: error instanceof Error ? error.message : String(error),
-              },
-            ],
-            isError: true,
-          };
-        }
+        const cb = agent.callback as AgentCallback;
+        return await Promise.resolve(cb(request.params.prompt, extra));
       },
     );
 
@@ -686,14 +674,10 @@ export class McpServer {
   /**
    * Registers a agent `name` (with a description) accepting the given arguments, which must be an object containing named properties associated with Zod schemas. When the client calls it, the function will be run with the parsed and validated arguments.
    */
-  agent<Args extends ZodRawShape>(
-    name: string,
-    description: string,
-    cb: AgentCallback<Args>,
-  ): void;
+  agent(name: string, description: string, cb: AgentCallback): void;
 
   agent(name: string, ...rest: unknown[]): void {
-    if (this._registeredTools[name]) {
+    if (this._registeredAgents[name]) {
       throw new Error(`Agent ${name} is already registered`);
     }
 
@@ -702,8 +686,8 @@ export class McpServer {
       description = rest.shift() as string;
     }
 
-    const cb = rest[0] as AgentCallback<ZodRawShape | undefined>;
-    this._registeredTools[name] = {
+    const cb = rest[0] as AgentCallback;
+    this._registeredAgents[name] = {
       description,
       callback: cb,
     };
@@ -796,17 +780,14 @@ type RegisteredTool = {
  *
  * Parameters will include tool arguments, if applicable, as well as other request handler context.
  */
-export type AgentCallback<Args extends undefined | ZodRawShape = undefined> =
-  Args extends ZodRawShape
-    ? (
-        args: z.objectOutputType<Args, ZodTypeAny>,
-        extra: RequestHandlerExtra,
-      ) => CallToolResult | Promise<CallToolResult>
-    : (extra: RequestHandlerExtra) => CallToolResult | Promise<CallToolResult>;
+export type AgentCallback = (
+  prompt: string,
+  extra: RequestHandlerExtra,
+) => RunAgentResult | Promise<RunAgentResult>;
 
 type RegisteredAgent = {
   description?: string;
-  callback: AgentCallback<undefined | ZodRawShape>;
+  callback: AgentCallback;
 };
 
 const EMPTY_OBJECT_JSON_SCHEMA = {
