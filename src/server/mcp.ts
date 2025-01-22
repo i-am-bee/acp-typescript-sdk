@@ -37,6 +37,11 @@ import {
   PromptArgument,
   GetPromptResult,
   ReadResourceResult,
+  ListAgentsRequestSchema,
+  RunAgentRequestSchema,
+  Agent,
+  ListAgentsResult,
+  RunAgentResult,
 } from "../types.js";
 import { Completable, CompletableDef } from "./completable.js";
 import { UriTemplate, Variables } from "../shared/uriTemplate.js";
@@ -60,6 +65,7 @@ export class McpServer {
   } = {};
   private _registeredTools: { [name: string]: RegisteredTool } = {};
   private _registeredPrompts: { [name: string]: RegisteredPrompt } = {};
+  private _registeredAgents: { [name: string]: RegisteredAgent } = {};
 
   constructor(serverInfo: Implementation, options?: ServerOptions) {
     this.server = new Server(serverInfo, options);
@@ -87,7 +93,7 @@ export class McpServer {
     if (this._toolHandlersInitialized) {
       return;
     }
-    
+
     this.server.assertCanSetRequestHandler(
       ListToolsRequestSchema.shape.method.value,
     );
@@ -356,7 +362,7 @@ export class McpServer {
     );
 
     this.setCompletionRequestHandler();
-    
+
     this._resourceHandlersInitialized = true;
   }
 
@@ -428,8 +434,71 @@ export class McpServer {
     );
 
     this.setCompletionRequestHandler();
-    
+
     this._promptHandlersInitialized = true;
+  }
+
+  private _agentHandlersInitialized = false;
+
+  private setAgentRequestHandlers() {
+    if (this._agentHandlersInitialized) {
+      return;
+    }
+
+    this.server.assertCanSetRequestHandler(
+      ListAgentsRequestSchema.shape.method.value,
+    );
+    this.server.assertCanSetRequestHandler(
+      RunAgentRequestSchema.shape.method.value,
+    );
+
+    this.server.registerCapabilities({
+      agents: {},
+    });
+
+    this.server.setRequestHandler(
+      ListAgentsRequestSchema,
+      (): ListAgentsResult => ({
+        agents: Object.entries(this._registeredAgents).map(
+          ([name, agent]): Agent => {
+            return {
+              name,
+              description: agent.description,
+            };
+          },
+        ),
+      }),
+    );
+
+    this.server.setRequestHandler(
+      RunAgentRequestSchema,
+      async (request, extra): Promise<RunAgentResult> => {
+        const agent = this._registeredAgents[request.params.name];
+        if (!agent) {
+          throw new McpError(
+            ErrorCode.InvalidParams,
+            `Agent ${request.params.name} not found`,
+          );
+        }
+
+        const cb = agent.callback as AgentCallback<undefined>;
+        try {
+          return await Promise.resolve(cb(extra));
+        } catch (error) {
+          return {
+            content: [
+              {
+                type: "text",
+                text: error instanceof Error ? error.message : String(error),
+              },
+            ],
+            isError: true,
+          };
+        }
+      },
+    );
+
+    this._agentHandlersInitialized = true;
   }
 
   /**
@@ -613,6 +682,34 @@ export class McpServer {
 
     this.setPromptRequestHandlers();
   }
+
+  /**
+   * Registers a agent `name` (with a description) accepting the given arguments, which must be an object containing named properties associated with Zod schemas. When the client calls it, the function will be run with the parsed and validated arguments.
+   */
+  agent<Args extends ZodRawShape>(
+    name: string,
+    description: string,
+    cb: AgentCallback<Args>,
+  ): void;
+
+  agent(name: string, ...rest: unknown[]): void {
+    if (this._registeredTools[name]) {
+      throw new Error(`Agent ${name} is already registered`);
+    }
+
+    let description: string | undefined;
+    if (typeof rest[0] === "string") {
+      description = rest.shift() as string;
+    }
+
+    const cb = rest[0] as AgentCallback<ZodRawShape | undefined>;
+    this._registeredTools[name] = {
+      description,
+      callback: cb,
+    };
+
+    this.setAgentRequestHandlers();
+  }
 }
 
 /**
@@ -692,6 +789,24 @@ type RegisteredTool = {
   description?: string;
   inputSchema?: AnyZodObject;
   callback: ToolCallback<undefined | ZodRawShape>;
+};
+
+/**
+ * Callback for a agent handler registered with Server.agent().
+ *
+ * Parameters will include tool arguments, if applicable, as well as other request handler context.
+ */
+export type AgentCallback<Args extends undefined | ZodRawShape = undefined> =
+  Args extends ZodRawShape
+    ? (
+        args: z.objectOutputType<Args, ZodTypeAny>,
+        extra: RequestHandlerExtra,
+      ) => CallToolResult | Promise<CallToolResult>
+    : (extra: RequestHandlerExtra) => CallToolResult | Promise<CallToolResult>;
+
+type RegisteredAgent = {
+  description?: string;
+  callback: AgentCallback<undefined | ZodRawShape>;
 };
 
 const EMPTY_OBJECT_JSON_SCHEMA = {

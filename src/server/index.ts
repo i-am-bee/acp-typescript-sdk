@@ -88,10 +88,7 @@ export class Server<
   /**
    * Initializes this server with the given name and version information.
    */
-  constructor(
-    private _serverInfo: Implementation,
-    options?: ServerOptions,
-  ) {
+  constructor(private _serverInfo: Implementation, options?: ServerOptions) {
     super(options);
     this._capabilities = options?.capabilities ?? {};
     this._instructions = options?.instructions;
@@ -187,6 +184,14 @@ export class Server<
       case "notifications/progress":
         // Progress notifications are always allowed
         break;
+
+      case "notifications/agents/list_changed":
+        if (!this._capabilities.agents) {
+          throw new Error(
+            `Server does not support notifying of agent list changes (required for ${method})`,
+          );
+        }
+        break;
     }
   }
 
@@ -232,6 +237,15 @@ export class Server<
         if (!this._capabilities.tools) {
           throw new Error(
             `Server does not support tools (required for ${method})`,
+          );
+        }
+        break;
+
+      case "agents/run":
+      case "agents/list":
+        if (!this._capabilities.agents) {
+          throw new Error(
+            `Server does not support agents (required for ${method})`,
           );
         }
         break;
@@ -328,5 +342,9 @@ export class Server<
 
   async sendPromptListChanged() {
     return this.notification({ method: "notifications/prompts/list_changed" });
+  }
+
+  async sendAgentListChanged() {
+    return this.notification({ method: "notifications/agents/list_changed" });
   }
 }
