@@ -21,6 +21,8 @@ import {
   Implementation,
   InitializeResultSchema,
   LATEST_PROTOCOL_VERSION,
+  ListAgentsRequest,
+  ListAgentsResultSchema,
   ListPromptsRequest,
   ListPromptsResultSchema,
   ListResourcesRequest,
@@ -35,6 +37,8 @@ import {
   ReadResourceResultSchema,
   Request,
   Result,
+  RunAgentRequest,
+  RunAgentResultSchema,
   ServerCapabilities,
   SubscribeRequest,
   SUPPORTED_PROTOCOL_VERSIONS,
@@ -90,10 +94,7 @@ export class Client<
   /**
    * Initializes this client with the given name and version information.
    */
-  constructor(
-    private _clientInfo: Implementation,
-    options?: ClientOptions,
-  ) {
+  constructor(private _clientInfo: Implementation, options?: ClientOptions) {
     super(options);
     this._capabilities = options?.capabilities ?? {};
   }
@@ -250,6 +251,15 @@ export class Client<
 
       case "ping":
         // No specific capability required for ping
+        break;
+
+      case "agents/run":
+      case "agents/list":
+        if (!this._serverCapabilities?.agents) {
+          throw new Error(
+            `Server does not support agents (required for ${method})`,
+          );
+        }
         break;
     }
   }
@@ -422,6 +432,25 @@ export class Client<
     return this.request(
       { method: "tools/list", params },
       ListToolsResultSchema,
+      options,
+    );
+  }
+
+  async runAgent(params: RunAgentRequest["params"], options?: RequestOptions) {
+    return this.request(
+      { method: "agents/run", params },
+      RunAgentResultSchema,
+      options,
+    );
+  }
+
+  async listAgents(
+    params?: ListAgentsRequest["params"],
+    options?: RequestOptions,
+  ) {
+    return this.request(
+      { method: "agents/list", params },
+      ListAgentsResultSchema,
       options,
     );
   }
