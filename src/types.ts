@@ -1104,6 +1104,7 @@ export const RunAgentRequestSchema = RequestSchema.extend({
   method: z.literal("agents/run"),
   params: BaseRequestParamsSchema.extend({
     name: z.string(),
+    tools: z.array(z.string()),
     prompt: z.string(),
   }),
 });

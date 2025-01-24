@@ -489,8 +489,7 @@ export class McpServer {
           );
         }
 
-        const cb = agent.callback as AgentCallback;
-        return await Promise.resolve(cb(request.params.prompt, extra));
+        return await Promise.resolve(agent.callback(request.params, extra));
       },
     );
 
@@ -682,22 +681,20 @@ export class McpServer {
   /**
    * Registers a agent `name` (with a description) accepting the given arguments, which must be an object containing named properties associated with Zod schemas. When the client calls it, the function will be run with the parsed and validated arguments.
    */
-  agent(name: string, description: string, cb: AgentCallback): void;
-
-  agent(name: string, ...rest: unknown[]): void {
+  agent(
+    name: string,
+    definition: {
+      description: string;
+    },
+    callback: AgentCallback,
+  ): void {
     if (this._registeredAgents[name]) {
       throw new Error(`Agent ${name} is already registered`);
     }
 
-    let description: string | undefined;
-    if (typeof rest[0] === "string") {
-      description = rest.shift() as string;
-    }
-
-    const cb = rest[0] as AgentCallback;
     this._registeredAgents[name] = {
-      description,
-      callback: cb,
+      ...definition,
+      callback,
     };
 
     this.setAgentRequestHandlers();
@@ -783,18 +780,16 @@ type RegisteredTool = {
   callback: ToolCallback<undefined | ZodRawShape>;
 };
 
-/**
- * Callback for a agent handler registered with Server.agent().
- *
- * Parameters will include tool arguments, if applicable, as well as other request handler context.
- */
 export type AgentCallback = (
-  prompt: string,
+  params: {
+    tools: string[];
+    prompt: string;
+  },
   extra: RequestHandlerExtra,
 ) => RunAgentResult | Promise<RunAgentResult>;
 
 type RegisteredAgent = {
-  description?: string;
+  description: string;
   callback: AgentCallback;
 };
 
