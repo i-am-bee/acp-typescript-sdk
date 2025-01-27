@@ -3,24 +3,33 @@ import { z } from "zod";
 import { StdioClientTransport } from "./stdio.js";
 import { SSEClientTransport } from "./sse.js";
 
+const serverTransport = z.union([
+  z.object({
+    type: z.literal("stdio"),
+    command: z.string(),
+    args: z.array(z.string()),
+  }),
+  z.object({
+    type: z.literal("sse"),
+    url: z.string(),
+  }),
+]);
+
 const ManifestSchema = z.object({
   servers: z.array(
     z.object({
-      transports: z.array(
-        z.union([
-          z.object({
-            type: z.literal("stdio"),
-            command: z.string(),
-            args: z.array(z.string()),
-          }),
-          z.object({
-            type: z.literal("sse"),
-            url: z.string(),
-          }),
-        ]),
-      ),
+      default: z.boolean().optional(),
+      transports: z.array(serverTransport),
     }),
   ),
+  uiServers: z
+    .array(
+      z.object({
+        default: z.boolean().optional(),
+        transports: z.array(serverTransport),
+      }),
+    )
+    .optional(),
 });
 export type Manifest = z.infer<typeof ManifestSchema>;
 
