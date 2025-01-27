@@ -37,10 +37,10 @@ import {
   PromptArgument,
   GetPromptResult,
   ReadResourceResult,
-  ListAgentsRequestSchema,
+  ListAgentTemplatesRequestSchema,
   RunAgentRequestSchema,
-  Agent,
-  ListAgentsResult,
+  AgentTemplate,
+  ListAgentTemplatesResult,
   RunAgentResult,
 } from "../types.js";
 import { Completable, CompletableDef } from "./completable.js";
@@ -65,7 +65,9 @@ export class McpServer {
   } = {};
   private _registeredTools: { [name: string]: RegisteredTool } = {};
   private _registeredPrompts: { [name: string]: RegisteredPrompt } = {};
-  private _registeredAgents: { [name: string]: RegisteredAgent } = {};
+  private _registeredAgentTemplates: {
+    [name: string]: RegisteredAgentTemplate;
+  } = {};
 
   constructor(serverInfo: Implementation, options?: ServerOptions) {
     this.server = new Server(serverInfo, options);
@@ -446,7 +448,7 @@ export class McpServer {
     }
 
     this.server.assertCanSetRequestHandler(
-      ListAgentsRequestSchema.shape.method.value,
+      ListAgentTemplatesRequestSchema.shape.method.value,
     );
     this.server.assertCanSetRequestHandler(
       RunAgentRequestSchema.shape.method.value,
@@ -457,10 +459,10 @@ export class McpServer {
     });
 
     this.server.setRequestHandler(
-      ListAgentsRequestSchema,
-      (): ListAgentsResult => ({
-        agents: Object.entries(this._registeredAgents).map(
-          ([name, agent]): Agent => {
+      ListAgentTemplatesRequestSchema,
+      (): ListAgentTemplatesResult => ({
+        agents: Object.entries(this._registeredAgentTemplates).map(
+          ([name, agent]): AgentTemplate => {
             return {
               name,
               description: agent.description,
@@ -473,11 +475,11 @@ export class McpServer {
     this.server.setRequestHandler(
       RunAgentRequestSchema,
       async (request, extra): Promise<RunAgentResult> => {
-        const agent = this._registeredAgents[request.params.name];
+        const agent = this._registeredAgentTemplates[request.params.name];
         if (!agent) {
           throw new McpError(
             ErrorCode.InvalidParams,
-            `Agent ${request.params.name} not found`,
+            `Agent template ${request.params.name} not found`,
           );
         }
 
@@ -675,17 +677,17 @@ export class McpServer {
    */
   agent(
     name: string,
-    definition: {
+    template: {
       description: string;
     },
-    callback: AgentCallback,
+    callback: AgentTemplateCallback,
   ): void {
-    if (this._registeredAgents[name]) {
-      throw new Error(`Agent ${name} is already registered`);
+    if (this._registeredAgentTemplates[name]) {
+      throw new Error(`Agent template ${name} is already registered`);
     }
 
-    this._registeredAgents[name] = {
-      ...definition,
+    this._registeredAgentTemplates[name] = {
+      ...template,
       callback,
     };
 
@@ -772,7 +774,7 @@ type RegisteredTool = {
   callback: ToolCallback<undefined | ZodRawShape>;
 };
 
-export type AgentCallback = (
+export type AgentTemplateCallback = (
   params: {
     tools: string[];
     prompt: string;
@@ -780,9 +782,9 @@ export type AgentCallback = (
   extra: RequestHandlerExtra,
 ) => RunAgentResult | Promise<RunAgentResult>;
 
-type RegisteredAgent = {
+type RegisteredAgentTemplate = {
   description: string;
-  callback: AgentCallback;
+  callback: AgentTemplateCallback;
 };
 
 const EMPTY_OBJECT_JSON_SCHEMA = {
