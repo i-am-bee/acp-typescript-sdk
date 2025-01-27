@@ -18,12 +18,14 @@ const serverTransport = zod_1.z.union([
 ]);
 const ManifestSchema = zod_1.z.object({
     servers: zod_1.z.array(zod_1.z.object({
-        default: zod_1.z.boolean().optional(),
+        name: zod_1.z.string(),
+        description: zod_1.z.string().optional(),
         transports: zod_1.z.array(serverTransport),
     })),
     uiServers: zod_1.z
         .array(zod_1.z.object({
-        default: zod_1.z.boolean().optional(),
+        name: zod_1.z.string(),
+        description: zod_1.z.string().optional(),
         transports: zod_1.z.array(serverTransport),
     }))
         .optional(),
@@ -32,8 +34,15 @@ async function loadManifest(url) {
     let manifestDocument;
     switch (url.protocol) {
         case "http:":
-        case "https:":
-            throw new Error("Not implemented");
+        case "https:": {
+            const res = await fetch(url, {
+                headers: { "accept-encoding": "application/json" },
+            });
+            if (!res.ok)
+                throw new Error(`Unable to fetch manifest: ${res.status} - ${await res.text()}`);
+            manifestDocument = await res.json();
+            break;
+        }
         case "file:":
             manifestDocument = JSON.parse((0, node_fs_1.readFileSync)(url.pathname, "utf8"));
             break;

@@ -18,14 +18,16 @@ const serverTransport = z.union([
 const ManifestSchema = z.object({
   servers: z.array(
     z.object({
-      default: z.boolean().optional(),
+      name: z.string(),
+      description: z.string().optional(),
       transports: z.array(serverTransport),
     }),
   ),
   uiServers: z
     .array(
       z.object({
-        default: z.boolean().optional(),
+        name: z.string(),
+        description: z.string().optional(),
         transports: z.array(serverTransport),
       }),
     )
@@ -37,8 +39,17 @@ async function loadManifest(url: URL): Promise<Manifest> {
   let manifestDocument: unknown;
   switch (url.protocol) {
     case "http:":
-    case "https:":
-      throw new Error("Not implemented");
+    case "https:": {
+      const res = await fetch(url, {
+        headers: { "accept-encoding": "application/json" },
+      });
+      if (!res.ok)
+        throw new Error(
+          `Unable to fetch manifest: ${res.status} - ${await res.text()}`,
+        );
+      manifestDocument = await res.json();
+      break;
+    }
     case "file:":
       manifestDocument = JSON.parse(readFileSync(url.pathname, "utf8"));
       break;
