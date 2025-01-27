@@ -21,8 +21,8 @@ import {
   Implementation,
   InitializeResultSchema,
   LATEST_PROTOCOL_VERSION,
-  ListAgentsRequest,
-  ListAgentsResultSchema,
+  ListAgentTemplatesRequest,
+  ListAgentTemplatesResultSchema,
   ListPromptsRequest,
   ListPromptsResultSchema,
   ListResourcesRequest,
@@ -254,7 +254,7 @@ export class Client<
         break;
 
       case "agents/run":
-      case "agents/list":
+      case "agents/templates/list":
         if (!this._serverCapabilities?.agents) {
           throw new Error(
             `Server does not support agents (required for ${method})`,
@@ -444,13 +444,13 @@ export class Client<
     );
   }
 
-  async listAgents(
-    params?: ListAgentsRequest["params"],
+  async listAgentTemplates(
+    params?: ListAgentTemplatesRequest["params"],
     options?: RequestOptions,
   ) {
     return this.request(
-      { method: "agents/list", params },
-      ListAgentsResultSchema,
+      { method: "agents/templates/list", params },
+      ListAgentTemplatesResultSchema,
       options,
     );
   }

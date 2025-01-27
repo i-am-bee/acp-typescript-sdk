@@ -2,12 +2,10 @@ import { readFileSync } from "node:fs";
 import { z } from "zod";
 import { StdioClientTransport } from "./stdio.js";
 import { SSEClientTransport } from "./sse.js";
-import { ServerCapabilitiesSchema } from "../types.js";
 
 const ManifestSchema = z.object({
   servers: z.array(
     z.object({
-      capabilities: ServerCapabilitiesSchema,
       transports: z.array(
         z.union([
           z.object({

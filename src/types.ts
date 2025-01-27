@@ -1063,7 +1063,7 @@ export const RootsListChangedNotificationSchema = NotificationSchema.extend({
 /**
  * Definition for an agent the client can run.
  */
-export const AgentSchema = z
+export const AgentTemplateSchema = z
   .object({
     /**
      * The name of the agent.
@@ -1079,15 +1079,15 @@ export const AgentSchema = z
 /**
  * Sent from the client to request a list of agents the server has.
  */
-export const ListAgentsRequestSchema = PaginatedRequestSchema.extend({
-  method: z.literal("agents/list"),
+export const ListAgentTemplatesRequestSchema = PaginatedRequestSchema.extend({
+  method: z.literal("agents/templates/list"),
 });
 
 /**
  * The server's response to a agents/list request from the client.
  */
-export const ListAgentsResultSchema = PaginatedResultSchema.extend({
-  agents: z.array(AgentSchema),
+export const ListAgentTemplatesResultSchema = PaginatedResultSchema.extend({
+  agents: z.array(AgentTemplateSchema),
 });
 
 /**
@@ -1131,7 +1131,7 @@ export const ClientRequestSchema = z.union([
   UnsubscribeRequestSchema,
   CallToolRequestSchema,
   ListToolsRequestSchema,
-  ListAgentsRequestSchema,
+  ListAgentTemplatesRequestSchema,
   RunAgentRequestSchema,
 ]);
 
@@ -1177,7 +1177,7 @@ export const ServerResultSchema = z.union([
   ReadResourceResultSchema,
   CallToolResultSchema,
   ListToolsResultSchema,
-  ListAgentsResultSchema,
+  ListAgentTemplatesResultSchema,
   RunAgentResultSchema,
 ]);
 
@@ -1336,9 +1336,13 @@ export type ServerNotification = Infer<typeof ServerNotificationSchema>;
 export type ServerResult = Infer<typeof ServerResultSchema>;
 
 /* Agents */
-export type Agent = Infer<typeof AgentSchema>;
-export type ListAgentsRequest = Infer<typeof ListAgentsRequestSchema>;
-export type ListAgentsResult = Infer<typeof ListAgentsResultSchema>;
+export type AgentTemplate = Infer<typeof AgentTemplateSchema>;
+export type ListAgentTemplatesRequest = Infer<
+  typeof ListAgentTemplatesRequestSchema
+>;
+export type ListAgentTemplatesResult = Infer<
+  typeof ListAgentTemplatesResultSchema
+>;
 export type RunAgentRequest = Infer<typeof RunAgentRequestSchema>;
 export type RunAgentResult = Infer<typeof RunAgentResultSchema>;
 export type AgentListChangedNotification = Infer<
