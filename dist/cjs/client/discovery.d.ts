@@ -3,7 +3,8 @@ import { StdioClientTransport } from "./stdio.js";
 import { SSEClientTransport } from "./sse.js";
 declare const ManifestSchema: z.ZodObject<{
     servers: z.ZodArray<z.ZodObject<{
-        default: z.ZodOptional<z.ZodBoolean>;
+        name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
         transports: z.ZodArray<z.ZodUnion<[z.ZodObject<{
             type: z.ZodLiteral<"stdio">;
             command: z.ZodString;
@@ -27,6 +28,7 @@ declare const ManifestSchema: z.ZodObject<{
             url: string;
         }>]>, "many">;
     }, "strip", z.ZodTypeAny, {
+        name: string;
         transports: ({
             type: "stdio";
             command: string;
@@ -35,8 +37,9 @@ declare const ManifestSchema: z.ZodObject<{
             type: "sse";
             url: string;
         })[];
-        default?: boolean | undefined;
+        description?: string | undefined;
     }, {
+        name: string;
         transports: ({
             type: "stdio";
             command: string;
@@ -45,10 +48,11 @@ declare const ManifestSchema: z.ZodObject<{
             type: "sse";
             url: string;
         })[];
-        default?: boolean | undefined;
+        description?: string | undefined;
     }>, "many">;
     uiServers: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        default: z.ZodOptional<z.ZodBoolean>;
+        name: z.ZodString;
+        description: z.ZodOptional<z.ZodString>;
         transports: z.ZodArray<z.ZodUnion<[z.ZodObject<{
             type: z.ZodLiteral<"stdio">;
             command: z.ZodString;
@@ -72,6 +76,7 @@ declare const ManifestSchema: z.ZodObject<{
             url: string;
         }>]>, "many">;
     }, "strip", z.ZodTypeAny, {
+        name: string;
         transports: ({
             type: "stdio";
             command: string;
@@ -80,8 +85,9 @@ declare const ManifestSchema: z.ZodObject<{
             type: "sse";
             url: string;
         })[];
-        default?: boolean | undefined;
+        description?: string | undefined;
     }, {
+        name: string;
         transports: ({
             type: "stdio";
             command: string;
@@ -90,10 +96,11 @@ declare const ManifestSchema: z.ZodObject<{
             type: "sse";
             url: string;
         })[];
-        default?: boolean | undefined;
+        description?: string | undefined;
     }>, "many">>;
 }, "strip", z.ZodTypeAny, {
     servers: {
+        name: string;
         transports: ({
             type: "stdio";
             command: string;
@@ -102,9 +109,10 @@ declare const ManifestSchema: z.ZodObject<{
             type: "sse";
             url: string;
         })[];
-        default?: boolean | undefined;
+        description?: string | undefined;
     }[];
     uiServers?: {
+        name: string;
         transports: ({
             type: "stdio";
             command: string;
@@ -113,10 +121,11 @@ declare const ManifestSchema: z.ZodObject<{
             type: "sse";
             url: string;
         })[];
-        default?: boolean | undefined;
+        description?: string | undefined;
     }[] | undefined;
 }, {
     servers: {
+        name: string;
         transports: ({
             type: "stdio";
             command: string;
@@ -125,9 +134,10 @@ declare const ManifestSchema: z.ZodObject<{
             type: "sse";
             url: string;
         })[];
-        default?: boolean | undefined;
+        description?: string | undefined;
     }[];
     uiServers?: {
+        name: string;
         transports: ({
             type: "stdio";
             command: string;
@@ -136,13 +146,14 @@ declare const ManifestSchema: z.ZodObject<{
             type: "sse";
             url: string;
         })[];
-        default?: boolean | undefined;
+        description?: string | undefined;
     }[] | undefined;
 }>;
 export type Manifest = z.infer<typeof ManifestSchema>;
 export declare function discoverServers(url: URL): Promise<{
     transports: (SSEClientTransport | StdioClientTransport)[];
-    default?: boolean | undefined;
+    name: string;
+    description?: string | undefined;
 }[]>;
 export {};
 //# sourceMappingURL=discovery.d.ts.map
