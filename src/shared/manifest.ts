@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { z } from "zod";
-import { StdioClientTransport } from "./stdio.js";
-import { SSEClientTransport } from "./sse.js";
+import { StdioClientTransport } from "../client/stdio.js";
+import { SSEClientTransport } from "../client/sse.js";
 
 const serverTransport = z.union([
   z.object({
@@ -14,19 +14,20 @@ const serverTransport = z.union([
     url: z.string(),
   }),
 ]);
+type ServerTransport = z.infer<typeof serverTransport>;
 
-const ManifestSchema = z.object({
-  servers: z.array(
-    z.object({
-      name: z.string(),
-      description: z.string().optional(),
-      transports: z.array(serverTransport),
-    }),
-  ),
-  uiServers: z
-    .array(
+export const ManifestSchema = z.object({
+  mcpServers: z
+    .record(
       z.object({
-        name: z.string(),
+        description: z.string().optional(),
+        transports: z.array(serverTransport),
+      }),
+    )
+    .optional(),
+  uiServers: z
+    .record(
+      z.object({
         description: z.string().optional(),
         transports: z.array(serverTransport),
       }),
@@ -35,7 +36,7 @@ const ManifestSchema = z.object({
 });
 export type Manifest = z.infer<typeof ManifestSchema>;
 
-async function loadManifest(url: URL): Promise<Manifest> {
+export async function loadManifest(url: URL): Promise<Manifest> {
   let manifestDocument: unknown;
   switch (url.protocol) {
     case "http:":
@@ -59,9 +60,7 @@ async function loadManifest(url: URL): Promise<Manifest> {
   return await ManifestSchema.parseAsync(manifestDocument);
 }
 
-function createTransport(
-  transport: Manifest["servers"][number]["transports"][number],
-) {
+export function createTransport(transport: ServerTransport) {
   switch (transport.type) {
     case "stdio":
       return new StdioClientTransport({
@@ -71,11 +70,4 @@ function createTransport(
     case "sse":
       return new SSEClientTransport(new URL(transport.url));
   }
-}
-
-export async function discoverServers(url: URL) {
-  const manifest = await loadManifest(url);
-  return manifest.servers.flatMap((server) => {
-    return { ...server, transports: server.transports.map(createTransport) };
-  });
 }
