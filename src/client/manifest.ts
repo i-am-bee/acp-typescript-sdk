@@ -3,7 +3,7 @@ import { z } from "zod";
 import { StdioClientTransport } from "../client/stdio.js";
 import { SSEClientTransport } from "../client/sse.js";
 
-const serverTransport = z.union([
+const transport = z.union([
   z.object({
     type: z.literal("stdio"),
     command: z.string(),
@@ -14,14 +14,14 @@ const serverTransport = z.union([
     url: z.string(),
   }),
 ]);
-type ServerTransport = z.infer<typeof serverTransport>;
+type Transport = z.infer<typeof transport>;
 
 export const ManifestSchema = z.object({
   mcpServers: z
     .record(
       z.object({
         description: z.string().optional(),
-        transports: z.array(serverTransport),
+        transports: z.array(transport),
       }),
     )
     .optional(),
@@ -29,7 +29,7 @@ export const ManifestSchema = z.object({
     .record(
       z.object({
         description: z.string().optional(),
-        transports: z.array(serverTransport),
+        transports: z.array(transport),
       }),
     )
     .optional(),
@@ -60,7 +60,7 @@ export async function loadManifest(url: URL): Promise<Manifest> {
   return await ManifestSchema.parseAsync(manifestDocument);
 }
 
-export function createTransport(transport: ServerTransport) {
+export function createClientTransport(transport: Transport) {
   switch (transport.type) {
     case "stdio":
       return new StdioClientTransport({
