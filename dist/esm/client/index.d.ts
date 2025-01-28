@@ -37,6 +37,7 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
     private _serverCapabilities?;
     private _serverVersion?;
     private _capabilities;
+    private _instructions?;
     /**
      * Initializes this client with the given name and version information.
      */
@@ -57,6 +58,10 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
      * After initialization has completed, this will be populated with information about the server's name and version.
      */
     getServerVersion(): Implementation | undefined;
+    /**
+     * After initialization has completed, this may be populated with information about the server's instructions.
+     */
+    getInstructions(): string | undefined;
     protected assertCapabilityForMethod(method: RequestT["method"]): void;
     protected assertNotificationCapability(method: NotificationT["method"]): void;
     protected assertRequestHandlerCapability(method: string): void;

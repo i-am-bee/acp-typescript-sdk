@@ -32,6 +32,7 @@ export declare class McpServer {
     close(): Promise<void>;
     private _toolHandlersInitialized;
     private setToolRequestHandlers;
+    private _completionHandlerInitialized;
     private setCompletionRequestHandler;
     private handlePromptCompletion;
     private handleResourceCompletion;

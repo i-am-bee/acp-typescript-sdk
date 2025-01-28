@@ -1,10 +1,14 @@
+import { type ErrorEvent, type EventSourceInit } from "eventsource";
 import { Transport } from "../shared/transport.js";
 import { JSONRPCMessage } from "../types.js";
+export declare class SseError extends Error {
+    readonly code: number | undefined;
+    readonly event: ErrorEvent;
+    constructor(code: number | undefined, message: string | undefined, event: ErrorEvent);
+}
 /**
  * Client transport for SSE: this will connect to a server using Server-Sent Events for receiving
  * messages and make separate POST requests for sending messages.
- *
- * This uses the EventSource API in browsers. You can install the `eventsource` package for Node.js.
  */
 export declare class SSEClientTransport implements Transport {
     private _eventSource?;

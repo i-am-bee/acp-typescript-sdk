@@ -71,6 +71,7 @@ export class Client extends Protocol {
             }
             this._serverCapabilities = result.capabilities;
             this._serverVersion = result.serverInfo;
+            this._instructions = result.instructions;
             await this.notification({
                 method: "notifications/initialized",
             });
@@ -92,6 +93,12 @@ export class Client extends Protocol {
      */
     getServerVersion() {
         return this._serverVersion;
+    }
+    /**
+     * After initialization has completed, this may be populated with information about the server's instructions.
+     */
+    getInstructions() {
+        return this._instructions;
     }
     assertCapabilityForMethod(method) {
         var _a, _b, _c, _d, _e, _f;

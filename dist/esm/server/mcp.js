@@ -17,6 +17,7 @@ export class McpServer {
         this._registeredPrompts = {};
         this._registeredAgentTemplates = {};
         this._toolHandlersInitialized = false;
+        this._completionHandlerInitialized = false;
         this._resourceHandlersInitialized = false;
         this._promptHandlersInitialized = false;
         this._agentHandlersInitialized = false;
@@ -104,6 +105,9 @@ export class McpServer {
         this._toolHandlersInitialized = true;
     }
     setCompletionRequestHandler() {
+        if (this._completionHandlerInitialized) {
+            return;
+        }
         this.server.assertCanSetRequestHandler(CompleteRequestSchema.shape.method.value);
         this.server.setRequestHandler(CompleteRequestSchema, async (request) => {
             switch (request.params.ref.type) {
@@ -115,6 +119,7 @@ export class McpServer {
                     throw new McpError(ErrorCode.InvalidParams, `Invalid completion reference: ${request.params.ref}`);
             }
         });
+        this._completionHandlerInitialized = true;
     }
     async handlePromptCompletion(request, ref) {
         const prompt = this._registeredPrompts[ref.name];

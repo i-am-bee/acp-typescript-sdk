@@ -1914,6 +1914,12 @@ export declare const InitializeResultSchema: z.ZodObject<z.objectUtil.extendShap
         name: z.ZodString;
         version: z.ZodString;
     }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * Instructions describing how to use the server and its features.
+     *
+     * This can be used by clients to improve the LLM's understanding of available tools, resources, etc. It can be thought of like a "hint" to the model. For example, this information MAY be added to the system prompt.
+     */
+    instructions: z.ZodOptional<z.ZodString>;
 }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
@@ -2226,6 +2232,12 @@ export declare const InitializeResultSchema: z.ZodObject<z.objectUtil.extendShap
         name: z.ZodString;
         version: z.ZodString;
     }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * Instructions describing how to use the server and its features.
+     *
+     * This can be used by clients to improve the LLM's understanding of available tools, resources, etc. It can be thought of like a "hint" to the model. For example, this information MAY be added to the system prompt.
+     */
+    instructions: z.ZodOptional<z.ZodString>;
 }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
@@ -2538,6 +2550,12 @@ export declare const InitializeResultSchema: z.ZodObject<z.objectUtil.extendShap
         name: z.ZodString;
         version: z.ZodString;
     }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * Instructions describing how to use the server and its features.
+     *
+     * This can be used by clients to improve the LLM's understanding of available tools, resources, etc. It can be thought of like a "hint" to the model. For example, this information MAY be added to the system prompt.
+     */
+    instructions: z.ZodOptional<z.ZodString>;
 }>, z.ZodTypeAny, "passthrough">>;
 /**
  * This notification is sent from the client to the server after initialization has finished.
@@ -21633,6 +21651,12 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         name: z.ZodString;
         version: z.ZodString;
     }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * Instructions describing how to use the server and its features.
+     *
+     * This can be used by clients to improve the LLM's understanding of available tools, resources, etc. It can be thought of like a "hint" to the model. For example, this information MAY be added to the system prompt.
+     */
+    instructions: z.ZodOptional<z.ZodString>;
 }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
@@ -21945,6 +21969,12 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         name: z.ZodString;
         version: z.ZodString;
     }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * Instructions describing how to use the server and its features.
+     *
+     * This can be used by clients to improve the LLM's understanding of available tools, resources, etc. It can be thought of like a "hint" to the model. For example, this information MAY be added to the system prompt.
+     */
+    instructions: z.ZodOptional<z.ZodString>;
 }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
@@ -22257,6 +22287,12 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         name: z.ZodString;
         version: z.ZodString;
     }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * Instructions describing how to use the server and its features.
+     *
+     * This can be used by clients to improve the LLM's understanding of available tools, resources, etc. It can be thought of like a "hint" to the model. For example, this information MAY be added to the system prompt.
+     */
+    instructions: z.ZodOptional<z.ZodString>;
 }>, z.ZodTypeAny, "passthrough">>, z.ZodObject<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
@@ -27804,8 +27840,8 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
 }>, z.ZodTypeAny, "passthrough">>]>;
 export declare class McpError extends Error {
     readonly code: number;
-    readonly data?: unknown;
-    constructor(code: number, message: string, data?: unknown);
+    readonly data?: unknown | undefined;
+    constructor(code: number, message: string, data?: unknown | undefined);
 }
 type Primitive = string | number | boolean | bigint | null | undefined;
 type Flatten<T> = T extends Primitive ? T : T extends Array<infer U> ? Array<Flatten<U>> : T extends Set<infer U> ? Set<Flatten<U>> : T extends Map<infer K, infer V> ? Map<Flatten<K>, Flatten<V>> : T extends object ? {

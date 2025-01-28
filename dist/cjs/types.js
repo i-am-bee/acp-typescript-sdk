@@ -284,6 +284,12 @@ exports.InitializeResultSchema = exports.ResultSchema.extend({
     protocolVersion: zod_1.z.string(),
     capabilities: exports.ServerCapabilitiesSchema,
     serverInfo: exports.ImplementationSchema,
+    /**
+     * Instructions describing how to use the server and its features.
+     *
+     * This can be used by clients to improve the LLM's understanding of available tools, resources, etc. It can be thought of like a "hint" to the model. For example, this information MAY be added to the system prompt.
+     */
+    instructions: zod_1.z.optional(zod_1.z.string()),
 });
 /**
  * This notification is sent from the client to the server after initialization has finished.

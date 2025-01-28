@@ -1,12 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SSEClientTransport = void 0;
+exports.SSEClientTransport = exports.SseError = void 0;
+const eventsource_1 = require("eventsource");
 const types_js_1 = require("../types.js");
+class SseError extends Error {
+    constructor(code, message, event) {
+        super(`SSE error: ${message}`);
+        this.code = code;
+        this.event = event;
+    }
+}
+exports.SseError = SseError;
 /**
  * Client transport for SSE: this will connect to a server using Server-Sent Events for receiving
  * messages and make separate POST requests for sending messages.
- *
- * This uses the EventSource API in browsers. You can install the `eventsource` package for Node.js.
  */
 class SSEClientTransport {
     constructor(url, opts) {
@@ -19,11 +26,11 @@ class SSEClientTransport {
             throw new Error("SSEClientTransport already started! If using Client class, note that connect() calls start() automatically.");
         }
         return new Promise((resolve, reject) => {
-            this._eventSource = new EventSource(this._url.href, this._eventSourceInit);
+            this._eventSource = new eventsource_1.EventSource(this._url.href, this._eventSourceInit);
             this._abortController = new AbortController();
             this._eventSource.onerror = (event) => {
                 var _a;
-                const error = new Error(`SSE error: ${JSON.stringify(event)}`);
+                const error = new SseError(event.code, event.message, event);
                 reject(error);
                 (_a = this.onerror) === null || _a === void 0 ? void 0 : _a.call(this, error);
             };
@@ -81,7 +88,7 @@ class SSEClientTransport {
                 method: "POST",
                 headers,
                 body: JSON.stringify(message),
-                signal: (_b = this._abortController) === null || _b === void 0 ? void 0 : _b.signal
+                signal: (_b = this._abortController) === null || _b === void 0 ? void 0 : _b.signal,
             };
             const response = await fetch(this._endpoint, init);
             if (!response.ok) {

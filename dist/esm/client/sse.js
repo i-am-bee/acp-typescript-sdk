@@ -1,9 +1,15 @@
+import { EventSource } from "eventsource";
 import { JSONRPCMessageSchema } from "../types.js";
+export class SseError extends Error {
+    constructor(code, message, event) {
+        super(`SSE error: ${message}`);
+        this.code = code;
+        this.event = event;
+    }
+}
 /**
  * Client transport for SSE: this will connect to a server using Server-Sent Events for receiving
  * messages and make separate POST requests for sending messages.
- *
- * This uses the EventSource API in browsers. You can install the `eventsource` package for Node.js.
  */
 export class SSEClientTransport {
     constructor(url, opts) {
@@ -20,7 +26,7 @@ export class SSEClientTransport {
             this._abortController = new AbortController();
             this._eventSource.onerror = (event) => {
                 var _a;
-                const error = new Error(`SSE error: ${JSON.stringify(event)}`);
+                const error = new SseError(event.code, event.message, event);
                 reject(error);
                 (_a = this.onerror) === null || _a === void 0 ? void 0 : _a.call(this, error);
             };
@@ -78,7 +84,7 @@ export class SSEClientTransport {
                 method: "POST",
                 headers,
                 body: JSON.stringify(message),
-                signal: (_b = this._abortController) === null || _b === void 0 ? void 0 : _b.signal
+                signal: (_b = this._abortController) === null || _b === void 0 ? void 0 : _b.signal,
             };
             const response = await fetch(this._endpoint, init);
             if (!response.ok) {
