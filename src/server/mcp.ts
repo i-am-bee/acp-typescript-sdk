@@ -469,7 +469,7 @@ export class McpServer {
     this.server.setRequestHandler(
       ListAgentTemplatesRequestSchema,
       (): ListAgentTemplatesResult => ({
-        agents: Object.entries(this._registeredAgentTemplates).map(
+        agentTemplates: Object.entries(this._registeredAgentTemplates).map(
           ([name, agent]): AgentTemplate => {
             return {
               name,

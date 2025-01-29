@@ -1087,7 +1087,7 @@ export const ListAgentTemplatesRequestSchema = PaginatedRequestSchema.extend({
  * The server's response to a agents/list request from the client.
  */
 export const ListAgentTemplatesResultSchema = PaginatedResultSchema.extend({
-  agents: z.array(AgentTemplateSchema),
+  agentTemplates: z.array(AgentTemplateSchema),
 });
 
 /**
