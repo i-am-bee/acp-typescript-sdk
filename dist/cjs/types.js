@@ -980,7 +980,7 @@ exports.ListAgentTemplatesRequestSchema = exports.PaginatedRequestSchema.extend(
  * The server's response to a agents/list request from the client.
  */
 exports.ListAgentTemplatesResultSchema = exports.PaginatedResultSchema.extend({
-    agents: zod_1.z.array(exports.AgentTemplateSchema),
+    agentTemplates: zod_1.z.array(exports.AgentTemplateSchema),
 });
 /**
  * The server's response to a agent run.

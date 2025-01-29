@@ -15729,7 +15729,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
      */
     nextCursor: z.ZodOptional<z.ZodString>;
 }>, {
-    agents: z.ZodArray<z.ZodObject<{
+    agentTemplates: z.ZodArray<z.ZodObject<{
         /**
          * The name of the agent.
          */
@@ -15769,7 +15769,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
      */
     nextCursor: z.ZodOptional<z.ZodString>;
 }>, {
-    agents: z.ZodArray<z.ZodObject<{
+    agentTemplates: z.ZodArray<z.ZodObject<{
         /**
          * The name of the agent.
          */
@@ -15809,7 +15809,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
      */
     nextCursor: z.ZodOptional<z.ZodString>;
 }>, {
-    agents: z.ZodArray<z.ZodObject<{
+    agentTemplates: z.ZodArray<z.ZodObject<{
         /**
          * The name of the agent.
          */
@@ -27708,7 +27708,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
      */
     nextCursor: z.ZodOptional<z.ZodString>;
 }>, {
-    agents: z.ZodArray<z.ZodObject<{
+    agentTemplates: z.ZodArray<z.ZodObject<{
         /**
          * The name of the agent.
          */
@@ -27748,7 +27748,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
      */
     nextCursor: z.ZodOptional<z.ZodString>;
 }>, {
-    agents: z.ZodArray<z.ZodObject<{
+    agentTemplates: z.ZodArray<z.ZodObject<{
         /**
          * The name of the agent.
          */
@@ -27788,7 +27788,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
      */
     nextCursor: z.ZodOptional<z.ZodString>;
 }>, {
-    agents: z.ZodArray<z.ZodObject<{
+    agentTemplates: z.ZodArray<z.ZodObject<{
         /**
          * The name of the agent.
          */

@@ -789,7 +789,7 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
     }, {
         nextCursor: import("zod").ZodOptional<import("zod").ZodString>;
     }>, {
-        agents: import("zod").ZodArray<import("zod").ZodObject<{
+        agentTemplates: import("zod").ZodArray<import("zod").ZodObject<{
             name: import("zod").ZodString;
             description: import("zod").ZodOptional<import("zod").ZodString>;
         }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
