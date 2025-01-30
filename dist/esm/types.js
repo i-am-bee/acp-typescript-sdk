@@ -964,6 +964,15 @@ export const AgentTemplateSchema = z
      * A human-readable description of the agent.
      */
     description: z.optional(z.string()),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    configSchema: z
+        .object({
+        type: z.literal("object"),
+        properties: z.optional(z.object({}).passthrough()),
+    })
+        .passthrough(),
 })
     .passthrough();
 /**
@@ -991,7 +1000,7 @@ export const RunAgentRequestSchema = RequestSchema.extend({
     method: z.literal("agents/run"),
     params: BaseRequestParamsSchema.extend({
         name: z.string(),
-        tools: z.array(z.string()),
+        config: z.record(z.unknown()),
         prompt: z.string(),
     }),
 });

@@ -968,6 +968,15 @@ exports.AgentTemplateSchema = zod_1.z
      * A human-readable description of the agent.
      */
     description: zod_1.z.optional(zod_1.z.string()),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    configSchema: zod_1.z
+        .object({
+        type: zod_1.z.literal("object"),
+        properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
+    })
+        .passthrough(),
 })
     .passthrough();
 /**
@@ -995,7 +1004,7 @@ exports.RunAgentRequestSchema = exports.RequestSchema.extend({
     method: zod_1.z.literal("agents/run"),
     params: BaseRequestParamsSchema.extend({
         name: zod_1.z.string(),
-        tools: zod_1.z.array(zod_1.z.string()),
+        config: zod_1.z.record(zod_1.z.unknown()),
         prompt: zod_1.z.string(),
     }),
 });
