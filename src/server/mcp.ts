@@ -474,6 +474,11 @@ export class McpServer {
             return {
               name,
               description: agent.description,
+              configSchema: agent.configSchema
+                ? (zodToJsonSchema(
+                    agent.configSchema,
+                  ) as AgentTemplate["configSchema"])
+                : EMPTY_OBJECT_JSON_SCHEMA,
             };
           },
         ),
@@ -683,20 +688,20 @@ export class McpServer {
   /**
    * Registers a agent `name` (with a description) accepting the given arguments, which must be an object containing named properties associated with Zod schemas. When the client calls it, the function will be run with the parsed and validated arguments.
    */
-  agent(
+  agent<Config extends ZodRawShape>(
     name: string,
-    template: {
-      description: string;
-    },
-    callback: AgentTemplateCallback,
+    description: string,
+    configSchema: Config,
+    callback: AgentTemplateCallback<Config>,
   ): void {
     if (this._registeredAgentTemplates[name]) {
       throw new Error(`Agent template ${name} is already registered`);
     }
 
     this._registeredAgentTemplates[name] = {
-      ...template,
-      callback,
+      description,
+      configSchema: z.object(configSchema),
+      callback: callback as AgentTemplateCallback<ZodRawShape>,
     };
 
     this.setAgentRequestHandlers();
@@ -782,9 +787,9 @@ type RegisteredTool = {
   callback: ToolCallback<undefined | ZodRawShape>;
 };
 
-export type AgentTemplateCallback = (
+export type AgentTemplateCallback<Config extends ZodRawShape> = (
   params: {
-    tools: string[];
+    config: z.objectOutputType<Config, ZodTypeAny>;
     prompt: string;
   },
   extra: RequestHandlerExtra,
@@ -792,7 +797,8 @@ export type AgentTemplateCallback = (
 
 type RegisteredAgentTemplate = {
   description: string;
-  callback: AgentTemplateCallback;
+  configSchema: AnyZodObject;
+  callback: AgentTemplateCallback<ZodRawShape>;
 };
 
 const EMPTY_OBJECT_JSON_SCHEMA = {

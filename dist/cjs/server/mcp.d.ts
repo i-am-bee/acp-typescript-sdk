@@ -93,9 +93,7 @@ export declare class McpServer {
     /**
      * Registers a agent `name` (with a description) accepting the given arguments, which must be an object containing named properties associated with Zod schemas. When the client calls it, the function will be run with the parsed and validated arguments.
      */
-    agent(name: string, template: {
-        description: string;
-    }, callback: AgentTemplateCallback): void;
+    agent<Config extends ZodRawShape>(name: string, description: string, configSchema: Config, callback: AgentTemplateCallback<Config>): void;
 }
 /**
  * A callback to complete one variable within a resource template's URI template.
@@ -139,8 +137,8 @@ export declare class ResourceTemplate {
  * Parameters will include tool arguments, if applicable, as well as other request handler context.
  */
 export type ToolCallback<Args extends undefined | ZodRawShape = undefined> = Args extends ZodRawShape ? (args: z.objectOutputType<Args, ZodTypeAny>, extra: RequestHandlerExtra) => CallToolResult | Promise<CallToolResult> : (extra: RequestHandlerExtra) => CallToolResult | Promise<CallToolResult>;
-export type AgentTemplateCallback = (params: {
-    tools: string[];
+export type AgentTemplateCallback<Config extends ZodRawShape> = (params: {
+    config: z.objectOutputType<Config, ZodTypeAny>;
     prompt: string;
 }, extra: RequestHandlerExtra) => RunAgentResult | Promise<RunAgentResult>;
 /**

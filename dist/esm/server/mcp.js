@@ -267,6 +267,9 @@ export class McpServer {
                 return {
                     name,
                     description: agent.description,
+                    configSchema: agent.configSchema
+                        ? zodToJsonSchema(agent.configSchema)
+                        : EMPTY_OBJECT_JSON_SCHEMA,
                 };
             }),
         }));
@@ -350,13 +353,14 @@ export class McpServer {
     /**
      * Registers a agent `name` (with a description) accepting the given arguments, which must be an object containing named properties associated with Zod schemas. When the client calls it, the function will be run with the parsed and validated arguments.
      */
-    agent(name, template, callback) {
+    agent(name, description, configSchema, callback) {
         if (this._registeredAgentTemplates[name]) {
             throw new Error(`Agent template ${name} is already registered`);
         }
         this._registeredAgentTemplates[name] = {
-            ...template,
-            callback,
+            description,
+            configSchema: z.object(configSchema),
+            callback: callback,
         };
         this.setAgentRequestHandlers();
     }
