@@ -1103,7 +1103,10 @@ export const ListAgentTemplatesResultSchema = PaginatedResultSchema.extend({
  * The server's response to a agent run.
  */
 export const RunAgentResultSchema = ResultSchema.extend({
-  text: z.string(),
+  content: z.array(
+    z.union([TextContentSchema, ImageContentSchema, EmbeddedResourceSchema]),
+  ),
+  isError: z.boolean().default(false).optional(),
 });
 
 /**
