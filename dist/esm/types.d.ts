@@ -15525,6 +15525,45 @@ export declare const AgentTemplateSchema: z.ZodObject<{
         type: z.ZodLiteral<"object">;
         properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runInputSchema: z.ZodObject<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runOutputSchema: z.ZodObject<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runDeltaSchema: z.ZodObject<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>;
 }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
     /**
      * The name of the agent.
@@ -15547,6 +15586,45 @@ export declare const AgentTemplateSchema: z.ZodObject<{
         type: z.ZodLiteral<"object">;
         properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runInputSchema: z.ZodObject<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runOutputSchema: z.ZodObject<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runDeltaSchema: z.ZodObject<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>;
 }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
     /**
      * The name of the agent.
@@ -15560,6 +15638,45 @@ export declare const AgentTemplateSchema: z.ZodObject<{
      * A JSON Schema object defining the expected configuration for the agent.
      */
     configSchema: z.ZodObject<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runInputSchema: z.ZodObject<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runOutputSchema: z.ZodObject<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        type: z.ZodLiteral<"object">;
+        properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>;
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runDeltaSchema: z.ZodObject<{
         type: z.ZodLiteral<"object">;
         properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -15790,6 +15907,45 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         /**
          * The name of the agent.
@@ -15812,6 +15968,45 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         /**
          * The name of the agent.
@@ -15825,6 +16020,45 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
          * A JSON Schema object defining the expected configuration for the agent.
          */
         configSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -15869,6 +16103,45 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         /**
          * The name of the agent.
@@ -15891,6 +16164,45 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         /**
          * The name of the agent.
@@ -15904,6 +16216,45 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
          * A JSON Schema object defining the expected configuration for the agent.
          */
         configSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -15948,6 +16299,45 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         /**
          * The name of the agent.
@@ -15961,6 +16351,45 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
          * A JSON Schema object defining the expected configuration for the agent.
          */
         configSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -15992,33 +16421,803 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, z.ZodTypeAny, "passthrough">>, "many">;
 }>, z.ZodTypeAny, "passthrough">>;
 /**
- * The server's response to a agent run.
+ * Definition for an agent the client can run.
  */
-export declare const RunAgentResultSchema: z.ZodObject<z.objectUtil.extendShape<{
+export declare const AgentSchema: z.ZodObject<{
+    /**
+     * The name of the agent.
+     */
+    name: z.ZodString;
+    /**
+     * A human-readable description of the agent.
+     */
+    description: z.ZodOptional<z.ZodString>;
+}, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+    /**
+     * The name of the agent.
+     */
+    name: z.ZodString;
+    /**
+     * A human-readable description of the agent.
+     */
+    description: z.ZodOptional<z.ZodString>;
+}, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+    /**
+     * The name of the agent.
+     */
+    name: z.ZodString;
+    /**
+     * A human-readable description of the agent.
+     */
+    description: z.ZodOptional<z.ZodString>;
+}, z.ZodTypeAny, "passthrough">>;
+/**
+ * Sent from the client to request a list of agents the server has.
+ */
+export declare const ListAgentsRequestSchema: z.ZodObject<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+    method: z.ZodString;
+    params: z.ZodOptional<z.ZodObject<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>>;
+}, {
+    params: z.ZodOptional<z.ZodObject<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        /**
+         * An opaque token representing the current pagination position.
+         * If provided, the server should return results starting after this cursor.
+         */
+        cursor: z.ZodOptional<z.ZodString>;
+    }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        /**
+         * An opaque token representing the current pagination position.
+         * If provided, the server should return results starting after this cursor.
+         */
+        cursor: z.ZodOptional<z.ZodString>;
+    }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        /**
+         * An opaque token representing the current pagination position.
+         * If provided, the server should return results starting after this cursor.
+         */
+        cursor: z.ZodOptional<z.ZodString>;
+    }>, z.ZodTypeAny, "passthrough">>>;
+}>, {
+    method: z.ZodLiteral<"agents/list">;
+}>, "strip", z.ZodTypeAny, {
+    method: "agents/list";
+    params?: z.objectOutputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        /**
+         * An opaque token representing the current pagination position.
+         * If provided, the server should return results starting after this cursor.
+         */
+        cursor: z.ZodOptional<z.ZodString>;
+    }>, z.ZodTypeAny, "passthrough"> | undefined;
+}, {
+    method: "agents/list";
+    params?: z.objectInputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        /**
+         * An opaque token representing the current pagination position.
+         * If provided, the server should return results starting after this cursor.
+         */
+        cursor: z.ZodOptional<z.ZodString>;
+    }>, z.ZodTypeAny, "passthrough"> | undefined;
+}>;
+/**
+ * The server's response to a agents/list request from the client.
+ */
+export declare const ListAgentsResultSchema: z.ZodObject<z.objectUtil.extendShape<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
      */
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
-    text: z.ZodString;
+    /**
+     * An opaque token representing the pagination position after the last returned result.
+     * If present, there may be more results available.
+     */
+    nextCursor: z.ZodOptional<z.ZodString>;
+}>, {
+    agents: z.ZodArray<z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>, "many">;
+}>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    /**
+     * An opaque token representing the pagination position after the last returned result.
+     * If present, there may be more results available.
+     */
+    nextCursor: z.ZodOptional<z.ZodString>;
+}>, {
+    agents: z.ZodArray<z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>, "many">;
+}>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    /**
+     * An opaque token representing the pagination position after the last returned result.
+     * If present, there may be more results available.
+     */
+    nextCursor: z.ZodOptional<z.ZodString>;
+}>, {
+    agents: z.ZodArray<z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>, "many">;
+}>, z.ZodTypeAny, "passthrough">>;
+/**
+ * Used by the client to run an agent provided by the server.
+ */
+export declare const CreateAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape<{
+    method: z.ZodString;
+    params: z.ZodOptional<z.ZodObject<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>>;
+}, {
+    method: z.ZodLiteral<"agents/create">;
+    params: z.ZodObject<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, z.ZodTypeAny, "passthrough">>;
+}>, "strip", z.ZodTypeAny, {
+    params: {
+        name: string;
+        config: Record<string, unknown>;
+        _meta?: z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "agents/create";
+}, {
+    params: {
+        name: string;
+        config: Record<string, unknown>;
+        _meta?: z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "agents/create";
+}>;
+/**
+ * The server's response to a agent run.
+ */
+export declare const CreateAgentResultSchema: z.ZodObject<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    agent: z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>;
 }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
      */
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
-    text: z.ZodString;
+    agent: z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>;
 }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
      */
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
-    text: z.ZodString;
+    agent: z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>;
 }>, z.ZodTypeAny, "passthrough">>;
+/**
+ * Used by the client to run an agent provided by the server.
+ */
+export declare const DestroyAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape<{
+    method: z.ZodString;
+    params: z.ZodOptional<z.ZodObject<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>>;
+}, {
+    method: z.ZodLiteral<"agents/destroy">;
+    params: z.ZodObject<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+    }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+    }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+    }>, z.ZodTypeAny, "passthrough">>;
+}>, "strip", z.ZodTypeAny, {
+    params: {
+        name: string;
+        _meta?: z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "agents/destroy";
+}, {
+    params: {
+        name: string;
+        _meta?: z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "agents/destroy";
+}>;
+/**
+ * The server's response to a agent run.
+ */
+export declare const DestroyAgentResultSchema: z.ZodObject<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, z.ZodTypeAny, "passthrough">>;
 /**
  * Used by the client to run an agent provided by the server.
  */
@@ -16097,8 +17296,7 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
-        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-        prompt: z.ZodString;
+        input: z.ZodRecord<z.ZodString, z.ZodUnknown>;
     }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
         _meta: z.ZodOptional<z.ZodObject<{
             /**
@@ -16118,8 +17316,7 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
-        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-        prompt: z.ZodString;
+        input: z.ZodRecord<z.ZodString, z.ZodUnknown>;
     }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
         _meta: z.ZodOptional<z.ZodObject<{
             /**
@@ -16139,14 +17336,12 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
-        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-        prompt: z.ZodString;
+        input: z.ZodRecord<z.ZodString, z.ZodUnknown>;
     }>, z.ZodTypeAny, "passthrough">>;
 }>, "strip", z.ZodTypeAny, {
     params: {
         name: string;
-        config: Record<string, unknown>;
-        prompt: string;
+        input: Record<string, unknown>;
         _meta?: z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
@@ -16160,8 +17355,7 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
 }, {
     params: {
         name: string;
-        config: Record<string, unknown>;
-        prompt: string;
+        input: Record<string, unknown>;
         _meta?: z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
@@ -16173,6 +17367,34 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
     };
     method: "agents/run";
 }>;
+/**
+ * The server's response to a agent run.
+ */
+export declare const RunAgentResultSchema: z.ZodObject<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
+}>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
+}>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
+}>, z.ZodTypeAny, "passthrough">>;
 /**
  * An optional notification from the server to the client, informing it that the list of agents it offers has changed. This may be issued by servers without any previous subscription from the client.
  */
@@ -18955,6 +20177,470 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
          */
         cursor: z.ZodOptional<z.ZodString>;
     }>, z.ZodTypeAny, "passthrough"> | undefined;
+}>, z.ZodObject<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+    method: z.ZodString;
+    params: z.ZodOptional<z.ZodObject<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>>;
+}, {
+    params: z.ZodOptional<z.ZodObject<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        /**
+         * An opaque token representing the current pagination position.
+         * If provided, the server should return results starting after this cursor.
+         */
+        cursor: z.ZodOptional<z.ZodString>;
+    }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        /**
+         * An opaque token representing the current pagination position.
+         * If provided, the server should return results starting after this cursor.
+         */
+        cursor: z.ZodOptional<z.ZodString>;
+    }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        /**
+         * An opaque token representing the current pagination position.
+         * If provided, the server should return results starting after this cursor.
+         */
+        cursor: z.ZodOptional<z.ZodString>;
+    }>, z.ZodTypeAny, "passthrough">>>;
+}>, {
+    method: z.ZodLiteral<"agents/list">;
+}>, "strip", z.ZodTypeAny, {
+    method: "agents/list";
+    params?: z.objectOutputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        /**
+         * An opaque token representing the current pagination position.
+         * If provided, the server should return results starting after this cursor.
+         */
+        cursor: z.ZodOptional<z.ZodString>;
+    }>, z.ZodTypeAny, "passthrough"> | undefined;
+}, {
+    method: "agents/list";
+    params?: z.objectInputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        /**
+         * An opaque token representing the current pagination position.
+         * If provided, the server should return results starting after this cursor.
+         */
+        cursor: z.ZodOptional<z.ZodString>;
+    }>, z.ZodTypeAny, "passthrough"> | undefined;
+}>, z.ZodObject<z.objectUtil.extendShape<{
+    method: z.ZodString;
+    params: z.ZodOptional<z.ZodObject<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>>;
+}, {
+    method: z.ZodLiteral<"agents/create">;
+    params: z.ZodObject<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, z.ZodTypeAny, "passthrough">>;
+}>, "strip", z.ZodTypeAny, {
+    params: {
+        name: string;
+        config: Record<string, unknown>;
+        _meta?: z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "agents/create";
+}, {
+    params: {
+        name: string;
+        config: Record<string, unknown>;
+        _meta?: z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "agents/create";
+}>, z.ZodObject<z.objectUtil.extendShape<{
+    method: z.ZodString;
+    params: z.ZodOptional<z.ZodObject<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>>;
+}, {
+    method: z.ZodLiteral<"agents/destroy">;
+    params: z.ZodObject<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+    }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+    }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
+        _meta: z.ZodOptional<z.ZodObject<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        name: z.ZodString;
+    }>, z.ZodTypeAny, "passthrough">>;
+}>, "strip", z.ZodTypeAny, {
+    params: {
+        name: string;
+        _meta?: z.objectOutputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "agents/destroy";
+}, {
+    params: {
+        name: string;
+        _meta?: z.objectInputType<{
+            /**
+             * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
+             */
+            progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+        }, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "agents/destroy";
 }>, z.ZodObject<z.objectUtil.extendShape<{
     method: z.ZodString;
     params: z.ZodOptional<z.ZodObject<{
@@ -19030,8 +20716,7 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
-        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-        prompt: z.ZodString;
+        input: z.ZodRecord<z.ZodString, z.ZodUnknown>;
     }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
         _meta: z.ZodOptional<z.ZodObject<{
             /**
@@ -19051,8 +20736,7 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
-        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-        prompt: z.ZodString;
+        input: z.ZodRecord<z.ZodString, z.ZodUnknown>;
     }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
         _meta: z.ZodOptional<z.ZodObject<{
             /**
@@ -19072,14 +20756,12 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
-        config: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-        prompt: z.ZodString;
+        input: z.ZodRecord<z.ZodString, z.ZodUnknown>;
     }>, z.ZodTypeAny, "passthrough">>;
 }>, "strip", z.ZodTypeAny, {
     params: {
         name: string;
-        config: Record<string, unknown>;
-        prompt: string;
+        input: Record<string, unknown>;
         _meta?: z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
@@ -19093,8 +20775,7 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
 }, {
     params: {
         name: string;
-        config: Record<string, unknown>;
-        prompt: string;
+        input: Record<string, unknown>;
         _meta?: z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
@@ -27886,6 +29567,45 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         /**
          * The name of the agent.
@@ -27908,6 +29628,45 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         /**
          * The name of the agent.
@@ -27921,6 +29680,45 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
          * A JSON Schema object defining the expected configuration for the agent.
          */
         configSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -27965,6 +29763,45 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         /**
          * The name of the agent.
@@ -27987,6 +29824,45 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         /**
          * The name of the agent.
@@ -28000,6 +29876,45 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
          * A JSON Schema object defining the expected configuration for the agent.
          */
         configSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -28044,6 +29959,45 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         /**
          * The name of the agent.
@@ -28057,6 +30011,45 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
          * A JSON Schema object defining the expected configuration for the agent.
          */
         configSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -28088,6 +30081,165 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runInputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runOutputSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+        /**
+         * A JSON Schema object defining the expected configuration for the agent.
+         */
+        runDeltaSchema: z.ZodObject<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+            type: z.ZodLiteral<"object">;
+            properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+        }, z.ZodTypeAny, "passthrough">>;
+    }, z.ZodTypeAny, "passthrough">>, "many">;
+}>, z.ZodTypeAny, "passthrough">>, z.ZodObject<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    /**
+     * An opaque token representing the pagination position after the last returned result.
+     * If present, there may be more results available.
+     */
+    nextCursor: z.ZodOptional<z.ZodString>;
+}>, {
+    agents: z.ZodArray<z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>, "many">;
+}>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    /**
+     * An opaque token representing the pagination position after the last returned result.
+     * If present, there may be more results available.
+     */
+    nextCursor: z.ZodOptional<z.ZodString>;
+}>, {
+    agents: z.ZodArray<z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>, "many">;
+}>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    /**
+     * An opaque token representing the pagination position after the last returned result.
+     * If present, there may be more results available.
+     */
+    nextCursor: z.ZodOptional<z.ZodString>;
+}>, {
+    agents: z.ZodArray<z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
     }, z.ZodTypeAny, "passthrough">>, "many">;
 }>, z.ZodTypeAny, "passthrough">>, z.ZodObject<z.objectUtil.extendShape<{
     /**
@@ -28095,21 +30247,141 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
      */
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
-    text: z.ZodString;
+    agent: z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>;
 }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
      */
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
-    text: z.ZodString;
+    agent: z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>;
 }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
      */
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
-    text: z.ZodString;
+    agent: z.ZodObject<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * The name of the agent.
+         */
+        name: z.ZodString;
+        /**
+         * A human-readable description of the agent.
+         */
+        description: z.ZodOptional<z.ZodString>;
+    }, z.ZodTypeAny, "passthrough">>;
+}>, z.ZodTypeAny, "passthrough">>, z.ZodObject<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, z.ZodTypeAny, "passthrough">>, z.ZodObject<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
+}>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
+}>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
+    /**
+     * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
+     */
+    _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+}, {
+    output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
 }>, z.ZodTypeAny, "passthrough">>]>;
 export declare class McpError extends Error {
     readonly code: number;
@@ -28201,6 +30473,12 @@ export type ServerResult = Infer<typeof ServerResultSchema>;
 export type AgentTemplate = Infer<typeof AgentTemplateSchema>;
 export type ListAgentTemplatesRequest = Infer<typeof ListAgentTemplatesRequestSchema>;
 export type ListAgentTemplatesResult = Infer<typeof ListAgentTemplatesResultSchema>;
+export type ListAgentsRequest = Infer<typeof ListAgentsRequestSchema>;
+export type ListAgentsResult = Infer<typeof ListAgentsResultSchema>;
+export type CreateAgentRequest = Infer<typeof CreateAgentRequestSchema>;
+export type CreateAgentResult = Infer<typeof CreateAgentResultSchema>;
+export type DestroyAgentRequest = Infer<typeof DestroyAgentRequestSchema>;
+export type DestroyAgentResult = Infer<typeof DestroyAgentResultSchema>;
 export type RunAgentRequest = Infer<typeof RunAgentRequestSchema>;
 export type RunAgentResult = Infer<typeof RunAgentResultSchema>;
 export type AgentListChangedNotification = Infer<typeof AgentListChangedNotificationSchema>;

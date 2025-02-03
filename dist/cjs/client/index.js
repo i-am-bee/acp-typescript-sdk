@@ -227,11 +227,20 @@ class Client extends protocol_js_1.Protocol {
     async listTools(params, options) {
         return this.request({ method: "tools/list", params }, types_js_1.ListToolsResultSchema, options);
     }
-    async runAgent(params, options) {
-        return this.request({ method: "agents/run", params }, types_js_1.RunAgentResultSchema, options);
-    }
     async listAgentTemplates(params, options) {
         return this.request({ method: "agents/templates/list", params }, types_js_1.ListAgentTemplatesResultSchema, options);
+    }
+    async listAgents(params, options) {
+        return this.request({ method: "agents/list", params }, types_js_1.ListAgentsResultSchema, options);
+    }
+    async createAgent(params, options) {
+        return this.request({ method: "agents/create", params }, types_js_1.CreateAgentResultSchema, options);
+    }
+    async destroyAgent(params, options) {
+        return this.request({ method: "agents/destroy", params }, types_js_1.DestroyAgentResultSchema, options);
+    }
+    async runAgent(params, options) {
+        return this.request({ method: "agents/run", params }, types_js_1.RunAgentResultSchema, options);
     }
     async sendRootsListChanged() {
         return this.notification({ method: "notifications/roots/list_changed" });

@@ -135,6 +135,9 @@ export class Server extends Protocol {
                 }
                 break;
             case "agents/run":
+            case "agents/create":
+            case "agents/destroy":
+            case "agents/templates/list":
             case "agents/list":
                 if (!this._capabilities.agents) {
                     throw new Error(`Server does not support agents (required for ${method})`);

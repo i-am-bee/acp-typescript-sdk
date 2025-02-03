@@ -1,5 +1,5 @@
 import { mergeCapabilities, Protocol, } from "../shared/protocol.js";
-import { CallToolResultSchema, CompleteResultSchema, EmptyResultSchema, GetPromptResultSchema, InitializeResultSchema, LATEST_PROTOCOL_VERSION, ListAgentTemplatesResultSchema, ListPromptsResultSchema, ListResourcesResultSchema, ListResourceTemplatesResultSchema, ListToolsResultSchema, ReadResourceResultSchema, RunAgentResultSchema, SUPPORTED_PROTOCOL_VERSIONS, } from "../types.js";
+import { CallToolResultSchema, CompleteResultSchema, CreateAgentResultSchema, DestroyAgentResultSchema, EmptyResultSchema, GetPromptResultSchema, InitializeResultSchema, LATEST_PROTOCOL_VERSION, ListAgentsResultSchema, ListAgentTemplatesResultSchema, ListPromptsResultSchema, ListResourcesResultSchema, ListResourceTemplatesResultSchema, ListToolsResultSchema, ReadResourceResultSchema, RunAgentResultSchema, SUPPORTED_PROTOCOL_VERSIONS, } from "../types.js";
 /**
  * An MCP client on top of a pluggable transport.
  *
@@ -224,11 +224,20 @@ export class Client extends Protocol {
     async listTools(params, options) {
         return this.request({ method: "tools/list", params }, ListToolsResultSchema, options);
     }
-    async runAgent(params, options) {
-        return this.request({ method: "agents/run", params }, RunAgentResultSchema, options);
-    }
     async listAgentTemplates(params, options) {
         return this.request({ method: "agents/templates/list", params }, ListAgentTemplatesResultSchema, options);
+    }
+    async listAgents(params, options) {
+        return this.request({ method: "agents/list", params }, ListAgentsResultSchema, options);
+    }
+    async createAgent(params, options) {
+        return this.request({ method: "agents/create", params }, CreateAgentResultSchema, options);
+    }
+    async destroyAgent(params, options) {
+        return this.request({ method: "agents/destroy", params }, DestroyAgentResultSchema, options);
+    }
+    async runAgent(params, options) {
+        return this.request({ method: "agents/run", params }, RunAgentResultSchema, options);
     }
     async sendRootsListChanged() {
         return this.notification({ method: "notifications/roots/list_changed" });

@@ -242,6 +242,9 @@ export class Server<
         break;
 
       case "agents/run":
+      case "agents/create":
+      case "agents/destroy":
+      case "agents/templates/list":
       case "agents/list":
         if (!this._capabilities.agents) {
           throw new Error(

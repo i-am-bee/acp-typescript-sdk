@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ImageContentSchema = exports.TextContentSchema = exports.GetPromptRequestSchema = exports.ListPromptsResultSchema = exports.ListPromptsRequestSchema = exports.PromptSchema = exports.PromptArgumentSchema = exports.ResourceUpdatedNotificationSchema = exports.UnsubscribeRequestSchema = exports.SubscribeRequestSchema = exports.ResourceListChangedNotificationSchema = exports.ReadResourceResultSchema = exports.ReadResourceRequestSchema = exports.ListResourceTemplatesResultSchema = exports.ListResourceTemplatesRequestSchema = exports.ListResourcesResultSchema = exports.ListResourcesRequestSchema = exports.ResourceTemplateSchema = exports.ResourceSchema = exports.BlobResourceContentsSchema = exports.TextResourceContentsSchema = exports.ResourceContentsSchema = exports.PaginatedResultSchema = exports.PaginatedRequestSchema = exports.ProgressNotificationSchema = exports.ProgressSchema = exports.PingRequestSchema = exports.InitializedNotificationSchema = exports.InitializeResultSchema = exports.ServerCapabilitiesSchema = exports.InitializeRequestSchema = exports.ClientCapabilitiesSchema = exports.ImplementationSchema = exports.CancelledNotificationSchema = exports.EmptyResultSchema = exports.JSONRPCMessageSchema = exports.JSONRPCErrorSchema = exports.ErrorCode = exports.JSONRPCResponseSchema = exports.JSONRPCNotificationSchema = exports.JSONRPCRequestSchema = exports.RequestIdSchema = exports.ResultSchema = exports.NotificationSchema = exports.RequestSchema = exports.CursorSchema = exports.ProgressTokenSchema = exports.JSONRPC_VERSION = exports.SUPPORTED_PROTOCOL_VERSIONS = exports.LATEST_PROTOCOL_VERSION = void 0;
-exports.McpError = exports.ServerResultSchema = exports.ServerNotificationSchema = exports.ServerRequestSchema = exports.ClientResultSchema = exports.ClientNotificationSchema = exports.ClientRequestSchema = exports.AgentListChangedNotificationSchema = exports.RunAgentRequestSchema = exports.RunAgentResultSchema = exports.ListAgentTemplatesResultSchema = exports.ListAgentTemplatesRequestSchema = exports.AgentTemplateSchema = exports.RootsListChangedNotificationSchema = exports.ListRootsResultSchema = exports.ListRootsRequestSchema = exports.RootSchema = exports.CompleteResultSchema = exports.CompleteRequestSchema = exports.PromptReferenceSchema = exports.ResourceReferenceSchema = exports.CreateMessageResultSchema = exports.CreateMessageRequestSchema = exports.SamplingMessageSchema = exports.ModelPreferencesSchema = exports.ModelHintSchema = exports.LoggingMessageNotificationSchema = exports.SetLevelRequestSchema = exports.LoggingLevelSchema = exports.ToolListChangedNotificationSchema = exports.CallToolRequestSchema = exports.CompatibilityCallToolResultSchema = exports.CallToolResultSchema = exports.ListToolsResultSchema = exports.ListToolsRequestSchema = exports.ToolSchema = exports.PromptListChangedNotificationSchema = exports.GetPromptResultSchema = exports.PromptMessageSchema = exports.EmbeddedResourceSchema = void 0;
+exports.McpError = exports.ServerResultSchema = exports.ServerNotificationSchema = exports.ServerRequestSchema = exports.ClientResultSchema = exports.ClientNotificationSchema = exports.ClientRequestSchema = exports.AgentListChangedNotificationSchema = exports.RunAgentResultSchema = exports.RunAgentRequestSchema = exports.DestroyAgentResultSchema = exports.DestroyAgentRequestSchema = exports.CreateAgentResultSchema = exports.CreateAgentRequestSchema = exports.ListAgentsResultSchema = exports.ListAgentsRequestSchema = exports.AgentSchema = exports.ListAgentTemplatesResultSchema = exports.ListAgentTemplatesRequestSchema = exports.AgentTemplateSchema = exports.RootsListChangedNotificationSchema = exports.ListRootsResultSchema = exports.ListRootsRequestSchema = exports.RootSchema = exports.CompleteResultSchema = exports.CompleteRequestSchema = exports.PromptReferenceSchema = exports.ResourceReferenceSchema = exports.CreateMessageResultSchema = exports.CreateMessageRequestSchema = exports.SamplingMessageSchema = exports.ModelPreferencesSchema = exports.ModelHintSchema = exports.LoggingMessageNotificationSchema = exports.SetLevelRequestSchema = exports.LoggingLevelSchema = exports.ToolListChangedNotificationSchema = exports.CallToolRequestSchema = exports.CompatibilityCallToolResultSchema = exports.CallToolResultSchema = exports.ListToolsResultSchema = exports.ListToolsRequestSchema = exports.ToolSchema = exports.PromptListChangedNotificationSchema = exports.GetPromptResultSchema = exports.PromptMessageSchema = exports.EmbeddedResourceSchema = void 0;
 const zod_1 = require("zod");
 exports.LATEST_PROTOCOL_VERSION = "2024-11-05";
 exports.SUPPORTED_PROTOCOL_VERSIONS = [
@@ -977,6 +977,33 @@ exports.AgentTemplateSchema = zod_1.z
         properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
     })
         .passthrough(),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runInputSchema: zod_1.z
+        .object({
+        type: zod_1.z.literal("object"),
+        properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
+    })
+        .passthrough(),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runOutputSchema: zod_1.z
+        .object({
+        type: zod_1.z.literal("object"),
+        properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
+    })
+        .passthrough(),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runDeltaSchema: zod_1.z
+        .object({
+        type: zod_1.z.literal("object"),
+        properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
+    })
+        .passthrough(),
 })
     .passthrough();
 /**
@@ -992,11 +1019,61 @@ exports.ListAgentTemplatesResultSchema = exports.PaginatedResultSchema.extend({
     agentTemplates: zod_1.z.array(exports.AgentTemplateSchema),
 });
 /**
+ * Definition for an agent the client can run.
+ */
+exports.AgentSchema = zod_1.z
+    .object({
+    /**
+     * The name of the agent.
+     */
+    name: zod_1.z.string(),
+    /**
+     * A human-readable description of the agent.
+     */
+    description: zod_1.z.optional(zod_1.z.string()),
+})
+    .passthrough();
+/**
+ * Sent from the client to request a list of agents the server has.
+ */
+exports.ListAgentsRequestSchema = exports.PaginatedRequestSchema.extend({
+    method: zod_1.z.literal("agents/list"),
+});
+/**
+ * The server's response to a agents/list request from the client.
+ */
+exports.ListAgentsResultSchema = exports.PaginatedResultSchema.extend({
+    agents: zod_1.z.array(exports.AgentSchema),
+});
+/**
+ * Used by the client to run an agent provided by the server.
+ */
+exports.CreateAgentRequestSchema = exports.RequestSchema.extend({
+    method: zod_1.z.literal("agents/create"),
+    params: BaseRequestParamsSchema.extend({
+        name: zod_1.z.string(),
+        config: zod_1.z.record(zod_1.z.unknown()),
+    }),
+});
+/**
  * The server's response to a agent run.
  */
-exports.RunAgentResultSchema = exports.ResultSchema.extend({
-    text: zod_1.z.string(),
+exports.CreateAgentResultSchema = exports.ResultSchema.extend({
+    agent: exports.AgentSchema,
 });
+/**
+ * Used by the client to run an agent provided by the server.
+ */
+exports.DestroyAgentRequestSchema = exports.RequestSchema.extend({
+    method: zod_1.z.literal("agents/destroy"),
+    params: BaseRequestParamsSchema.extend({
+        name: zod_1.z.string(),
+    }),
+});
+/**
+ * The server's response to a agent run.
+ */
+exports.DestroyAgentResultSchema = exports.ResultSchema;
 /**
  * Used by the client to run an agent provided by the server.
  */
@@ -1004,9 +1081,15 @@ exports.RunAgentRequestSchema = exports.RequestSchema.extend({
     method: zod_1.z.literal("agents/run"),
     params: BaseRequestParamsSchema.extend({
         name: zod_1.z.string(),
-        config: zod_1.z.record(zod_1.z.unknown()),
-        prompt: zod_1.z.string(),
+        input: zod_1.z.record(zod_1.z.unknown()),
     }),
+});
+/**
+ * The server's response to a agent run.
+ */
+exports.RunAgentResultSchema = exports.ResultSchema.extend({
+    output: zod_1.z.record(zod_1.z.unknown()),
+    isError: zod_1.z.boolean().default(false).optional(),
 });
 /**
  * An optional notification from the server to the client, informing it that the list of agents it offers has changed. This may be issued by servers without any previous subscription from the client.
@@ -1030,6 +1113,9 @@ exports.ClientRequestSchema = zod_1.z.union([
     exports.CallToolRequestSchema,
     exports.ListToolsRequestSchema,
     exports.ListAgentTemplatesRequestSchema,
+    exports.ListAgentsRequestSchema,
+    exports.CreateAgentRequestSchema,
+    exports.DestroyAgentRequestSchema,
     exports.RunAgentRequestSchema,
 ]);
 exports.ClientNotificationSchema = zod_1.z.union([
@@ -1071,6 +1157,9 @@ exports.ServerResultSchema = zod_1.z.union([
     exports.CallToolResultSchema,
     exports.ListToolsResultSchema,
     exports.ListAgentTemplatesResultSchema,
+    exports.ListAgentsResultSchema,
+    exports.CreateAgentResultSchema,
+    exports.DestroyAgentResultSchema,
     exports.RunAgentResultSchema,
 ]);
 class McpError extends Error {
