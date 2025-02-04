@@ -1012,15 +1012,6 @@ exports.AgentTemplateSchema = zod_1.z
         properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
     })
         .passthrough(),
-    /**
-     * A JSON Schema object defining the expected configuration for the agent.
-     */
-    runDeltaSchema: zod_1.z
-        .object({
-        type: zod_1.z.literal("object"),
-        properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
-    })
-        .passthrough(),
 })
     .passthrough();
 /**
@@ -1048,6 +1039,24 @@ exports.AgentSchema = zod_1.z
      * A human-readable description of the agent.
      */
     description: zod_1.z.optional(zod_1.z.string()),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    inputSchema: zod_1.z
+        .object({
+        type: zod_1.z.literal("object"),
+        properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
+    })
+        .passthrough(),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    outputSchema: zod_1.z
+        .object({
+        type: zod_1.z.literal("object"),
+        properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
+    })
+        .passthrough(),
 })
     .passthrough();
 /**
@@ -1069,6 +1078,7 @@ exports.CreateAgentRequestSchema = exports.RequestSchema.extend({
     method: zod_1.z.literal("agents/create"),
     params: BaseRequestParamsSchema.extend({
         name: zod_1.z.string(),
+        description: zod_1.z.string(),
         config: zod_1.z.record(zod_1.z.unknown()),
     }),
 });

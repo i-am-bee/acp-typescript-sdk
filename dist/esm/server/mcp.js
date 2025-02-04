@@ -286,15 +286,26 @@ export class McpServer {
             if (!template) {
                 throw new McpError(ErrorCode.InvalidParams, `Agent template ${request.params.name} not found`);
             }
-            const [runCallback, destroyCallback] = await template.callback(request.params, extra);
+            const [runCallback, destroyCallback] = await template.callback(request, extra);
             const agent = {
                 description: template.description,
+                inputSchema: template.inputSchema,
+                outputSchema: template.outputSchema,
                 runCallback,
                 destroyCallback,
             };
             this._registeredAgents[request.params.name] = agent;
             return await Promise.resolve({
-                agent: { name: request.params.name, description: agent.description },
+                agent: {
+                    name: request.params.name,
+                    description: agent.description,
+                    inputSchema: agent.inputSchema
+                        ? zodToJsonSchema(agent.inputSchema)
+                        : EMPTY_OBJECT_JSON_SCHEMA,
+                    outputSchema: agent.outputSchema
+                        ? zodToJsonSchema(agent.outputSchema)
+                        : EMPTY_OBJECT_JSON_SCHEMA,
+                },
             });
         });
         this.server.setRequestHandler(DestroyAgentRequestSchema, async (request, extra) => {

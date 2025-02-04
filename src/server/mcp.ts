@@ -47,6 +47,8 @@ import {
   DestroyAgentRequestSchema,
   DestroyAgentResult,
   RunAgentRequest,
+  CreateAgentRequest,
+  Agent,
 } from "../types.js";
 import { Completable, CompletableDef } from "./completable.js";
 import { UriTemplate, Variables } from "../shared/uriTemplate.js";
@@ -516,12 +518,14 @@ export class McpServer {
         }
 
         const [runCallback, destroyCallback] = await template.callback(
-          request.params,
+          request,
           extra,
         );
 
         const agent: RegisteredAgent = {
           description: template.description,
+          inputSchema: template.inputSchema,
+          outputSchema: template.outputSchema,
           runCallback,
           destroyCallback,
         };
@@ -529,7 +533,16 @@ export class McpServer {
         this._registeredAgents[request.params.name] = agent;
 
         return await Promise.resolve({
-          agent: { name: request.params.name, description: agent.description },
+          agent: {
+            name: request.params.name,
+            description: agent.description,
+            inputSchema: agent.inputSchema
+              ? (zodToJsonSchema(agent.inputSchema) as Agent["inputSchema"])
+              : EMPTY_OBJECT_JSON_SCHEMA,
+            outputSchema: agent.outputSchema
+              ? (zodToJsonSchema(agent.outputSchema) as Agent["outputSchema"])
+              : EMPTY_OBJECT_JSON_SCHEMA,
+          },
         });
       },
     );
@@ -873,8 +886,10 @@ export type AgentCreateCallback<
   Input extends ZodRawShape,
   Output extends ZodRawShape,
 > = (
-  params: {
-    config: z.objectOutputType<Config, ZodTypeAny>;
+  request: CreateAgentRequest & {
+    params: {
+      config: z.objectOutputType<Config, ZodTypeAny>;
+    };
   },
   extra: RequestHandlerExtra,
 ) =>
@@ -907,6 +922,8 @@ type RegisteredAgentTemplate = {
 
 type RegisteredAgent = {
   description: string;
+  inputSchema: AnyZodObject;
+  outputSchema: AnyZodObject;
   runCallback: AgentRunCallback<ZodRawShape, ZodRawShape>;
   destroyCallback: AgentDestroyCallback;
 };

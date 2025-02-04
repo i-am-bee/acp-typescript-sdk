@@ -1119,15 +1119,6 @@ export const AgentTemplateSchema = z
         properties: z.optional(z.object({}).passthrough()),
       })
       .passthrough(),
-    /**
-     * A JSON Schema object defining the expected configuration for the agent.
-     */
-    runDeltaSchema: z
-      .object({
-        type: z.literal("object"),
-        properties: z.optional(z.object({}).passthrough()),
-      })
-      .passthrough(),
   })
   .passthrough();
 
@@ -1158,6 +1149,24 @@ export const AgentSchema = z
      * A human-readable description of the agent.
      */
     description: z.optional(z.string()),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    inputSchema: z
+      .object({
+        type: z.literal("object"),
+        properties: z.optional(z.object({}).passthrough()),
+      })
+      .passthrough(),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    outputSchema: z
+      .object({
+        type: z.literal("object"),
+        properties: z.optional(z.object({}).passthrough()),
+      })
+      .passthrough(),
   })
   .passthrough();
 
@@ -1182,6 +1191,7 @@ export const CreateAgentRequestSchema = RequestSchema.extend({
   method: z.literal("agents/create"),
   params: BaseRequestParamsSchema.extend({
     name: z.string(),
+    description: z.string(),
     config: z.record(z.unknown()),
   }),
 });
@@ -1468,6 +1478,7 @@ export type ListAgentTemplatesRequest = Infer<
 export type ListAgentTemplatesResult = Infer<
   typeof ListAgentTemplatesResultSchema
 >;
+export type Agent = Infer<typeof AgentSchema>;
 export type ListAgentsRequest = Infer<typeof ListAgentsRequestSchema>;
 export type ListAgentsResult = Infer<typeof ListAgentsResultSchema>;
 export type CreateAgentRequest = Infer<typeof CreateAgentRequestSchema>;

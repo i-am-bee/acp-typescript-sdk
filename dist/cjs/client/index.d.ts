@@ -817,16 +817,6 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, import("zod").ZodTypeAny, "passthrough">>;
-            runDeltaSchema: import("zod").ZodObject<{
-                type: import("zod").ZodLiteral<"object">;
-                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
-            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
-                type: import("zod").ZodLiteral<"object">;
-                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
-            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
-                type: import("zod").ZodLiteral<"object">;
-                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
-            }, import("zod").ZodTypeAny, "passthrough">>;
         }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
             name: import("zod").ZodString;
             description: import("zod").ZodOptional<import("zod").ZodString>;
@@ -860,16 +850,6 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, import("zod").ZodTypeAny, "passthrough">>;
-            runDeltaSchema: import("zod").ZodObject<{
-                type: import("zod").ZodLiteral<"object">;
-                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
-            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
-                type: import("zod").ZodLiteral<"object">;
-                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
-            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
-                type: import("zod").ZodLiteral<"object">;
-                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
-            }, import("zod").ZodTypeAny, "passthrough">>;
         }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
             name: import("zod").ZodString;
             description: import("zod").ZodOptional<import("zod").ZodString>;
@@ -894,16 +874,6 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, import("zod").ZodTypeAny, "passthrough">>;
             runOutputSchema: import("zod").ZodObject<{
-                type: import("zod").ZodLiteral<"object">;
-                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
-            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
-                type: import("zod").ZodLiteral<"object">;
-                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
-            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
-                type: import("zod").ZodLiteral<"object">;
-                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
-            }, import("zod").ZodTypeAny, "passthrough">>;
-            runDeltaSchema: import("zod").ZodObject<{
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
@@ -923,12 +893,72 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
         agents: import("zod").ZodArray<import("zod").ZodObject<{
             name: import("zod").ZodString;
             description: import("zod").ZodOptional<import("zod").ZodString>;
+            inputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
+            outputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
         }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
             name: import("zod").ZodString;
             description: import("zod").ZodOptional<import("zod").ZodString>;
+            inputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
+            outputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
         }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
             name: import("zod").ZodString;
             description: import("zod").ZodOptional<import("zod").ZodString>;
+            inputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
+            outputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
         }, import("zod").ZodTypeAny, "passthrough">>, "many">;
     }>, import("zod").ZodTypeAny, "passthrough">>;
     createAgent(params: CreateAgentRequest["params"], options?: RequestOptions): Promise<import("zod").objectOutputType<import("zod").objectUtil.extendShape<{
@@ -937,12 +967,72 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
         agent: import("zod").ZodObject<{
             name: import("zod").ZodString;
             description: import("zod").ZodOptional<import("zod").ZodString>;
+            inputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
+            outputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
         }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
             name: import("zod").ZodString;
             description: import("zod").ZodOptional<import("zod").ZodString>;
+            inputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
+            outputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
         }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
             name: import("zod").ZodString;
             description: import("zod").ZodOptional<import("zod").ZodString>;
+            inputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
+            outputSchema: import("zod").ZodObject<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{
+                type: import("zod").ZodLiteral<"object">;
+                properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
+            }, import("zod").ZodTypeAny, "passthrough">>;
         }, import("zod").ZodTypeAny, "passthrough">>;
     }>, import("zod").ZodTypeAny, "passthrough">>;
     destroyAgent(params: DestroyAgentRequest["params"], options?: RequestOptions): Promise<import("zod").objectOutputType<{
