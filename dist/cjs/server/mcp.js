@@ -280,7 +280,7 @@ class McpServer {
                     runOutputSchema: template.outputSchema
                         ? (0, zod_to_json_schema_1.zodToJsonSchema)(template.configSchema)
                         : EMPTY_OBJECT_JSON_SCHEMA,
-                    runDeltaSchema: EMPTY_OBJECT_JSON_SCHEMA, // TODO
+                    metadata: template.metadata,
                 };
             }),
         }));
@@ -289,25 +289,28 @@ class McpServer {
             if (!template) {
                 throw new types_js_1.McpError(types_js_1.ErrorCode.InvalidParams, `Agent template ${request.params.name} not found`);
             }
-            const [runCallback, destroyCallback] = await template.callback(request, extra);
-            const agent = {
-                description: template.description,
+            const { agent, ...rest } = await template.callback(request, extra);
+            const registeredAgent = {
+                description: agent.description,
                 inputSchema: template.inputSchema,
                 outputSchema: template.outputSchema,
-                runCallback,
-                destroyCallback,
+                metadata: agent.metadata,
+                runCallback: agent.run,
+                destroyCallback: agent.destroy,
             };
-            this._registeredAgents[request.params.name] = agent;
+            this._registeredAgents[agent.name] = registeredAgent;
             return await Promise.resolve({
+                ...rest,
                 agent: {
                     name: request.params.name,
                     description: agent.description,
                     inputSchema: agent.inputSchema
-                        ? (0, zod_to_json_schema_1.zodToJsonSchema)(agent.inputSchema)
+                        ? (0, zod_to_json_schema_1.zodToJsonSchema)(registeredAgent.inputSchema)
                         : EMPTY_OBJECT_JSON_SCHEMA,
                     outputSchema: agent.outputSchema
-                        ? (0, zod_to_json_schema_1.zodToJsonSchema)(agent.outputSchema)
+                        ? (0, zod_to_json_schema_1.zodToJsonSchema)(registeredAgent.outputSchema)
                         : EMPTY_OBJECT_JSON_SCHEMA,
+                    metadata: agent.metadata,
                 },
             });
         });
@@ -316,18 +319,16 @@ class McpServer {
             if (!agent) {
                 throw new types_js_1.McpError(types_js_1.ErrorCode.InvalidParams, `Agent ${request.params.name} not found`);
             }
-            await agent.destroyCallback(extra);
+            const result = await agent.destroyCallback(extra);
             delete this._registeredAgents[request.params.name];
-            return await Promise.resolve({});
+            return await Promise.resolve(result);
         });
         this.server.setRequestHandler(types_js_1.RunAgentRequestSchema, async (request, extra) => {
             const agent = this._registeredAgents[request.params.name];
             if (!agent) {
                 throw new types_js_1.McpError(types_js_1.ErrorCode.InvalidParams, `Agent ${request.params.name} not found`);
             }
-            return await Promise.resolve({
-                output: await agent.runCallback(request, extra),
-            });
+            return await Promise.resolve(agent.runCallback(request, extra));
         });
         this._agentHandlersInitialized = true;
     }
@@ -402,7 +403,7 @@ class McpServer {
     /**
      * Registers a agent `name` (with a description) accepting the given arguments, which must be an object containing named properties associated with Zod schemas. When the client calls it, the function will be run with the parsed and validated arguments.
      */
-    agent(name, description, configSchema, inputSchema, outputSchema, callback) {
+    agent(name, description, configSchema, inputSchema, outputSchema, metadata, callback) {
         if (this._registeredAgentTemplates[name]) {
             throw new Error(`Agent template ${name} is already registered`);
         }
@@ -411,6 +412,7 @@ class McpServer {
             configSchema: zod_1.z.object(configSchema),
             inputSchema: zod_1.z.object(inputSchema),
             outputSchema: zod_1.z.object(outputSchema),
+            metadata,
             callback: callback,
         };
         this.setAgentRequestHandlers();
