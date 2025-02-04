@@ -96,6 +96,7 @@ export class Server extends Protocol {
             case "notifications/progress":
                 // Progress notifications are always allowed
                 break;
+            case "notifications/agents/run/progress":
             case "notifications/agents/list_changed":
                 if (!this._capabilities.agents) {
                     throw new Error(`Server does not support notifying of agent list changes (required for ${method})`);
@@ -208,6 +209,12 @@ export class Server extends Protocol {
     }
     async sendAgentListChanged() {
         return this.notification({ method: "notifications/agents/list_changed" });
+    }
+    async sendAgentRunProgress(params) {
+        return this.notification({
+            method: "notifications/agents/run/progress",
+            params,
+        });
     }
 }
 //# sourceMappingURL=index.js.map

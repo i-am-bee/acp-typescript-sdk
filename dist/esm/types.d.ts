@@ -2827,6 +2827,92 @@ export declare const ProgressNotificationSchema: z.ZodObject<z.objectUtil.extend
     };
     method: "notifications/progress";
 }>;
+export declare const AgentRunProgressSchema: z.ZodObject<{
+    delta: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+}, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+    delta: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+}, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+    delta: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+}, z.ZodTypeAny, "passthrough">>;
+/**
+ * An out-of-band notification used to stream data during run agent request.
+ */
+export declare const AgentRunProgressNotificationSchema: z.ZodObject<z.objectUtil.extendShape<{
+    method: z.ZodString;
+    params: z.ZodOptional<z.ZodObject<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>>;
+}, {
+    method: z.ZodLiteral<"notifications/agents/run/progress">;
+    params: z.ZodObject<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        delta: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, {
+        /**
+         * The progress token which was given in the initial request, used to associate this notification with the request that is proceeding.
+         */
+        progressToken: z.ZodUnion<[z.ZodString, z.ZodNumber]>;
+    }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        delta: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, {
+        /**
+         * The progress token which was given in the initial request, used to associate this notification with the request that is proceeding.
+         */
+        progressToken: z.ZodUnion<[z.ZodString, z.ZodNumber]>;
+    }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        delta: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, {
+        /**
+         * The progress token which was given in the initial request, used to associate this notification with the request that is proceeding.
+         */
+        progressToken: z.ZodUnion<[z.ZodString, z.ZodNumber]>;
+    }>, z.ZodTypeAny, "passthrough">>;
+}>, "strip", z.ZodTypeAny, {
+    params: {
+        progressToken: string | number;
+        delta: Record<string, unknown>;
+        _meta?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "notifications/agents/run/progress";
+}, {
+    params: {
+        progressToken: string | number;
+        delta: Record<string, unknown>;
+        _meta?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "notifications/agents/run/progress";
+}>;
 export declare const PaginatedRequestSchema: z.ZodObject<z.objectUtil.extendShape<{
     method: z.ZodString;
     params: z.ZodOptional<z.ZodObject<{
@@ -23166,6 +23252,81 @@ export declare const ServerNotificationSchema: z.ZodUnion<[z.ZodObject<z.objectU
          */
         _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
+}>, z.ZodObject<z.objectUtil.extendShape<{
+    method: z.ZodString;
+    params: z.ZodOptional<z.ZodObject<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, z.ZodTypeAny, "passthrough">>>;
+}, {
+    method: z.ZodLiteral<"notifications/agents/run/progress">;
+    params: z.ZodObject<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        delta: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, {
+        /**
+         * The progress token which was given in the initial request, used to associate this notification with the request that is proceeding.
+         */
+        progressToken: z.ZodUnion<[z.ZodString, z.ZodNumber]>;
+    }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        delta: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, {
+        /**
+         * The progress token which was given in the initial request, used to associate this notification with the request that is proceeding.
+         */
+        progressToken: z.ZodUnion<[z.ZodString, z.ZodNumber]>;
+    }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<z.objectUtil.extendShape<{
+        /**
+         * This parameter name is reserved by MCP to allow clients and servers to attach additional metadata to their notifications.
+         */
+        _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
+    }, {
+        delta: z.ZodRecord<z.ZodString, z.ZodUnknown>;
+    }>, {
+        /**
+         * The progress token which was given in the initial request, used to associate this notification with the request that is proceeding.
+         */
+        progressToken: z.ZodUnion<[z.ZodString, z.ZodNumber]>;
+    }>, z.ZodTypeAny, "passthrough">>;
+}>, "strip", z.ZodTypeAny, {
+    params: {
+        progressToken: string | number;
+        delta: Record<string, unknown>;
+        _meta?: z.objectOutputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "notifications/agents/run/progress";
+}, {
+    params: {
+        progressToken: string | number;
+        delta: Record<string, unknown>;
+        _meta?: z.objectInputType<{}, z.ZodTypeAny, "passthrough"> | undefined;
+    } & {
+        [k: string]: unknown;
+    };
+    method: "notifications/agents/run/progress";
 }>]>;
 export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
     /**
@@ -30482,5 +30643,7 @@ export type DestroyAgentResult = Infer<typeof DestroyAgentResultSchema>;
 export type RunAgentRequest = Infer<typeof RunAgentRequestSchema>;
 export type RunAgentResult = Infer<typeof RunAgentResultSchema>;
 export type AgentListChangedNotification = Infer<typeof AgentListChangedNotificationSchema>;
+export type AgentRunProgress = Infer<typeof AgentRunProgressSchema>;
+export type AgentRunProgressNotification = Infer<typeof AgentRunProgressNotificationSchema>;
 export {};
 //# sourceMappingURL=types.d.ts.map

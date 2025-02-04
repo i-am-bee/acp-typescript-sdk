@@ -5,6 +5,7 @@ import {
   RequestOptions,
 } from "../shared/protocol.js";
 import {
+  AgentRunProgressNotification,
   ClientCapabilities,
   CreateMessageRequest,
   CreateMessageResultSchema,
@@ -185,6 +186,7 @@ export class Server<
         // Progress notifications are always allowed
         break;
 
+      case "notifications/agents/run/progress":
       case "notifications/agents/list_changed":
         if (!this._capabilities.agents) {
           throw new Error(
@@ -349,5 +351,12 @@ export class Server<
 
   async sendAgentListChanged() {
     return this.notification({ method: "notifications/agents/list_changed" });
+  }
+
+  async sendAgentRunProgress(params: AgentRunProgressNotification["params"]) {
+    return this.notification({
+      method: "notifications/agents/run/progress",
+      params,
+    });
   }
 }

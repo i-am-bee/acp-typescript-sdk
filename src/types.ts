@@ -367,6 +367,25 @@ export const ProgressNotificationSchema = NotificationSchema.extend({
   }),
 });
 
+export const AgentRunProgressSchema = z
+  .object({
+    delta: z.record(z.unknown()),
+  })
+  .passthrough();
+
+/**
+ * An out-of-band notification used to stream data during run agent request.
+ */
+export const AgentRunProgressNotificationSchema = NotificationSchema.extend({
+  method: z.literal("notifications/agents/run/progress"),
+  params: BaseNotificationParamsSchema.merge(AgentRunProgressSchema).extend({
+    /**
+     * The progress token which was given in the initial request, used to associate this notification with the request that is proceeding.
+     */
+    progressToken: ProgressTokenSchema,
+  }),
+});
+
 /* Pagination */
 export const PaginatedRequestSchema = RequestSchema.extend({
   params: BaseRequestParamsSchema.extend({
@@ -1266,6 +1285,7 @@ export const ServerNotificationSchema = z.union([
   ToolListChangedNotificationSchema,
   PromptListChangedNotificationSchema,
   AgentListChangedNotificationSchema,
+  AgentRunProgressNotificationSchema,
 ]);
 
 export const ServerResultSchema = z.union([
@@ -1458,4 +1478,9 @@ export type RunAgentRequest = Infer<typeof RunAgentRequestSchema>;
 export type RunAgentResult = Infer<typeof RunAgentResultSchema>;
 export type AgentListChangedNotification = Infer<
   typeof AgentListChangedNotificationSchema
+>;
+
+export type AgentRunProgress = Infer<typeof AgentRunProgressSchema>;
+export type AgentRunProgressNotification = Infer<
+  typeof AgentRunProgressNotificationSchema
 >;

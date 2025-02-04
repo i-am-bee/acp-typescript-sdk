@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ImageContentSchema = exports.TextContentSchema = exports.GetPromptRequestSchema = exports.ListPromptsResultSchema = exports.ListPromptsRequestSchema = exports.PromptSchema = exports.PromptArgumentSchema = exports.ResourceUpdatedNotificationSchema = exports.UnsubscribeRequestSchema = exports.SubscribeRequestSchema = exports.ResourceListChangedNotificationSchema = exports.ReadResourceResultSchema = exports.ReadResourceRequestSchema = exports.ListResourceTemplatesResultSchema = exports.ListResourceTemplatesRequestSchema = exports.ListResourcesResultSchema = exports.ListResourcesRequestSchema = exports.ResourceTemplateSchema = exports.ResourceSchema = exports.BlobResourceContentsSchema = exports.TextResourceContentsSchema = exports.ResourceContentsSchema = exports.PaginatedResultSchema = exports.PaginatedRequestSchema = exports.ProgressNotificationSchema = exports.ProgressSchema = exports.PingRequestSchema = exports.InitializedNotificationSchema = exports.InitializeResultSchema = exports.ServerCapabilitiesSchema = exports.InitializeRequestSchema = exports.ClientCapabilitiesSchema = exports.ImplementationSchema = exports.CancelledNotificationSchema = exports.EmptyResultSchema = exports.JSONRPCMessageSchema = exports.JSONRPCErrorSchema = exports.ErrorCode = exports.JSONRPCResponseSchema = exports.JSONRPCNotificationSchema = exports.JSONRPCRequestSchema = exports.RequestIdSchema = exports.ResultSchema = exports.NotificationSchema = exports.RequestSchema = exports.CursorSchema = exports.ProgressTokenSchema = exports.JSONRPC_VERSION = exports.SUPPORTED_PROTOCOL_VERSIONS = exports.LATEST_PROTOCOL_VERSION = void 0;
-exports.McpError = exports.ServerResultSchema = exports.ServerNotificationSchema = exports.ServerRequestSchema = exports.ClientResultSchema = exports.ClientNotificationSchema = exports.ClientRequestSchema = exports.AgentListChangedNotificationSchema = exports.RunAgentResultSchema = exports.RunAgentRequestSchema = exports.DestroyAgentResultSchema = exports.DestroyAgentRequestSchema = exports.CreateAgentResultSchema = exports.CreateAgentRequestSchema = exports.ListAgentsResultSchema = exports.ListAgentsRequestSchema = exports.AgentSchema = exports.ListAgentTemplatesResultSchema = exports.ListAgentTemplatesRequestSchema = exports.AgentTemplateSchema = exports.RootsListChangedNotificationSchema = exports.ListRootsResultSchema = exports.ListRootsRequestSchema = exports.RootSchema = exports.CompleteResultSchema = exports.CompleteRequestSchema = exports.PromptReferenceSchema = exports.ResourceReferenceSchema = exports.CreateMessageResultSchema = exports.CreateMessageRequestSchema = exports.SamplingMessageSchema = exports.ModelPreferencesSchema = exports.ModelHintSchema = exports.LoggingMessageNotificationSchema = exports.SetLevelRequestSchema = exports.LoggingLevelSchema = exports.ToolListChangedNotificationSchema = exports.CallToolRequestSchema = exports.CompatibilityCallToolResultSchema = exports.CallToolResultSchema = exports.ListToolsResultSchema = exports.ListToolsRequestSchema = exports.ToolSchema = exports.PromptListChangedNotificationSchema = exports.GetPromptResultSchema = exports.PromptMessageSchema = exports.EmbeddedResourceSchema = void 0;
+exports.GetPromptRequestSchema = exports.ListPromptsResultSchema = exports.ListPromptsRequestSchema = exports.PromptSchema = exports.PromptArgumentSchema = exports.ResourceUpdatedNotificationSchema = exports.UnsubscribeRequestSchema = exports.SubscribeRequestSchema = exports.ResourceListChangedNotificationSchema = exports.ReadResourceResultSchema = exports.ReadResourceRequestSchema = exports.ListResourceTemplatesResultSchema = exports.ListResourceTemplatesRequestSchema = exports.ListResourcesResultSchema = exports.ListResourcesRequestSchema = exports.ResourceTemplateSchema = exports.ResourceSchema = exports.BlobResourceContentsSchema = exports.TextResourceContentsSchema = exports.ResourceContentsSchema = exports.PaginatedResultSchema = exports.PaginatedRequestSchema = exports.AgentRunProgressNotificationSchema = exports.AgentRunProgressSchema = exports.ProgressNotificationSchema = exports.ProgressSchema = exports.PingRequestSchema = exports.InitializedNotificationSchema = exports.InitializeResultSchema = exports.ServerCapabilitiesSchema = exports.InitializeRequestSchema = exports.ClientCapabilitiesSchema = exports.ImplementationSchema = exports.CancelledNotificationSchema = exports.EmptyResultSchema = exports.JSONRPCMessageSchema = exports.JSONRPCErrorSchema = exports.ErrorCode = exports.JSONRPCResponseSchema = exports.JSONRPCNotificationSchema = exports.JSONRPCRequestSchema = exports.RequestIdSchema = exports.ResultSchema = exports.NotificationSchema = exports.RequestSchema = exports.CursorSchema = exports.ProgressTokenSchema = exports.JSONRPC_VERSION = exports.SUPPORTED_PROTOCOL_VERSIONS = exports.LATEST_PROTOCOL_VERSION = void 0;
+exports.McpError = exports.ServerResultSchema = exports.ServerNotificationSchema = exports.ServerRequestSchema = exports.ClientResultSchema = exports.ClientNotificationSchema = exports.ClientRequestSchema = exports.AgentListChangedNotificationSchema = exports.RunAgentResultSchema = exports.RunAgentRequestSchema = exports.DestroyAgentResultSchema = exports.DestroyAgentRequestSchema = exports.CreateAgentResultSchema = exports.CreateAgentRequestSchema = exports.ListAgentsResultSchema = exports.ListAgentsRequestSchema = exports.AgentSchema = exports.ListAgentTemplatesResultSchema = exports.ListAgentTemplatesRequestSchema = exports.AgentTemplateSchema = exports.RootsListChangedNotificationSchema = exports.ListRootsResultSchema = exports.ListRootsRequestSchema = exports.RootSchema = exports.CompleteResultSchema = exports.CompleteRequestSchema = exports.PromptReferenceSchema = exports.ResourceReferenceSchema = exports.CreateMessageResultSchema = exports.CreateMessageRequestSchema = exports.SamplingMessageSchema = exports.ModelPreferencesSchema = exports.ModelHintSchema = exports.LoggingMessageNotificationSchema = exports.SetLevelRequestSchema = exports.LoggingLevelSchema = exports.ToolListChangedNotificationSchema = exports.CallToolRequestSchema = exports.CompatibilityCallToolResultSchema = exports.CallToolResultSchema = exports.ListToolsResultSchema = exports.ListToolsRequestSchema = exports.ToolSchema = exports.PromptListChangedNotificationSchema = exports.GetPromptResultSchema = exports.PromptMessageSchema = exports.EmbeddedResourceSchema = exports.ImageContentSchema = exports.TextContentSchema = void 0;
 const zod_1 = require("zod");
 exports.LATEST_PROTOCOL_VERSION = "2024-11-05";
 exports.SUPPORTED_PROTOCOL_VERSIONS = [
@@ -323,6 +323,23 @@ exports.ProgressSchema = zod_1.z
 exports.ProgressNotificationSchema = exports.NotificationSchema.extend({
     method: zod_1.z.literal("notifications/progress"),
     params: BaseNotificationParamsSchema.merge(exports.ProgressSchema).extend({
+        /**
+         * The progress token which was given in the initial request, used to associate this notification with the request that is proceeding.
+         */
+        progressToken: exports.ProgressTokenSchema,
+    }),
+});
+exports.AgentRunProgressSchema = zod_1.z
+    .object({
+    delta: zod_1.z.record(zod_1.z.unknown()),
+})
+    .passthrough();
+/**
+ * An out-of-band notification used to stream data during run agent request.
+ */
+exports.AgentRunProgressNotificationSchema = exports.NotificationSchema.extend({
+    method: zod_1.z.literal("notifications/agents/run/progress"),
+    params: BaseNotificationParamsSchema.merge(exports.AgentRunProgressSchema).extend({
         /**
          * The progress token which was given in the initial request, used to associate this notification with the request that is proceeding.
          */
@@ -1144,6 +1161,7 @@ exports.ServerNotificationSchema = zod_1.z.union([
     exports.ToolListChangedNotificationSchema,
     exports.PromptListChangedNotificationSchema,
     exports.AgentListChangedNotificationSchema,
+    exports.AgentRunProgressNotificationSchema,
 ]);
 exports.ServerResultSchema = zod_1.z.union([
     exports.EmptyResultSchema,
