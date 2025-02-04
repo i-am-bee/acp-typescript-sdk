@@ -1,6 +1,6 @@
 import { Server, ServerOptions } from "./index.js";
 import { z, ZodRawShape, ZodTypeAny, ZodType, ZodTypeDef, ZodOptional } from "zod";
-import { Implementation, CallToolResult, Resource, ListResourcesResult, GetPromptResult, ReadResourceResult } from "../types.js";
+import { Implementation, CallToolResult, Resource, ListResourcesResult, GetPromptResult, ReadResourceResult, RunAgentRequest } from "../types.js";
 import { UriTemplate, Variables } from "../shared/uriTemplate.js";
 import { RequestHandlerExtra } from "../shared/protocol.js";
 import { Transport } from "../shared/transport.js";
@@ -141,8 +141,10 @@ export type ToolCallback<Args extends undefined | ZodRawShape = undefined> = Arg
 export type AgentCreateCallback<Config extends ZodRawShape, Input extends ZodRawShape, Output extends ZodRawShape> = (params: {
     config: z.objectOutputType<Config, ZodTypeAny>;
 }, extra: RequestHandlerExtra) => [AgentRunCallback<Input, Output>, AgentDestroyCallback] | Promise<[AgentRunCallback<Input, Output>, AgentDestroyCallback]>;
-export type AgentRunCallback<Input extends ZodRawShape, Output extends ZodRawShape> = (params: {
-    input: z.objectOutputType<Input, ZodTypeAny>;
+export type AgentRunCallback<Input extends ZodRawShape, Output extends ZodRawShape> = (request: RunAgentRequest & {
+    params: {
+        input: z.objectOutputType<Input, ZodTypeAny>;
+    };
 }, extra: RequestHandlerExtra) => Output | Promise<Output>;
 export type AgentDestroyCallback = (extra: RequestHandlerExtra) => void | Promise<void>;
 /**

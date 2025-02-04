@@ -315,7 +315,7 @@ class McpServer {
                 throw new types_js_1.McpError(types_js_1.ErrorCode.InvalidParams, `Agent ${request.params.name} not found`);
             }
             return await Promise.resolve({
-                output: await agent.runCallback(request.params, extra),
+                output: await agent.runCallback(request, extra),
             });
         });
         this._agentHandlersInitialized = true;

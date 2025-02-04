@@ -46,6 +46,7 @@ import {
   CreateAgentResult,
   DestroyAgentRequestSchema,
   DestroyAgentResult,
+  RunAgentRequest,
 } from "../types.js";
 import { Completable, CompletableDef } from "./completable.js";
 import { UriTemplate, Variables } from "../shared/uriTemplate.js";
@@ -563,7 +564,7 @@ export class McpServer {
         }
 
         return await Promise.resolve({
-          output: await agent.runCallback(request.params, extra),
+          output: await agent.runCallback(request, extra),
         });
       },
     );
@@ -884,8 +885,10 @@ export type AgentRunCallback<
   Input extends ZodRawShape,
   Output extends ZodRawShape,
 > = (
-  params: {
-    input: z.objectOutputType<Input, ZodTypeAny>;
+  request: RunAgentRequest & {
+    params: {
+      input: z.objectOutputType<Input, ZodTypeAny>;
+    };
   },
   extra: RequestHandlerExtra,
 ) => Output | Promise<Output>;
