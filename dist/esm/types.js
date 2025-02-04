@@ -1008,6 +1008,7 @@ export const AgentTemplateSchema = z
         properties: z.optional(z.object({}).passthrough()),
     })
         .passthrough(),
+    metadata: z.optional(z.object({}).passthrough()),
 })
     .passthrough();
 /**
@@ -1053,6 +1054,7 @@ export const AgentSchema = z
         properties: z.optional(z.object({}).passthrough()),
     })
         .passthrough(),
+    metadata: z.optional(z.object({}).passthrough()),
 })
     .passthrough();
 /**

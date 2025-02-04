@@ -1012,6 +1012,7 @@ exports.AgentTemplateSchema = zod_1.z
         properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
     })
         .passthrough(),
+    metadata: zod_1.z.optional(zod_1.z.object({}).passthrough()),
 })
     .passthrough();
 /**
@@ -1057,6 +1058,7 @@ exports.AgentSchema = zod_1.z
         properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
     })
         .passthrough(),
+    metadata: zod_1.z.optional(zod_1.z.object({}).passthrough()),
 })
     .passthrough();
 /**
