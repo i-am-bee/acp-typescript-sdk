@@ -15,12 +15,18 @@ import {
   CompatibilityCallToolResultSchema,
   CompleteRequest,
   CompleteResultSchema,
+  CreateAgentRequest,
+  CreateAgentResultSchema,
+  DestroyAgentRequest,
+  DestroyAgentResultSchema,
   EmptyResultSchema,
   GetPromptRequest,
   GetPromptResultSchema,
   Implementation,
   InitializeResultSchema,
   LATEST_PROTOCOL_VERSION,
+  ListAgentsRequest,
+  ListAgentsResultSchema,
   ListAgentTemplatesRequest,
   ListAgentTemplatesResultSchema,
   ListPromptsRequest,
@@ -436,14 +442,6 @@ export class Client<
     );
   }
 
-  async runAgent(params: RunAgentRequest["params"], options?: RequestOptions) {
-    return this.request(
-      { method: "agents/run", params },
-      RunAgentResultSchema,
-      options,
-    );
-  }
-
   async listAgentTemplates(
     params?: ListAgentTemplatesRequest["params"],
     options?: RequestOptions,
@@ -451,6 +449,47 @@ export class Client<
     return this.request(
       { method: "agents/templates/list", params },
       ListAgentTemplatesResultSchema,
+      options,
+    );
+  }
+
+  async listAgents(
+    params?: ListAgentsRequest["params"],
+    options?: RequestOptions,
+  ) {
+    return this.request(
+      { method: "agents/list", params },
+      ListAgentsResultSchema,
+      options,
+    );
+  }
+
+  async createAgent(
+    params: CreateAgentRequest["params"],
+    options?: RequestOptions,
+  ) {
+    return this.request(
+      { method: "agents/create", params },
+      CreateAgentResultSchema,
+      options,
+    );
+  }
+
+  async destroyAgent(
+    params: DestroyAgentRequest["params"],
+    options?: RequestOptions,
+  ) {
+    return this.request(
+      { method: "agents/destroy", params },
+      DestroyAgentResultSchema,
+      options,
+    );
+  }
+
+  async runAgent(params: RunAgentRequest["params"], options?: RequestOptions) {
+    return this.request(
+      { method: "agents/run", params },
+      RunAgentResultSchema,
       options,
     );
   }

@@ -367,6 +367,25 @@ export const ProgressNotificationSchema = NotificationSchema.extend({
   }),
 });
 
+export const AgentRunProgressSchema = z
+  .object({
+    delta: z.record(z.unknown()),
+  })
+  .passthrough();
+
+/**
+ * An out-of-band notification used to stream data during run agent request.
+ */
+export const AgentRunProgressNotificationSchema = NotificationSchema.extend({
+  method: z.literal("notifications/agents/run/progress"),
+  params: BaseNotificationParamsSchema.merge(AgentRunProgressSchema).extend({
+    /**
+     * The progress token which was given in the initial request, used to associate this notification with the request that is proceeding.
+     */
+    progressToken: ProgressTokenSchema,
+  }),
+});
+
 /* Pagination */
 export const PaginatedRequestSchema = RequestSchema.extend({
   params: BaseRequestParamsSchema.extend({
@@ -1082,6 +1101,24 @@ export const AgentTemplateSchema = z
         properties: z.optional(z.object({}).passthrough()),
       })
       .passthrough(),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runInputSchema: z
+      .object({
+        type: z.literal("object"),
+        properties: z.optional(z.object({}).passthrough()),
+      })
+      .passthrough(),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    runOutputSchema: z
+      .object({
+        type: z.literal("object"),
+        properties: z.optional(z.object({}).passthrough()),
+      })
+      .passthrough(),
   })
   .passthrough();
 
@@ -1100,14 +1137,86 @@ export const ListAgentTemplatesResultSchema = PaginatedResultSchema.extend({
 });
 
 /**
+ * Definition for an agent the client can run.
+ */
+export const AgentSchema = z
+  .object({
+    /**
+     * The name of the agent.
+     */
+    name: z.string(),
+    /**
+     * A human-readable description of the agent.
+     */
+    description: z.optional(z.string()),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    inputSchema: z
+      .object({
+        type: z.literal("object"),
+        properties: z.optional(z.object({}).passthrough()),
+      })
+      .passthrough(),
+    /**
+     * A JSON Schema object defining the expected configuration for the agent.
+     */
+    outputSchema: z
+      .object({
+        type: z.literal("object"),
+        properties: z.optional(z.object({}).passthrough()),
+      })
+      .passthrough(),
+  })
+  .passthrough();
+
+/**
+ * Sent from the client to request a list of agents the server has.
+ */
+export const ListAgentsRequestSchema = PaginatedRequestSchema.extend({
+  method: z.literal("agents/list"),
+});
+
+/**
+ * The server's response to a agents/list request from the client.
+ */
+export const ListAgentsResultSchema = PaginatedResultSchema.extend({
+  agents: z.array(AgentSchema),
+});
+
+/**
+ * Used by the client to run an agent provided by the server.
+ */
+export const CreateAgentRequestSchema = RequestSchema.extend({
+  method: z.literal("agents/create"),
+  params: BaseRequestParamsSchema.extend({
+    name: z.string(),
+    description: z.string(),
+    config: z.record(z.unknown()),
+  }),
+});
+
+/**
  * The server's response to a agent run.
  */
-export const RunAgentResultSchema = ResultSchema.extend({
-  content: z.array(
-    z.union([TextContentSchema, ImageContentSchema, EmbeddedResourceSchema]),
-  ),
-  isError: z.boolean().default(false).optional(),
+export const CreateAgentResultSchema = ResultSchema.extend({
+  agent: AgentSchema,
 });
+
+/**
+ * Used by the client to run an agent provided by the server.
+ */
+export const DestroyAgentRequestSchema = RequestSchema.extend({
+  method: z.literal("agents/destroy"),
+  params: BaseRequestParamsSchema.extend({
+    name: z.string(),
+  }),
+});
+
+/**
+ * The server's response to a agent run.
+ */
+export const DestroyAgentResultSchema = ResultSchema;
 
 /**
  * Used by the client to run an agent provided by the server.
@@ -1116,9 +1225,16 @@ export const RunAgentRequestSchema = RequestSchema.extend({
   method: z.literal("agents/run"),
   params: BaseRequestParamsSchema.extend({
     name: z.string(),
-    config: z.record(z.unknown()),
-    prompt: z.string(),
+    input: z.record(z.unknown()),
   }),
+});
+
+/**
+ * The server's response to a agent run.
+ */
+export const RunAgentResultSchema = ResultSchema.extend({
+  output: z.record(z.unknown()),
+  isError: z.boolean().default(false).optional(),
 });
 
 /**
@@ -1144,6 +1260,9 @@ export const ClientRequestSchema = z.union([
   CallToolRequestSchema,
   ListToolsRequestSchema,
   ListAgentTemplatesRequestSchema,
+  ListAgentsRequestSchema,
+  CreateAgentRequestSchema,
+  DestroyAgentRequestSchema,
   RunAgentRequestSchema,
 ]);
 
@@ -1176,6 +1295,7 @@ export const ServerNotificationSchema = z.union([
   ToolListChangedNotificationSchema,
   PromptListChangedNotificationSchema,
   AgentListChangedNotificationSchema,
+  AgentRunProgressNotificationSchema,
 ]);
 
 export const ServerResultSchema = z.union([
@@ -1190,6 +1310,9 @@ export const ServerResultSchema = z.union([
   CallToolResultSchema,
   ListToolsResultSchema,
   ListAgentTemplatesResultSchema,
+  ListAgentsResultSchema,
+  CreateAgentResultSchema,
+  DestroyAgentResultSchema,
   RunAgentResultSchema,
 ]);
 
@@ -1355,8 +1478,20 @@ export type ListAgentTemplatesRequest = Infer<
 export type ListAgentTemplatesResult = Infer<
   typeof ListAgentTemplatesResultSchema
 >;
+export type Agent = Infer<typeof AgentSchema>;
+export type ListAgentsRequest = Infer<typeof ListAgentsRequestSchema>;
+export type ListAgentsResult = Infer<typeof ListAgentsResultSchema>;
+export type CreateAgentRequest = Infer<typeof CreateAgentRequestSchema>;
+export type CreateAgentResult = Infer<typeof CreateAgentResultSchema>;
+export type DestroyAgentRequest = Infer<typeof DestroyAgentRequestSchema>;
+export type DestroyAgentResult = Infer<typeof DestroyAgentResultSchema>;
 export type RunAgentRequest = Infer<typeof RunAgentRequestSchema>;
 export type RunAgentResult = Infer<typeof RunAgentResultSchema>;
 export type AgentListChangedNotification = Infer<
   typeof AgentListChangedNotificationSchema
+>;
+
+export type AgentRunProgress = Infer<typeof AgentRunProgressSchema>;
+export type AgentRunProgressNotification = Infer<
+  typeof AgentRunProgressNotificationSchema
 >;

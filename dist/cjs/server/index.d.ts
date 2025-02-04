@@ -1,5 +1,5 @@
 import { Protocol, ProtocolOptions, RequestOptions } from "../shared/protocol.js";
-import { ClientCapabilities, CreateMessageRequest, Implementation, ListRootsRequest, LoggingMessageNotification, Notification, Request, ResourceUpdatedNotification, Result, ServerCapabilities, ServerNotification, ServerRequest, ServerResult } from "../types.js";
+import { AgentRunProgressNotification, ClientCapabilities, CreateMessageRequest, Implementation, ListRootsRequest, LoggingMessageNotification, Notification, Request, ResourceUpdatedNotification, Result, ServerCapabilities, ServerNotification, ServerRequest, ServerResult } from "../types.js";
 export type ServerOptions = ProtocolOptions & {
     /**
      * Capabilities to advertise as being supported by this server.
@@ -120,5 +120,6 @@ export declare class Server<RequestT extends Request = Request, NotificationT ex
     sendToolListChanged(): Promise<void>;
     sendPromptListChanged(): Promise<void>;
     sendAgentListChanged(): Promise<void>;
+    sendAgentRunProgress(params: AgentRunProgressNotification["params"]): Promise<void>;
 }
 //# sourceMappingURL=index.d.ts.map

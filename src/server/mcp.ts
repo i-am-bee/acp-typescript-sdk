@@ -42,6 +42,13 @@ import {
   AgentTemplate,
   ListAgentTemplatesResult,
   RunAgentResult,
+  CreateAgentRequestSchema,
+  CreateAgentResult,
+  DestroyAgentRequestSchema,
+  DestroyAgentResult,
+  RunAgentRequest,
+  CreateAgentRequest,
+  Agent,
 } from "../types.js";
 import { Completable, CompletableDef } from "./completable.js";
 import { UriTemplate, Variables } from "../shared/uriTemplate.js";
@@ -65,6 +72,9 @@ export class McpServer {
   } = {};
   private _registeredTools: { [name: string]: RegisteredTool } = {};
   private _registeredPrompts: { [name: string]: RegisteredPrompt } = {};
+  private _registeredAgents: {
+    [name: string]: RegisteredAgent;
+  } = {};
   private _registeredAgentTemplates: {
     [name: string]: RegisteredAgentTemplate;
   } = {};
@@ -470,15 +480,26 @@ export class McpServer {
       ListAgentTemplatesRequestSchema,
       (): ListAgentTemplatesResult => ({
         agentTemplates: Object.entries(this._registeredAgentTemplates).map(
-          ([name, agent]): AgentTemplate => {
+          ([name, template]): AgentTemplate => {
             return {
               name,
-              description: agent.description,
-              configSchema: agent.configSchema
+              description: template.description,
+              configSchema: template.configSchema
                 ? (zodToJsonSchema(
-                    agent.configSchema,
+                    template.configSchema,
                   ) as AgentTemplate["configSchema"])
                 : EMPTY_OBJECT_JSON_SCHEMA,
+              runInputSchema: template.inputSchema
+                ? (zodToJsonSchema(
+                    template.configSchema,
+                  ) as AgentTemplate["runInputSchema"])
+                : EMPTY_OBJECT_JSON_SCHEMA,
+              runOutputSchema: template.outputSchema
+                ? (zodToJsonSchema(
+                    template.configSchema,
+                  ) as AgentTemplate["runOutputSchema"])
+                : EMPTY_OBJECT_JSON_SCHEMA,
+              runDeltaSchema: EMPTY_OBJECT_JSON_SCHEMA, // TODO
             };
           },
         ),
@@ -486,17 +507,78 @@ export class McpServer {
     );
 
     this.server.setRequestHandler(
-      RunAgentRequestSchema,
-      async (request, extra): Promise<RunAgentResult> => {
-        const agent = this._registeredAgentTemplates[request.params.name];
-        if (!agent) {
+      CreateAgentRequestSchema,
+      async (request, extra): Promise<CreateAgentResult> => {
+        const template = this._registeredAgentTemplates[request.params.name];
+        if (!template) {
           throw new McpError(
             ErrorCode.InvalidParams,
             `Agent template ${request.params.name} not found`,
           );
         }
 
-        return await Promise.resolve(agent.callback(request.params, extra));
+        const [runCallback, destroyCallback] = await template.callback(
+          request,
+          extra,
+        );
+
+        const agent: RegisteredAgent = {
+          description: template.description,
+          inputSchema: template.inputSchema,
+          outputSchema: template.outputSchema,
+          runCallback,
+          destroyCallback,
+        };
+
+        this._registeredAgents[request.params.name] = agent;
+
+        return await Promise.resolve({
+          agent: {
+            name: request.params.name,
+            description: agent.description,
+            inputSchema: agent.inputSchema
+              ? (zodToJsonSchema(agent.inputSchema) as Agent["inputSchema"])
+              : EMPTY_OBJECT_JSON_SCHEMA,
+            outputSchema: agent.outputSchema
+              ? (zodToJsonSchema(agent.outputSchema) as Agent["outputSchema"])
+              : EMPTY_OBJECT_JSON_SCHEMA,
+          },
+        });
+      },
+    );
+
+    this.server.setRequestHandler(
+      DestroyAgentRequestSchema,
+      async (request, extra): Promise<DestroyAgentResult> => {
+        const agent = this._registeredAgents[request.params.name];
+        if (!agent) {
+          throw new McpError(
+            ErrorCode.InvalidParams,
+            `Agent ${request.params.name} not found`,
+          );
+        }
+
+        await agent.destroyCallback(extra);
+        delete this._registeredAgents[request.params.name];
+
+        return await Promise.resolve({});
+      },
+    );
+
+    this.server.setRequestHandler(
+      RunAgentRequestSchema,
+      async (request, extra): Promise<RunAgentResult> => {
+        const agent = this._registeredAgents[request.params.name];
+        if (!agent) {
+          throw new McpError(
+            ErrorCode.InvalidParams,
+            `Agent ${request.params.name} not found`,
+          );
+        }
+
+        return await Promise.resolve({
+          output: await agent.runCallback(request, extra),
+        });
       },
     );
 
@@ -688,11 +770,17 @@ export class McpServer {
   /**
    * Registers a agent `name` (with a description) accepting the given arguments, which must be an object containing named properties associated with Zod schemas. When the client calls it, the function will be run with the parsed and validated arguments.
    */
-  agent<Config extends ZodRawShape>(
+  agent<
+    Config extends ZodRawShape,
+    Input extends ZodRawShape,
+    Output extends ZodRawShape,
+  >(
     name: string,
     description: string,
     configSchema: Config,
-    callback: AgentTemplateCallback<Config>,
+    inputSchema: Input,
+    outputSchema: Output,
+    callback: AgentCreateCallback<Config, Input, Output>,
   ): void {
     if (this._registeredAgentTemplates[name]) {
       throw new Error(`Agent template ${name} is already registered`);
@@ -701,7 +789,13 @@ export class McpServer {
     this._registeredAgentTemplates[name] = {
       description,
       configSchema: z.object(configSchema),
-      callback: callback as AgentTemplateCallback<ZodRawShape>,
+      inputSchema: z.object(inputSchema),
+      outputSchema: z.object(outputSchema),
+      callback: callback as AgentCreateCallback<
+        ZodRawShape,
+        ZodRawShape,
+        ZodRawShape
+      >,
     };
 
     this.setAgentRequestHandlers();
@@ -787,18 +881,51 @@ type RegisteredTool = {
   callback: ToolCallback<undefined | ZodRawShape>;
 };
 
-export type AgentTemplateCallback<Config extends ZodRawShape> = (
-  params: {
-    config: z.objectOutputType<Config, ZodTypeAny>;
-    prompt: string;
+export type AgentCreateCallback<
+  Config extends ZodRawShape,
+  Input extends ZodRawShape,
+  Output extends ZodRawShape,
+> = (
+  request: CreateAgentRequest & {
+    params: {
+      config: z.objectOutputType<Config, ZodTypeAny>;
+    };
   },
   extra: RequestHandlerExtra,
-) => RunAgentResult | Promise<RunAgentResult>;
+) =>
+  | [AgentRunCallback<Input, Output>, AgentDestroyCallback]
+  | Promise<[AgentRunCallback<Input, Output>, AgentDestroyCallback]>;
+
+export type AgentRunCallback<
+  Input extends ZodRawShape,
+  Output extends ZodRawShape,
+> = (
+  request: RunAgentRequest & {
+    params: {
+      input: z.objectOutputType<Input, ZodTypeAny>;
+    };
+  },
+  extra: RequestHandlerExtra,
+) => Output | Promise<Output>;
+
+export type AgentDestroyCallback = (
+  extra: RequestHandlerExtra,
+) => void | Promise<void>;
 
 type RegisteredAgentTemplate = {
   description: string;
   configSchema: AnyZodObject;
-  callback: AgentTemplateCallback<ZodRawShape>;
+  inputSchema: AnyZodObject;
+  outputSchema: AnyZodObject;
+  callback: AgentCreateCallback<ZodRawShape, ZodRawShape, ZodRawShape>;
+};
+
+type RegisteredAgent = {
+  description: string;
+  inputSchema: AnyZodObject;
+  outputSchema: AnyZodObject;
+  runCallback: AgentRunCallback<ZodRawShape, ZodRawShape>;
+  destroyCallback: AgentDestroyCallback;
 };
 
 const EMPTY_OBJECT_JSON_SCHEMA = {
