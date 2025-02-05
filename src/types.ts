@@ -298,6 +298,10 @@ export const ServerCapabilitiesSchema = z
       z
         .object({
           /**
+           * Whether this server supports agent templates.
+           */
+          templates: z.optional(z.boolean()),
+          /**
            * Whether this server supports issuing notifications for changes to the agent list.
            */
           listChanged: z.optional(z.boolean()),
@@ -1119,7 +1123,6 @@ export const AgentTemplateSchema = z
         properties: z.optional(z.object({}).passthrough()),
       })
       .passthrough(),
-    metadata: z.optional(z.object({}).passthrough()),
   })
   .passthrough();
 
@@ -1151,7 +1154,7 @@ export const AgentSchema = z
      */
     description: z.optional(z.string()),
     /**
-     * A JSON Schema object defining the expected configuration for the agent.
+     * A JSON Schema object defining the expected input for the agent.
      */
     inputSchema: z
       .object({
@@ -1160,7 +1163,7 @@ export const AgentSchema = z
       })
       .passthrough(),
     /**
-     * A JSON Schema object defining the expected configuration for the agent.
+     * A JSON Schema object defining the expected output for the agent.
      */
     outputSchema: z
       .object({
@@ -1168,7 +1171,6 @@ export const AgentSchema = z
         properties: z.optional(z.object({}).passthrough()),
       })
       .passthrough(),
-    metadata: z.optional(z.object({}).passthrough()),
   })
   .passthrough();
 
@@ -1192,8 +1194,7 @@ export const ListAgentsResultSchema = PaginatedResultSchema.extend({
 export const CreateAgentRequestSchema = RequestSchema.extend({
   method: z.literal("agents/create"),
   params: BaseRequestParamsSchema.extend({
-    name: z.string(),
-    description: z.string(),
+    templateName: z.string(),
     config: z.record(z.unknown()),
   }),
 });

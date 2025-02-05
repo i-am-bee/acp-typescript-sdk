@@ -267,6 +267,10 @@ exports.ServerCapabilitiesSchema = zod_1.z
     agents: zod_1.z.optional(zod_1.z
         .object({
         /**
+         * Whether this server supports agent templates.
+         */
+        templates: zod_1.z.optional(zod_1.z.boolean()),
+        /**
          * Whether this server supports issuing notifications for changes to the agent list.
          */
         listChanged: zod_1.z.optional(zod_1.z.boolean()),
@@ -1012,7 +1016,6 @@ exports.AgentTemplateSchema = zod_1.z
         properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
     })
         .passthrough(),
-    metadata: zod_1.z.optional(zod_1.z.object({}).passthrough()),
 })
     .passthrough();
 /**
@@ -1041,7 +1044,7 @@ exports.AgentSchema = zod_1.z
      */
     description: zod_1.z.optional(zod_1.z.string()),
     /**
-     * A JSON Schema object defining the expected configuration for the agent.
+     * A JSON Schema object defining the expected input for the agent.
      */
     inputSchema: zod_1.z
         .object({
@@ -1050,7 +1053,7 @@ exports.AgentSchema = zod_1.z
     })
         .passthrough(),
     /**
-     * A JSON Schema object defining the expected configuration for the agent.
+     * A JSON Schema object defining the expected output for the agent.
      */
     outputSchema: zod_1.z
         .object({
@@ -1058,7 +1061,6 @@ exports.AgentSchema = zod_1.z
         properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
     })
         .passthrough(),
-    metadata: zod_1.z.optional(zod_1.z.object({}).passthrough()),
 })
     .passthrough();
 /**
@@ -1079,8 +1081,7 @@ exports.ListAgentsResultSchema = exports.PaginatedResultSchema.extend({
 exports.CreateAgentRequestSchema = exports.RequestSchema.extend({
     method: zod_1.z.literal("agents/create"),
     params: BaseRequestParamsSchema.extend({
-        name: zod_1.z.string(),
-        description: zod_1.z.string(),
+        templateName: zod_1.z.string(),
         config: zod_1.z.record(zod_1.z.unknown()),
     }),
 });

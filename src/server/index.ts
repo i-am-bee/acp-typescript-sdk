@@ -243,10 +243,17 @@ export class Server<
         }
         break;
 
-      case "agents/run":
       case "agents/create":
       case "agents/destroy":
       case "agents/templates/list":
+        if (!this._capabilities.agents?.templates) {
+          throw new Error(
+            `Server does not support agent templates (required for ${method})`,
+          );
+        }
+        break;
+
+      case "agents/run":
       case "agents/list":
         if (!this._capabilities.agents) {
           throw new Error(

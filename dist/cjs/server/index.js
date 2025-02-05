@@ -108,6 +108,7 @@ class Server extends protocol_js_1.Protocol {
         }
     }
     assertRequestHandlerCapability(method) {
+        var _a;
         switch (method) {
             case "sampling/createMessage":
                 if (!this._capabilities.sampling) {
@@ -138,10 +139,14 @@ class Server extends protocol_js_1.Protocol {
                     throw new Error(`Server does not support tools (required for ${method})`);
                 }
                 break;
-            case "agents/run":
             case "agents/create":
             case "agents/destroy":
             case "agents/templates/list":
+                if (!((_a = this._capabilities.agents) === null || _a === void 0 ? void 0 : _a.templates)) {
+                    throw new Error(`Server does not support agent templates (required for ${method})`);
+                }
+                break;
+            case "agents/run":
             case "agents/list":
                 if (!this._capabilities.agents) {
                     throw new Error(`Server does not support agents (required for ${method})`);
