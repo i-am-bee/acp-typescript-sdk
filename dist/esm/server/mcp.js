@@ -307,10 +307,10 @@ export class McpServer {
                     configSchema: template.configSchema
                         ? zodToJsonSchema(template.configSchema)
                         : EMPTY_OBJECT_JSON_SCHEMA,
-                    runInputSchema: template.inputSchema
+                    inputSchema: template.inputSchema
                         ? zodToJsonSchema(template.configSchema)
                         : EMPTY_OBJECT_JSON_SCHEMA,
-                    runOutputSchema: template.outputSchema
+                    outputSchema: template.outputSchema
                         ? zodToJsonSchema(template.configSchema)
                         : EMPTY_OBJECT_JSON_SCHEMA,
                 };

@@ -1108,7 +1108,7 @@ export const AgentTemplateSchema = z
     /**
      * A JSON Schema object defining the expected configuration for the agent.
      */
-    runInputSchema: z
+    inputSchema: z
       .object({
         type: z.literal("object"),
         properties: z.optional(z.object({}).passthrough()),
@@ -1117,7 +1117,7 @@ export const AgentTemplateSchema = z
     /**
      * A JSON Schema object defining the expected configuration for the agent.
      */
-    runOutputSchema: z
+    outputSchema: z
       .object({
         type: z.literal("object"),
         properties: z.optional(z.object({}).passthrough()),
@@ -1237,7 +1237,6 @@ export const RunAgentRequestSchema = RequestSchema.extend({
  */
 export const RunAgentResultSchema = ResultSchema.extend({
   output: z.record(z.unknown()),
-  isError: z.boolean().default(false).optional(),
 });
 
 /**

@@ -552,15 +552,15 @@ export class McpServer {
                     template.configSchema,
                   ) as AgentTemplate["configSchema"])
                 : EMPTY_OBJECT_JSON_SCHEMA,
-              runInputSchema: template.inputSchema
+              inputSchema: template.inputSchema
                 ? (zodToJsonSchema(
                     template.configSchema,
-                  ) as AgentTemplate["runInputSchema"])
+                  ) as AgentTemplate["inputSchema"])
                 : EMPTY_OBJECT_JSON_SCHEMA,
-              runOutputSchema: template.outputSchema
+              outputSchema: template.outputSchema
                 ? (zodToJsonSchema(
                     template.configSchema,
-                  ) as AgentTemplate["runOutputSchema"])
+                  ) as AgentTemplate["outputSchema"])
                 : EMPTY_OBJECT_JSON_SCHEMA,
             };
           },

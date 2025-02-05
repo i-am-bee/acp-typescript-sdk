@@ -15758,7 +15758,7 @@ export declare const AgentTemplateSchema: z.ZodObject<{
     /**
      * A JSON Schema object defining the expected configuration for the agent.
      */
-    runInputSchema: z.ZodObject<{
+    inputSchema: z.ZodObject<{
         type: z.ZodLiteral<"object">;
         properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -15771,7 +15771,7 @@ export declare const AgentTemplateSchema: z.ZodObject<{
     /**
      * A JSON Schema object defining the expected configuration for the agent.
      */
-    runOutputSchema: z.ZodObject<{
+    outputSchema: z.ZodObject<{
         type: z.ZodLiteral<"object">;
         properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -15806,7 +15806,7 @@ export declare const AgentTemplateSchema: z.ZodObject<{
     /**
      * A JSON Schema object defining the expected configuration for the agent.
      */
-    runInputSchema: z.ZodObject<{
+    inputSchema: z.ZodObject<{
         type: z.ZodLiteral<"object">;
         properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -15819,7 +15819,7 @@ export declare const AgentTemplateSchema: z.ZodObject<{
     /**
      * A JSON Schema object defining the expected configuration for the agent.
      */
-    runOutputSchema: z.ZodObject<{
+    outputSchema: z.ZodObject<{
         type: z.ZodLiteral<"object">;
         properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -15854,7 +15854,7 @@ export declare const AgentTemplateSchema: z.ZodObject<{
     /**
      * A JSON Schema object defining the expected configuration for the agent.
      */
-    runInputSchema: z.ZodObject<{
+    inputSchema: z.ZodObject<{
         type: z.ZodLiteral<"object">;
         properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -15867,7 +15867,7 @@ export declare const AgentTemplateSchema: z.ZodObject<{
     /**
      * A JSON Schema object defining the expected configuration for the agent.
      */
-    runOutputSchema: z.ZodObject<{
+    outputSchema: z.ZodObject<{
         type: z.ZodLiteral<"object">;
         properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16101,7 +16101,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16114,7 +16114,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16149,7 +16149,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16162,7 +16162,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16197,7 +16197,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16210,7 +16210,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16258,7 +16258,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16271,7 +16271,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16306,7 +16306,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16319,7 +16319,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16354,7 +16354,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16367,7 +16367,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16415,7 +16415,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16428,7 +16428,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16463,7 +16463,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16476,7 +16476,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16511,7 +16511,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -16524,7 +16524,7 @@ export declare const ListAgentTemplatesResultSchema: z.ZodObject<z.objectUtil.ex
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -17997,7 +17997,6 @@ export declare const RunAgentResultSchema: z.ZodObject<z.objectUtil.extendShape<
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
     output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
 }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
@@ -18005,7 +18004,6 @@ export declare const RunAgentResultSchema: z.ZodObject<z.objectUtil.extendShape<
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
     output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
 }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
@@ -18013,7 +18011,6 @@ export declare const RunAgentResultSchema: z.ZodObject<z.objectUtil.extendShape<
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
     output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
 }>, z.ZodTypeAny, "passthrough">>;
 /**
  * An optional notification from the server to the client, informing it that the list of agents it offers has changed. This may be issued by servers without any previous subscription from the client.
@@ -30373,7 +30370,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30386,7 +30383,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30421,7 +30418,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30434,7 +30431,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30469,7 +30466,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30482,7 +30479,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30530,7 +30527,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30543,7 +30540,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30578,7 +30575,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30591,7 +30588,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30626,7 +30623,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30639,7 +30636,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30687,7 +30684,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30700,7 +30697,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30735,7 +30732,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30748,7 +30745,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30783,7 +30780,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runInputSchema: z.ZodObject<{
+        inputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -30796,7 +30793,7 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
         /**
          * A JSON Schema object defining the expected configuration for the agent.
          */
-        runOutputSchema: z.ZodObject<{
+        outputSchema: z.ZodObject<{
             type: z.ZodLiteral<"object">;
             properties: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
@@ -31519,7 +31516,6 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
     output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
 }>, "passthrough", z.ZodTypeAny, z.objectOutputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
@@ -31527,7 +31523,6 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
     output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
 }>, z.ZodTypeAny, "passthrough">, z.objectInputType<z.objectUtil.extendShape<{
     /**
      * This result property is reserved by the protocol to allow clients and servers to attach additional metadata to their responses.
@@ -31535,7 +31530,6 @@ export declare const ServerResultSchema: z.ZodUnion<[z.ZodObject<{
     _meta: z.ZodOptional<z.ZodObject<{}, "passthrough", z.ZodTypeAny, z.objectOutputType<{}, z.ZodTypeAny, "passthrough">, z.objectInputType<{}, z.ZodTypeAny, "passthrough">>>;
 }, {
     output: z.ZodRecord<z.ZodString, z.ZodUnknown>;
-    isError: z.ZodOptional<z.ZodDefault<z.ZodBoolean>>;
 }>, z.ZodTypeAny, "passthrough">>]>;
 export declare class McpError extends Error {
     readonly code: number;

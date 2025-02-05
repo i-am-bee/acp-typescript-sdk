@@ -797,7 +797,7 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, import("zod").ZodTypeAny, "passthrough">>;
-            runInputSchema: import("zod").ZodObject<{
+            inputSchema: import("zod").ZodObject<{
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
@@ -807,7 +807,7 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, import("zod").ZodTypeAny, "passthrough">>;
-            runOutputSchema: import("zod").ZodObject<{
+            outputSchema: import("zod").ZodObject<{
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
@@ -830,7 +830,7 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, import("zod").ZodTypeAny, "passthrough">>;
-            runInputSchema: import("zod").ZodObject<{
+            inputSchema: import("zod").ZodObject<{
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
@@ -840,7 +840,7 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, import("zod").ZodTypeAny, "passthrough">>;
-            runOutputSchema: import("zod").ZodObject<{
+            outputSchema: import("zod").ZodObject<{
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
@@ -863,7 +863,7 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, import("zod").ZodTypeAny, "passthrough">>;
-            runInputSchema: import("zod").ZodObject<{
+            inputSchema: import("zod").ZodObject<{
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
@@ -873,7 +873,7 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, import("zod").ZodTypeAny, "passthrough">>;
-            runOutputSchema: import("zod").ZodObject<{
+            outputSchema: import("zod").ZodObject<{
                 type: import("zod").ZodLiteral<"object">;
                 properties: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
             }, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{
@@ -1042,7 +1042,6 @@ export declare class Client<RequestT extends Request = Request, NotificationT ex
         _meta: import("zod").ZodOptional<import("zod").ZodObject<{}, "passthrough", import("zod").ZodTypeAny, import("zod").objectOutputType<{}, import("zod").ZodTypeAny, "passthrough">, import("zod").objectInputType<{}, import("zod").ZodTypeAny, "passthrough">>>;
     }, {
         output: import("zod").ZodRecord<import("zod").ZodString, import("zod").ZodUnknown>;
-        isError: import("zod").ZodOptional<import("zod").ZodDefault<import("zod").ZodBoolean>>;
     }>, import("zod").ZodTypeAny, "passthrough">>;
     sendRootsListChanged(): Promise<void>;
 }

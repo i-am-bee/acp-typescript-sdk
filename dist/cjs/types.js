@@ -1001,7 +1001,7 @@ exports.AgentTemplateSchema = zod_1.z
     /**
      * A JSON Schema object defining the expected configuration for the agent.
      */
-    runInputSchema: zod_1.z
+    inputSchema: zod_1.z
         .object({
         type: zod_1.z.literal("object"),
         properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
@@ -1010,7 +1010,7 @@ exports.AgentTemplateSchema = zod_1.z
     /**
      * A JSON Schema object defining the expected configuration for the agent.
      */
-    runOutputSchema: zod_1.z
+    outputSchema: zod_1.z
         .object({
         type: zod_1.z.literal("object"),
         properties: zod_1.z.optional(zod_1.z.object({}).passthrough()),
@@ -1119,7 +1119,6 @@ exports.RunAgentRequestSchema = exports.RequestSchema.extend({
  */
 exports.RunAgentResultSchema = exports.ResultSchema.extend({
     output: zod_1.z.record(zod_1.z.unknown()),
-    isError: zod_1.z.boolean().default(false).optional(),
 });
 /**
  * An optional notification from the server to the client, informing it that the list of agents it offers has changed. This may be issued by servers without any previous subscription from the client.
