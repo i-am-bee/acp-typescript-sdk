@@ -349,7 +349,9 @@ export class McpServer {
             if (!agent) {
                 throw new McpError(ErrorCode.InvalidParams, `Agent ${request.params.name} not found`);
             }
-            const result = agent.destroyCallback && (await agent.destroyCallback(extra));
+            if (!agent.destroyCallback)
+                throw new McpError(ErrorCode.InvalidParams, `Agent ${request.params.name} cannot be destroyed`);
+            const result = await agent.destroyCallback(extra);
             delete this._registeredAgents[request.params.name];
             return await Promise.resolve(result !== null && result !== void 0 ? result : {});
         });
@@ -451,6 +453,7 @@ export class McpServer {
             inputSchema: z.object(inputSchema),
             outputSchema: z.object(outputSchema),
             runCallback: callback,
+            destroyCallback: null,
         };
         this.setAgentRequestHandlers();
     }

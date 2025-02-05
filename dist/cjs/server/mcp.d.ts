@@ -151,12 +151,12 @@ export type AgentCreateCallback<Config extends ZodRawShape, Input extends ZodRaw
 }, extra: RequestHandlerExtra) => (CreateAgentResult & {
     agent: {
         run: AgentRunCallback<Input, Output>;
-        destroy?: AgentDestroyCallback;
+        destroy: AgentDestroyCallback;
     };
 }) | Promise<CreateAgentResult & {
     agent: {
         run: AgentRunCallback<Input, Output>;
-        destroy?: AgentDestroyCallback;
+        destroy: AgentDestroyCallback;
     };
 }>;
 export type AgentRunCallback<Input extends ZodRawShape, Output extends ZodRawShape> = (request: RunAgentRequest & {

@@ -623,8 +623,13 @@ export class McpServer {
           );
         }
 
-        const result =
-          agent.destroyCallback && (await agent.destroyCallback(extra));
+        if (!agent.destroyCallback)
+          throw new McpError(
+            ErrorCode.InvalidParams,
+            `Agent ${request.params.name} cannot be destroyed`,
+          );
+
+        const result = await agent.destroyCallback(extra);
         delete this._registeredAgents[request.params.name];
 
         return await Promise.resolve(result ?? {});
@@ -869,6 +874,7 @@ export class McpServer {
       inputSchema: z.object(inputSchema),
       outputSchema: z.object(outputSchema),
       runCallback: callback as AgentRunCallback<ZodRawShape, ZodRawShape>,
+      destroyCallback: null,
     };
 
     this.setAgentRequestHandlers();
@@ -969,14 +975,14 @@ export type AgentCreateCallback<
   | (CreateAgentResult & {
       agent: {
         run: AgentRunCallback<Input, Output>;
-        destroy?: AgentDestroyCallback;
+        destroy: AgentDestroyCallback;
       };
     })
   | Promise<
       CreateAgentResult & {
         agent: {
           run: AgentRunCallback<Input, Output>;
-          destroy?: AgentDestroyCallback;
+          destroy: AgentDestroyCallback;
         };
       }
     >;
@@ -1012,7 +1018,7 @@ type RegisteredAgent = {
   inputSchema: AnyZodObject;
   outputSchema: AnyZodObject;
   runCallback: AgentRunCallback<ZodRawShape, ZodRawShape>;
-  destroyCallback?: AgentDestroyCallback;
+  destroyCallback: AgentDestroyCallback | null;
 };
 
 const EMPTY_OBJECT_JSON_SCHEMA = {
