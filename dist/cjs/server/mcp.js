@@ -25,6 +25,7 @@ class McpServer {
         this._resourceHandlersInitialized = false;
         this._promptHandlersInitialized = false;
         this._agentHandlersInitialized = false;
+        this._agentTemplateHandlersInitialized = false;
         this.server = new index_js_1.Server(serverInfo, options);
     }
     /**
@@ -261,10 +262,45 @@ class McpServer {
         if (this._agentHandlersInitialized) {
             return;
         }
-        this.server.assertCanSetRequestHandler(types_js_1.ListAgentTemplatesRequestSchema.shape.method.value);
+        this.server.assertCanSetRequestHandler(types_js_1.ListAgentsRequestSchema.shape.method.value);
         this.server.assertCanSetRequestHandler(types_js_1.RunAgentRequestSchema.shape.method.value);
         this.server.registerCapabilities({
             agents: {},
+        });
+        this.server.setRequestHandler(types_js_1.ListAgentsRequestSchema, () => ({
+            agents: Object.entries(this._registeredAgents).map(([name, agent]) => {
+                return {
+                    name,
+                    description: agent.description,
+                    inputSchema: agent.inputSchema
+                        ? (0, zod_to_json_schema_1.zodToJsonSchema)(agent.inputSchema)
+                        : EMPTY_OBJECT_JSON_SCHEMA,
+                    outputSchema: agent.outputSchema
+                        ? (0, zod_to_json_schema_1.zodToJsonSchema)(agent.outputSchema)
+                        : EMPTY_OBJECT_JSON_SCHEMA,
+                };
+            }),
+        }));
+        this.server.setRequestHandler(types_js_1.RunAgentRequestSchema, async (request, extra) => {
+            const agent = this._registeredAgents[request.params.name];
+            if (!agent) {
+                throw new types_js_1.McpError(types_js_1.ErrorCode.InvalidParams, `Agent ${request.params.name} not found`);
+            }
+            return await Promise.resolve(agent.runCallback(request, extra));
+        });
+        this._agentHandlersInitialized = true;
+    }
+    setAgentTemplateRequestHandlers() {
+        if (this._agentTemplateHandlersInitialized) {
+            return;
+        }
+        this.server.assertCanSetRequestHandler(types_js_1.ListAgentTemplatesRequestSchema.shape.method.value);
+        this.server.assertCanSetRequestHandler(types_js_1.CreateAgentRequestSchema.shape.method.value);
+        this.server.assertCanSetRequestHandler(types_js_1.DestroyAgentRequestSchema.shape.method.value);
+        this.server.registerCapabilities({
+            agents: {
+                templates: true,
+            },
         });
         this.server.setRequestHandler(types_js_1.ListAgentTemplatesRequestSchema, () => ({
             agentTemplates: Object.entries(this._registeredAgentTemplates).map(([name, template]) => {
@@ -280,12 +316,11 @@ class McpServer {
                     runOutputSchema: template.outputSchema
                         ? (0, zod_to_json_schema_1.zodToJsonSchema)(template.configSchema)
                         : EMPTY_OBJECT_JSON_SCHEMA,
-                    metadata: template.metadata,
                 };
             }),
         }));
         this.server.setRequestHandler(types_js_1.CreateAgentRequestSchema, async (request, extra) => {
-            const template = this._registeredAgentTemplates[request.params.name];
+            const template = this._registeredAgentTemplates[request.params.templateName];
             if (!template) {
                 throw new types_js_1.McpError(types_js_1.ErrorCode.InvalidParams, `Agent template ${request.params.name} not found`);
             }
@@ -294,7 +329,6 @@ class McpServer {
                 description: agent.description,
                 inputSchema: template.inputSchema,
                 outputSchema: template.outputSchema,
-                metadata: agent.metadata,
                 runCallback: agent.run,
                 destroyCallback: agent.destroy,
             };
@@ -302,7 +336,7 @@ class McpServer {
             return await Promise.resolve({
                 ...rest,
                 agent: {
-                    name: request.params.name,
+                    name: agent.name,
                     description: agent.description,
                     inputSchema: agent.inputSchema
                         ? (0, zod_to_json_schema_1.zodToJsonSchema)(registeredAgent.inputSchema)
@@ -310,7 +344,6 @@ class McpServer {
                     outputSchema: agent.outputSchema
                         ? (0, zod_to_json_schema_1.zodToJsonSchema)(registeredAgent.outputSchema)
                         : EMPTY_OBJECT_JSON_SCHEMA,
-                    metadata: agent.metadata,
                 },
             });
         });
@@ -319,18 +352,11 @@ class McpServer {
             if (!agent) {
                 throw new types_js_1.McpError(types_js_1.ErrorCode.InvalidParams, `Agent ${request.params.name} not found`);
             }
-            const result = await agent.destroyCallback(extra);
+            const result = agent.destroyCallback && (await agent.destroyCallback(extra));
             delete this._registeredAgents[request.params.name];
-            return await Promise.resolve(result);
+            return await Promise.resolve(result !== null && result !== void 0 ? result : {});
         });
-        this.server.setRequestHandler(types_js_1.RunAgentRequestSchema, async (request, extra) => {
-            const agent = this._registeredAgents[request.params.name];
-            if (!agent) {
-                throw new types_js_1.McpError(types_js_1.ErrorCode.InvalidParams, `Agent ${request.params.name} not found`);
-            }
-            return await Promise.resolve(agent.runCallback(request, extra));
-        });
-        this._agentHandlersInitialized = true;
+        this._agentTemplateHandlersInitialized = true;
     }
     resource(name, uriOrTemplate, ...rest) {
         let metadata;
@@ -401,9 +427,9 @@ class McpServer {
         this.setPromptRequestHandlers();
     }
     /**
-     * Registers a agent `name` (with a description) accepting the given arguments, which must be an object containing named properties associated with Zod schemas. When the client calls it, the function will be run with the parsed and validated arguments.
+     * Registers an agent template
      */
-    agent(name, description, configSchema, inputSchema, outputSchema, metadata, callback) {
+    agentTemplate(name, description, configSchema, inputSchema, outputSchema, callback) {
         if (this._registeredAgentTemplates[name]) {
             throw new Error(`Agent template ${name} is already registered`);
         }
@@ -412,8 +438,22 @@ class McpServer {
             configSchema: zod_1.z.object(configSchema),
             inputSchema: zod_1.z.object(inputSchema),
             outputSchema: zod_1.z.object(outputSchema),
-            metadata,
             callback: callback,
+        };
+        this.setAgentTemplateRequestHandlers();
+    }
+    /**
+     * Registers an agent
+     */
+    agent(name, description, inputSchema, outputSchema, callback) {
+        if (this._registeredAgents[name]) {
+            throw new Error(`Agent ${name} is already registered`);
+        }
+        this._registeredAgents[name] = {
+            description,
+            inputSchema: zod_1.z.object(inputSchema),
+            outputSchema: zod_1.z.object(outputSchema),
+            runCallback: callback,
         };
         this.setAgentRequestHandlers();
     }

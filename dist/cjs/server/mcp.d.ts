@@ -43,6 +43,8 @@ export declare class McpServer {
     private setPromptRequestHandlers;
     private _agentHandlersInitialized;
     private setAgentRequestHandlers;
+    private _agentTemplateHandlersInitialized;
+    private setAgentTemplateRequestHandlers;
     /**
      * Registers a resource `name` at a fixed URI, which will use the given callback to respond to read requests.
      */
@@ -92,9 +94,13 @@ export declare class McpServer {
      */
     prompt<Args extends PromptArgsRawShape>(name: string, description: string, argsSchema: Args, cb: PromptCallback<Args>): void;
     /**
-     * Registers a agent `name` (with a description) accepting the given arguments, which must be an object containing named properties associated with Zod schemas. When the client calls it, the function will be run with the parsed and validated arguments.
+     * Registers an agent template
      */
-    agent<Config extends ZodRawShape, Input extends ZodRawShape, Output extends ZodRawShape>(name: string, description: string, configSchema: Config, inputSchema: Input, outputSchema: Output, metadata: AgentTemplateMetadata, callback: AgentCreateCallback<Config, Input, Output>): void;
+    agentTemplate<Config extends ZodRawShape, Input extends ZodRawShape, Output extends ZodRawShape>(name: string, description: string, configSchema: Config, inputSchema: Input, outputSchema: Output, callback: AgentCreateCallback<Config, Input, Output>): void;
+    /**
+     * Registers an agent
+     */
+    agent<Input extends ZodRawShape, Output extends ZodRawShape>(name: string, description: string, inputSchema: Input, outputSchema: Output, callback: AgentRunCallback<Input, Output>): void;
 }
 /**
  * A callback to complete one variable within a resource template's URI template.
@@ -138,12 +144,6 @@ export declare class ResourceTemplate {
  * Parameters will include tool arguments, if applicable, as well as other request handler context.
  */
 export type ToolCallback<Args extends undefined | ZodRawShape = undefined> = Args extends ZodRawShape ? (args: z.objectOutputType<Args, ZodTypeAny>, extra: RequestHandlerExtra) => CallToolResult | Promise<CallToolResult> : (extra: RequestHandlerExtra) => CallToolResult | Promise<CallToolResult>;
-export type AgentTemplateMetadata = {
-    [x: string]: unknown;
-};
-export type AgentMetadata = {
-    [x: string]: unknown;
-};
 export type AgentCreateCallback<Config extends ZodRawShape, Input extends ZodRawShape, Output extends ZodRawShape> = (request: CreateAgentRequest & {
     params: {
         config: z.objectOutputType<Config, ZodTypeAny>;
@@ -151,12 +151,12 @@ export type AgentCreateCallback<Config extends ZodRawShape, Input extends ZodRaw
 }, extra: RequestHandlerExtra) => (CreateAgentResult & {
     agent: {
         run: AgentRunCallback<Input, Output>;
-        destroy: AgentDestroyCallback;
+        destroy?: AgentDestroyCallback;
     };
 }) | Promise<CreateAgentResult & {
     agent: {
         run: AgentRunCallback<Input, Output>;
-        destroy: AgentDestroyCallback;
+        destroy?: AgentDestroyCallback;
     };
 }>;
 export type AgentRunCallback<Input extends ZodRawShape, Output extends ZodRawShape> = (request: RunAgentRequest & {
