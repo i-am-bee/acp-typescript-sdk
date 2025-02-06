@@ -1,8 +1,10 @@
+import { context, propagation, SpanKind, trace } from "@opentelemetry/api";
 import { CancelledNotificationSchema, ErrorCode, McpError, PingRequestSchema, ProgressNotificationSchema, } from "../types.js";
 /**
  * The default request timeout, in miliseconds.
  */
 export const DEFAULT_REQUEST_TIMEOUT_MSEC = 60000;
+const TRACER_NAME = "acp";
 /**
  * Implements MCP protocol framing on top of a pluggable transport, including
  * features like request/response linking, notifications, and progress.
@@ -82,7 +84,7 @@ export class Protocol {
             .catch((error) => this._onerror(new Error(`Uncaught error in notification handler: ${error}`)));
     }
     _onrequest(request) {
-        var _a, _b;
+        var _a, _b, _c, _d;
         const handler = (_a = this._requestHandlers.get(request.method)) !== null && _a !== void 0 ? _a : this.fallbackRequestHandler;
         if (handler === undefined) {
             (_b = this._transport) === null || _b === void 0 ? void 0 : _b.send({
@@ -95,11 +97,22 @@ export class Protocol {
             }).catch((error) => this._onerror(new Error(`Failed to send an error response: ${error}`)));
             return;
         }
+        let activeContext = context.active();
+        if ((_d = (_c = request.params) === null || _c === void 0 ? void 0 : _c._meta) === null || _d === void 0 ? void 0 : _d.traceparent) {
+            activeContext = propagation.extract(context.active(), {
+                traceparent: request.params._meta.traceparent,
+                tracestate: request.params._meta.tracestate,
+            });
+        }
         const abortController = new AbortController();
         this._requestHandlerAbortControllers.set(request.id, abortController);
         // Starting with Promise.resolve() puts any synchronous errors into the monad as well.
         Promise.resolve()
-            .then(() => handler(request, { signal: abortController.signal }))
+            .then(() => {
+            return trace
+                .getTracer(TRACER_NAME)
+                .startActiveSpan(request.method, { kind: SpanKind.SERVER }, activeContext, (_) => handler(request, { signal: abortController.signal }));
+        })
             .then((result) => {
             var _a;
             if (abortController.signal.aborted) {
@@ -173,79 +186,96 @@ export class Protocol {
      * Do not use this method to emit notifications! Use notification() instead.
      */
     request(request, resultSchema, options) {
-        return new Promise((resolve, reject) => {
-            var _a, _b, _c, _d;
-            if (!this._transport) {
-                reject(new Error("Not connected"));
-                return;
-            }
-            if (((_a = this._options) === null || _a === void 0 ? void 0 : _a.enforceStrictCapabilities) === true) {
-                this.assertCapabilityForMethod(request.method);
-            }
-            (_b = options === null || options === void 0 ? void 0 : options.signal) === null || _b === void 0 ? void 0 : _b.throwIfAborted();
-            const messageId = this._requestMessageId++;
-            const jsonrpcRequest = {
-                ...request,
-                jsonrpc: "2.0",
-                id: messageId,
-            };
-            if (options === null || options === void 0 ? void 0 : options.onprogress) {
-                this._progressHandlers.set(messageId, options.onprogress);
-                jsonrpcRequest.params = {
-                    ...request.params,
-                    _meta: { progressToken: messageId },
-                };
-            }
-            let timeoutId = undefined;
-            this._responseHandlers.set(messageId, (response) => {
-                var _a;
-                if (timeoutId !== undefined) {
-                    clearTimeout(timeoutId);
-                }
-                if ((_a = options === null || options === void 0 ? void 0 : options.signal) === null || _a === void 0 ? void 0 : _a.aborted) {
+        return trace
+            .getTracer(TRACER_NAME)
+            .startActiveSpan(request.method, { kind: SpanKind.CLIENT }, () => {
+            return new Promise((resolve, reject) => {
+                var _a, _b, _c, _d, _e;
+                if (!this._transport) {
+                    reject(new Error("Not connected"));
                     return;
                 }
-                if (response instanceof Error) {
-                    return reject(response);
+                if (((_a = this._options) === null || _a === void 0 ? void 0 : _a.enforceStrictCapabilities) === true) {
+                    this.assertCapabilityForMethod(request.method);
                 }
-                try {
-                    const result = resultSchema.parse(response.result);
-                    resolve(result);
-                }
-                catch (error) {
-                    reject(error);
-                }
-            });
-            const cancel = (reason) => {
-                var _a;
-                this._responseHandlers.delete(messageId);
-                this._progressHandlers.delete(messageId);
-                (_a = this._transport) === null || _a === void 0 ? void 0 : _a.send({
+                (_b = options === null || options === void 0 ? void 0 : options.signal) === null || _b === void 0 ? void 0 : _b.throwIfAborted();
+                const messageId = this._requestMessageId++;
+                const jsonrpcRequest = {
+                    ...request,
                     jsonrpc: "2.0",
-                    method: "notifications/cancelled",
-                    params: {
-                        requestId: messageId,
-                        reason: String(reason),
-                    },
-                }).catch((error) => this._onerror(new Error(`Failed to send cancellation: ${error}`)));
-                reject(reason);
-            };
-            (_c = options === null || options === void 0 ? void 0 : options.signal) === null || _c === void 0 ? void 0 : _c.addEventListener("abort", () => {
-                var _a;
-                if (timeoutId !== undefined) {
-                    clearTimeout(timeoutId);
+                    id: messageId,
+                };
+                if (options === null || options === void 0 ? void 0 : options.onprogress) {
+                    this._progressHandlers.set(messageId, options.onprogress);
+                    jsonrpcRequest.params = {
+                        ...request.params,
+                        _meta: { progressToken: messageId },
+                    };
                 }
-                cancel((_a = options === null || options === void 0 ? void 0 : options.signal) === null || _a === void 0 ? void 0 : _a.reason);
-            });
-            const timeout = (_d = options === null || options === void 0 ? void 0 : options.timeout) !== null && _d !== void 0 ? _d : DEFAULT_REQUEST_TIMEOUT_MSEC;
-            timeoutId = setTimeout(() => cancel(new McpError(ErrorCode.RequestTimeout, "Request timed out", {
-                timeout,
-            })), timeout);
-            this._transport.send(jsonrpcRequest).catch((error) => {
-                if (timeoutId !== undefined) {
-                    clearTimeout(timeoutId);
+                const output = {};
+                propagation.inject(context.active(), output);
+                const { traceparent, tracestate } = output;
+                if (traceparent) {
+                    jsonrpcRequest.params = {
+                        ...jsonrpcRequest.params,
+                        _meta: {
+                            ...(_c = jsonrpcRequest.params) === null || _c === void 0 ? void 0 : _c._meta,
+                            traceparent,
+                            tracestate,
+                        },
+                    };
                 }
-                reject(error);
+                let timeoutId = undefined;
+                this._responseHandlers.set(messageId, (response) => {
+                    var _a;
+                    if (timeoutId !== undefined) {
+                        clearTimeout(timeoutId);
+                    }
+                    if ((_a = options === null || options === void 0 ? void 0 : options.signal) === null || _a === void 0 ? void 0 : _a.aborted) {
+                        return;
+                    }
+                    if (response instanceof Error) {
+                        return reject(response);
+                    }
+                    try {
+                        const result = resultSchema.parse(response.result);
+                        resolve(result);
+                    }
+                    catch (error) {
+                        reject(error);
+                    }
+                });
+                const cancel = (reason) => {
+                    var _a;
+                    this._responseHandlers.delete(messageId);
+                    this._progressHandlers.delete(messageId);
+                    (_a = this._transport) === null || _a === void 0 ? void 0 : _a.send({
+                        jsonrpc: "2.0",
+                        method: "notifications/cancelled",
+                        params: {
+                            requestId: messageId,
+                            reason: String(reason),
+                        },
+                    }).catch((error) => this._onerror(new Error(`Failed to send cancellation: ${error}`)));
+                    reject(reason);
+                };
+                (_d = options === null || options === void 0 ? void 0 : options.signal) === null || _d === void 0 ? void 0 : _d.addEventListener("abort", () => {
+                    var _a;
+                    if (timeoutId !== undefined) {
+                        clearTimeout(timeoutId);
+                    }
+                    cancel((_a = options === null || options === void 0 ? void 0 : options.signal) === null || _a === void 0 ? void 0 : _a.reason);
+                });
+                const timeout = (_e = options === null || options === void 0 ? void 0 : options.timeout) !== null && _e !== void 0 ? _e : DEFAULT_REQUEST_TIMEOUT_MSEC;
+                timeoutId = setTimeout(() => cancel(new McpError(ErrorCode.RequestTimeout, "Request timed out", {
+                    timeout,
+                })), timeout);
+                this._transport.send(jsonrpcRequest).catch((error) => {
+                    if (timeoutId !== undefined) {
+                        clearTimeout(timeoutId);
+                    }
+                    reject(error);
+                });
             });
         });
     }

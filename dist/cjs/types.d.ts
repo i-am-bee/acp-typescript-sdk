@@ -18,16 +18,31 @@ export declare const RequestSchema: z.ZodObject<{
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -35,16 +50,31 @@ export declare const RequestSchema: z.ZodObject<{
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -52,16 +82,31 @@ export declare const RequestSchema: z.ZodObject<{
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, "strip", z.ZodTypeAny, {
@@ -72,16 +117,31 @@ export declare const RequestSchema: z.ZodObject<{
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }, {
@@ -92,16 +152,31 @@ export declare const RequestSchema: z.ZodObject<{
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }>;
@@ -174,16 +249,31 @@ export declare const JSONRPCRequestSchema: z.ZodObject<z.objectUtil.extendShape<
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -191,16 +281,31 @@ export declare const JSONRPCRequestSchema: z.ZodObject<z.objectUtil.extendShape<
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -208,16 +313,31 @@ export declare const JSONRPCRequestSchema: z.ZodObject<z.objectUtil.extendShape<
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }>, "strict", z.ZodTypeAny, {
@@ -230,16 +350,31 @@ export declare const JSONRPCRequestSchema: z.ZodObject<z.objectUtil.extendShape<
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }, {
@@ -252,16 +387,31 @@ export declare const JSONRPCRequestSchema: z.ZodObject<z.objectUtil.extendShape<
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }>;
@@ -414,16 +564,31 @@ export declare const JSONRPCMessageSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -431,16 +596,31 @@ export declare const JSONRPCMessageSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -448,16 +628,31 @@ export declare const JSONRPCMessageSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }>, "strict", z.ZodTypeAny, {
@@ -470,16 +665,31 @@ export declare const JSONRPCMessageSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }, {
@@ -492,16 +702,31 @@ export declare const JSONRPCMessageSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }>, z.ZodObject<z.objectUtil.extendShape<{
@@ -841,16 +1066,31 @@ export declare const InitializeRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -858,16 +1098,31 @@ export declare const InitializeRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -875,16 +1130,31 @@ export declare const InitializeRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -895,16 +1165,31 @@ export declare const InitializeRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -1012,16 +1297,31 @@ export declare const InitializeRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -1129,16 +1429,31 @@ export declare const InitializeRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -1267,6 +1582,11 @@ export declare const InitializeRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -1298,6 +1618,11 @@ export declare const InitializeRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -2752,16 +3077,31 @@ export declare const PingRequestSchema: z.ZodObject<z.objectUtil.extendShape<{
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -2769,16 +3109,31 @@ export declare const PingRequestSchema: z.ZodObject<z.objectUtil.extendShape<{
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -2786,16 +3141,31 @@ export declare const PingRequestSchema: z.ZodObject<z.objectUtil.extendShape<{
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -2808,16 +3178,31 @@ export declare const PingRequestSchema: z.ZodObject<z.objectUtil.extendShape<{
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }, {
@@ -2828,16 +3213,31 @@ export declare const PingRequestSchema: z.ZodObject<z.objectUtil.extendShape<{
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }>;
@@ -3065,16 +3465,31 @@ export declare const PaginatedRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -3082,16 +3497,31 @@ export declare const PaginatedRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -3099,16 +3529,31 @@ export declare const PaginatedRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -3118,16 +3563,31 @@ export declare const PaginatedRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -3141,16 +3601,31 @@ export declare const PaginatedRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -3164,16 +3639,31 @@ export declare const PaginatedRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -3190,16 +3680,31 @@ export declare const PaginatedRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -3216,16 +3721,31 @@ export declare const PaginatedRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -3531,16 +4051,31 @@ export declare const ListResourcesRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -3548,16 +4083,31 @@ export declare const ListResourcesRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -3565,16 +4115,31 @@ export declare const ListResourcesRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -3584,16 +4149,31 @@ export declare const ListResourcesRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -3607,16 +4187,31 @@ export declare const ListResourcesRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -3630,16 +4225,31 @@ export declare const ListResourcesRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -3658,16 +4268,31 @@ export declare const ListResourcesRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -3684,16 +4309,31 @@ export declare const ListResourcesRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -3946,16 +4586,31 @@ export declare const ListResourceTemplatesRequestSchema: z.ZodObject<z.objectUti
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -3963,16 +4618,31 @@ export declare const ListResourceTemplatesRequestSchema: z.ZodObject<z.objectUti
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -3980,16 +4650,31 @@ export declare const ListResourceTemplatesRequestSchema: z.ZodObject<z.objectUti
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -3999,16 +4684,31 @@ export declare const ListResourceTemplatesRequestSchema: z.ZodObject<z.objectUti
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4022,16 +4722,31 @@ export declare const ListResourceTemplatesRequestSchema: z.ZodObject<z.objectUti
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4045,16 +4760,31 @@ export declare const ListResourceTemplatesRequestSchema: z.ZodObject<z.objectUti
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4073,16 +4803,31 @@ export declare const ListResourceTemplatesRequestSchema: z.ZodObject<z.objectUti
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4099,16 +4844,31 @@ export declare const ListResourceTemplatesRequestSchema: z.ZodObject<z.objectUti
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4361,16 +5121,31 @@ export declare const ReadResourceRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -4378,16 +5153,31 @@ export declare const ReadResourceRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -4395,16 +5185,31 @@ export declare const ReadResourceRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -4415,16 +5220,31 @@ export declare const ReadResourceRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4437,16 +5257,31 @@ export declare const ReadResourceRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4459,16 +5294,31 @@ export declare const ReadResourceRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4484,6 +5334,11 @@ export declare const ReadResourceRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -4497,6 +5352,11 @@ export declare const ReadResourceRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -4831,16 +5691,31 @@ export declare const SubscribeRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -4848,16 +5723,31 @@ export declare const SubscribeRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -4865,16 +5755,31 @@ export declare const SubscribeRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -4885,16 +5790,31 @@ export declare const SubscribeRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4907,16 +5827,31 @@ export declare const SubscribeRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4929,16 +5864,31 @@ export declare const SubscribeRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -4954,6 +5904,11 @@ export declare const SubscribeRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -4967,6 +5922,11 @@ export declare const SubscribeRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -4984,16 +5944,31 @@ export declare const UnsubscribeRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -5001,16 +5976,31 @@ export declare const UnsubscribeRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -5018,16 +6008,31 @@ export declare const UnsubscribeRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -5038,16 +6043,31 @@ export declare const UnsubscribeRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -5060,16 +6080,31 @@ export declare const UnsubscribeRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -5082,16 +6117,31 @@ export declare const UnsubscribeRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -5107,6 +6157,11 @@ export declare const UnsubscribeRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -5120,6 +6175,11 @@ export declare const UnsubscribeRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -5411,16 +6471,31 @@ export declare const ListPromptsRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -5428,16 +6503,31 @@ export declare const ListPromptsRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -5445,16 +6535,31 @@ export declare const ListPromptsRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -5464,16 +6569,31 @@ export declare const ListPromptsRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -5487,16 +6607,31 @@ export declare const ListPromptsRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -5510,16 +6645,31 @@ export declare const ListPromptsRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -5538,16 +6688,31 @@ export declare const ListPromptsRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -5564,16 +6729,31 @@ export declare const ListPromptsRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -6105,16 +7285,31 @@ export declare const GetPromptRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -6122,16 +7317,31 @@ export declare const GetPromptRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -6139,16 +7349,31 @@ export declare const GetPromptRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -6159,16 +7384,31 @@ export declare const GetPromptRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -6185,16 +7425,31 @@ export declare const GetPromptRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -6211,16 +7466,31 @@ export declare const GetPromptRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -6240,6 +7510,11 @@ export declare const GetPromptRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         arguments?: Record<string, string> | undefined;
     } & {
@@ -6254,6 +7529,11 @@ export declare const GetPromptRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         arguments?: Record<string, string> | undefined;
     } & {
@@ -10488,16 +11768,31 @@ export declare const ListToolsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -10505,16 +11800,31 @@ export declare const ListToolsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -10522,16 +11832,31 @@ export declare const ListToolsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -10541,16 +11866,31 @@ export declare const ListToolsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -10564,16 +11904,31 @@ export declare const ListToolsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -10587,16 +11942,31 @@ export declare const ListToolsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -10615,16 +11985,31 @@ export declare const ListToolsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -10641,16 +12026,31 @@ export declare const ListToolsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -12843,16 +14243,31 @@ export declare const CallToolRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -12860,16 +14275,31 @@ export declare const CallToolRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -12877,16 +14307,31 @@ export declare const CallToolRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -12897,16 +14342,31 @@ export declare const CallToolRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -12917,16 +14377,31 @@ export declare const CallToolRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -12937,16 +14412,31 @@ export declare const CallToolRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -12960,6 +14450,11 @@ export declare const CallToolRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         arguments?: Record<string, unknown> | undefined;
     } & {
@@ -12974,6 +14469,11 @@ export declare const CallToolRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         arguments?: Record<string, unknown> | undefined;
     } & {
@@ -13036,16 +14536,31 @@ export declare const SetLevelRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -13053,16 +14568,31 @@ export declare const SetLevelRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -13070,16 +14600,31 @@ export declare const SetLevelRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -13090,16 +14635,31 @@ export declare const SetLevelRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -13112,16 +14672,31 @@ export declare const SetLevelRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -13134,16 +14709,31 @@ export declare const SetLevelRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -13159,6 +14749,11 @@ export declare const SetLevelRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -13172,6 +14767,11 @@ export declare const SetLevelRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -13564,16 +15164,31 @@ export declare const CreateMessageRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -13581,16 +15196,31 @@ export declare const CreateMessageRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -13598,16 +15228,31 @@ export declare const CreateMessageRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -13618,16 +15263,31 @@ export declare const CreateMessageRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         messages: z.ZodArray<z.ZodObject<{
@@ -13908,16 +15568,31 @@ export declare const CreateMessageRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         messages: z.ZodArray<z.ZodObject<{
@@ -14198,16 +15873,31 @@ export declare const CreateMessageRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         messages: z.ZodArray<z.ZodObject<{
@@ -14543,6 +16233,11 @@ export declare const CreateMessageRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         systemPrompt?: string | undefined;
         includeContext?: "none" | "thisServer" | "allServers" | undefined;
@@ -14646,6 +16341,11 @@ export declare const CreateMessageRequestSchema: z.ZodObject<z.objectUtil.extend
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         systemPrompt?: string | undefined;
         includeContext?: "none" | "thisServer" | "allServers" | undefined;
@@ -14941,16 +16641,31 @@ export declare const CompleteRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -14958,16 +16673,31 @@ export declare const CompleteRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -14975,16 +16705,31 @@ export declare const CompleteRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -14995,16 +16740,31 @@ export declare const CompleteRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         ref: z.ZodUnion<[z.ZodObject<{
@@ -15081,16 +16841,31 @@ export declare const CompleteRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         ref: z.ZodUnion<[z.ZodObject<{
@@ -15167,16 +16942,31 @@ export declare const CompleteRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         ref: z.ZodUnion<[z.ZodObject<{
@@ -15274,6 +17064,11 @@ export declare const CompleteRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -15305,6 +17100,11 @@ export declare const CompleteRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -15495,16 +17295,31 @@ export declare const ListRootsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -15512,16 +17327,31 @@ export declare const ListRootsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -15529,16 +17359,31 @@ export declare const ListRootsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -15551,16 +17396,31 @@ export declare const ListRootsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }, {
@@ -15571,16 +17431,31 @@ export declare const ListRootsRequestSchema: z.ZodObject<z.objectUtil.extendShap
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }>;
@@ -15889,16 +17764,31 @@ export declare const ListAgentTemplatesRequestSchema: z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -15906,16 +17796,31 @@ export declare const ListAgentTemplatesRequestSchema: z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -15923,16 +17828,31 @@ export declare const ListAgentTemplatesRequestSchema: z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -15942,16 +17862,31 @@ export declare const ListAgentTemplatesRequestSchema: z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -15965,16 +17900,31 @@ export declare const ListAgentTemplatesRequestSchema: z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -15988,16 +17938,31 @@ export declare const ListAgentTemplatesRequestSchema: z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -16016,16 +17981,31 @@ export declare const ListAgentTemplatesRequestSchema: z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -16042,16 +18022,31 @@ export declare const ListAgentTemplatesRequestSchema: z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -16656,16 +18651,31 @@ export declare const ListAgentsRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -16673,16 +18683,31 @@ export declare const ListAgentsRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -16690,16 +18715,31 @@ export declare const ListAgentsRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -16709,16 +18749,31 @@ export declare const ListAgentsRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -16732,16 +18787,31 @@ export declare const ListAgentsRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -16755,16 +18825,31 @@ export declare const ListAgentsRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -16783,16 +18868,31 @@ export declare const ListAgentsRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -16809,16 +18909,31 @@ export declare const ListAgentsRequestSchema: z.ZodObject<z.objectUtil.extendSha
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -17197,16 +19312,31 @@ export declare const CreateAgentRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -17214,16 +19344,31 @@ export declare const CreateAgentRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -17231,16 +19376,31 @@ export declare const CreateAgentRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -17251,16 +19411,31 @@ export declare const CreateAgentRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         templateName: z.ZodString;
@@ -17271,16 +19446,31 @@ export declare const CreateAgentRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         templateName: z.ZodString;
@@ -17291,16 +19481,31 @@ export declare const CreateAgentRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         templateName: z.ZodString;
@@ -17315,6 +19520,11 @@ export declare const CreateAgentRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -17329,6 +19539,11 @@ export declare const CreateAgentRequestSchema: z.ZodObject<z.objectUtil.extendSh
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -17686,16 +19901,31 @@ export declare const DestroyAgentRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -17703,16 +19933,31 @@ export declare const DestroyAgentRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -17720,16 +19965,31 @@ export declare const DestroyAgentRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -17740,16 +20000,31 @@ export declare const DestroyAgentRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -17759,16 +20034,31 @@ export declare const DestroyAgentRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -17778,16 +20068,31 @@ export declare const DestroyAgentRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -17800,6 +20105,11 @@ export declare const DestroyAgentRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -17813,6 +20123,11 @@ export declare const DestroyAgentRequestSchema: z.ZodObject<z.objectUtil.extendS
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -17849,16 +20164,31 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -17866,16 +20196,31 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -17883,16 +20228,31 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -17903,16 +20263,31 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -17923,16 +20298,31 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -17943,16 +20333,31 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -17967,6 +20372,11 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -17981,6 +20391,11 @@ export declare const RunAgentRequestSchema: z.ZodObject<z.objectUtil.extendShape
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -18060,16 +20475,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -18077,16 +20507,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -18094,16 +20539,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -18116,16 +20576,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }, {
@@ -18136,16 +20611,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }>, z.ZodObject<z.objectUtil.extendShape<{
@@ -18156,16 +20646,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -18173,16 +20678,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -18190,16 +20710,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -18210,16 +20745,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -18327,16 +20877,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -18444,16 +21009,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -18582,6 +21162,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -18613,6 +21198,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -18626,16 +21216,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -18643,16 +21248,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -18660,16 +21280,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -18680,16 +21315,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         ref: z.ZodUnion<[z.ZodObject<{
@@ -18766,16 +21416,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         ref: z.ZodUnion<[z.ZodObject<{
@@ -18852,16 +21517,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         ref: z.ZodUnion<[z.ZodObject<{
@@ -18959,6 +21639,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -18990,6 +21675,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -19003,16 +21693,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19020,16 +21725,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19037,16 +21757,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -19057,16 +21792,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19079,16 +21829,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19101,16 +21866,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19126,6 +21906,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -19139,6 +21924,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -19152,16 +21942,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19169,16 +21974,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19186,16 +22006,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -19206,16 +22041,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19232,16 +22082,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19258,16 +22123,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19287,6 +22167,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         arguments?: Record<string, string> | undefined;
     } & {
@@ -19301,6 +22186,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         arguments?: Record<string, string> | undefined;
     } & {
@@ -19315,16 +22205,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19332,16 +22237,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19349,16 +22269,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -19368,16 +22303,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19391,16 +22341,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19414,16 +22379,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19442,16 +22422,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19468,16 +22463,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19494,16 +22504,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19511,16 +22536,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19528,16 +22568,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -19547,16 +22602,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19570,16 +22640,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19593,16 +22678,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19621,16 +22721,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19647,16 +22762,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19673,16 +22803,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19690,16 +22835,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19707,16 +22867,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -19726,16 +22901,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19749,16 +22939,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19772,16 +22977,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19800,16 +23020,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19826,16 +23061,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19852,16 +23102,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19869,16 +23134,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -19886,16 +23166,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -19906,16 +23201,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19928,16 +23238,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19950,16 +23275,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -19975,6 +23315,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -19988,6 +23333,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -20001,16 +23351,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20018,16 +23383,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20035,16 +23415,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -20055,16 +23450,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20077,16 +23487,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20099,16 +23524,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20124,6 +23564,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -20137,6 +23582,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -20150,16 +23600,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20167,16 +23632,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20184,16 +23664,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -20204,16 +23699,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20226,16 +23736,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20248,16 +23773,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20273,6 +23813,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -20286,6 +23831,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -20299,16 +23849,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20316,16 +23881,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20333,16 +23913,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -20353,16 +23948,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -20373,16 +23983,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -20393,16 +24018,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -20416,6 +24056,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         arguments?: Record<string, unknown> | undefined;
     } & {
@@ -20430,6 +24075,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         arguments?: Record<string, unknown> | undefined;
     } & {
@@ -20444,16 +24094,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20461,16 +24126,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20478,16 +24158,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -20497,16 +24192,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20520,16 +24230,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20543,16 +24268,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20571,16 +24311,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20597,16 +24352,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20623,16 +24393,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20640,16 +24425,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20657,16 +24457,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -20676,16 +24491,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20699,16 +24529,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20722,16 +24567,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20750,16 +24610,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20776,16 +24651,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20802,16 +24692,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20819,16 +24724,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20836,16 +24756,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -20855,16 +24790,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20878,16 +24828,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20901,16 +24866,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20929,16 +24909,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20955,16 +24950,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         /**
@@ -20981,16 +24991,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -20998,16 +25023,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -21015,16 +25055,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -21035,16 +25090,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         templateName: z.ZodString;
@@ -21055,16 +25125,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         templateName: z.ZodString;
@@ -21075,16 +25160,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         templateName: z.ZodString;
@@ -21099,6 +25199,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -21113,6 +25218,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -21126,16 +25236,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -21143,16 +25268,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -21160,16 +25300,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -21180,16 +25335,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -21199,16 +25369,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -21218,16 +25403,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -21240,6 +25440,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -21253,6 +25458,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -21266,16 +25476,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -21283,16 +25508,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -21300,16 +25540,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -21320,16 +25575,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -21340,16 +25610,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -21360,16 +25645,31 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         name: z.ZodString;
@@ -21384,6 +25684,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -21398,6 +25703,11 @@ export declare const ClientRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
     } & {
         [k: string]: unknown;
@@ -21974,16 +26284,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -21991,16 +26316,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -22008,16 +26348,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -22030,16 +26385,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }, {
@@ -22050,16 +26420,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }>, z.ZodObject<z.objectUtil.extendShape<{
@@ -22070,16 +26455,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -22087,16 +26487,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -22104,16 +26519,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -22124,16 +26554,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         messages: z.ZodArray<z.ZodObject<{
@@ -22414,16 +26859,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         messages: z.ZodArray<z.ZodObject<{
@@ -22704,16 +27164,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, {
         messages: z.ZodArray<z.ZodObject<{
@@ -23049,6 +27524,11 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         systemPrompt?: string | undefined;
         includeContext?: "none" | "thisServer" | "allServers" | undefined;
@@ -23152,6 +27632,11 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough"> | undefined;
         systemPrompt?: string | undefined;
         includeContext?: "none" | "thisServer" | "allServers" | undefined;
@@ -23203,16 +27688,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -23220,16 +27720,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
         _meta: z.ZodOptional<z.ZodObject<{
@@ -23237,16 +27752,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough">>>;
 }, {
@@ -23259,16 +27789,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }, {
@@ -23279,16 +27824,31 @@ export declare const ServerRequestSchema: z.ZodUnion<[z.ZodObject<z.objectUtil.e
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, "passthrough", z.ZodTypeAny, z.objectOutputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">, z.objectInputType<{
             /**
              * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
              */
             progressToken: z.ZodOptional<z.ZodUnion<[z.ZodString, z.ZodNumber]>>;
+            /**
+             * Opentelemetry propagation
+             */
+            traceparent: z.ZodOptional<z.ZodString>;
+            tracestate: z.ZodOptional<z.ZodString>;
         }, z.ZodTypeAny, "passthrough">>>;
     }, z.ZodTypeAny, "passthrough"> | undefined;
 }>]>;
