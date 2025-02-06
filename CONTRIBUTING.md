@@ -1,11 +1,11 @@
-# Contributing to MCP TypeScript SDK
+# Contributing to ACP TypeScript SDK
 
-We welcome contributions to the Model Context Protocol TypeScript SDK! This document outlines the process for contributing to the project.
+We welcome contributions to the Agent Communication Protocol TypeScript SDK! This document outlines the process for contributing to the project.
 
 ## Getting Started
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/YOUR-USERNAME/typescript-sdk.git`
+2. Clone your fork: `git clone https://github.com/YOUR-USERNAME/acp-typescript-sdk.git`
 3. Install dependencies: `npm install`
 4. Build the project: `npm run build`
 5. Run tests: `npm test`
@@ -37,7 +37,7 @@ This project follows our [Code of Conduct](CODE_OF_CONDUCT.md). Please review it
 
 ## Reporting Issues
 
-- Use the [GitHub issue tracker](https://github.com/modelcontextprotocol/typescript-sdk/issues)
+- Use the [GitHub issue tracker](https://github.com/i-am-bee/acp-typescript-sdk/issues)
 - Search existing issues before creating a new one
 - Provide clear reproduction steps
 
