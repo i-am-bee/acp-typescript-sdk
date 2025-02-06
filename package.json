@@ -46,6 +46,7 @@
     "client": "tsx src/cli.ts client"
   },
   "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
     "content-type": "^1.0.5",
     "eventsource": "^3.0.2",
     "raw-body": "^3.0.0",

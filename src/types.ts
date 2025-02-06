@@ -28,6 +28,11 @@ const BaseRequestParamsSchema = z
            * If specified, the caller is requesting out-of-band progress notifications for this request (as represented by notifications/progress). The value of this parameter is an opaque token that will be attached to any subsequent notifications. The receiver is not obligated to provide these notifications.
            */
           progressToken: z.optional(ProgressTokenSchema),
+          /**
+           * Opentelemetry propagation
+           */
+          traceparent: z.optional(z.string()),
+          tracestate: z.optional(z.string()),
         })
         .passthrough(),
     ),
