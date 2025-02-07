@@ -10,6 +10,7 @@ import {
   ZodType,
   ZodTypeDef,
   ZodOptional,
+  SomeZodObject,
 } from "zod";
 import {
   Implementation,
@@ -39,7 +40,7 @@ import {
   ReadResourceResult,
   ListAgentTemplatesRequestSchema,
   RunAgentRequestSchema,
-  AgentTemplate,
+  AgentTemplate as MCPAgentTemplate,
   ListAgentTemplatesResult,
   RunAgentResult,
   CreateAgentRequestSchema,
@@ -48,7 +49,7 @@ import {
   DestroyAgentResult,
   RunAgentRequest,
   CreateAgentRequest,
-  Agent,
+  Agent as MCPAgent,
   ListAgentsRequestSchema,
   ListAgentsResult,
 } from "../types.js";
@@ -75,10 +76,10 @@ export class McpServer {
   private _registeredTools: { [name: string]: RegisteredTool } = {};
   private _registeredPrompts: { [name: string]: RegisteredPrompt } = {};
   private _registeredAgents: {
-    [name: string]: RegisteredAgent;
+    [name: string]: Agent;
   } = {};
   private _registeredAgentTemplates: {
-    [name: string]: RegisteredAgentTemplate;
+    [name: string]: AgentTemplate;
   } = {};
 
   constructor(serverInfo: Implementation, options?: ServerOptions) {
@@ -482,15 +483,19 @@ export class McpServer {
       ListAgentsRequestSchema,
       (): ListAgentsResult => ({
         agents: Object.entries(this._registeredAgents).map(
-          ([name, agent]): Agent => {
+          ([name, agent]): MCPAgent => {
             return {
               name,
               description: agent.description,
               inputSchema: agent.inputSchema
-                ? (zodToJsonSchema(agent.inputSchema) as Agent["inputSchema"])
+                ? (zodToJsonSchema(
+                    agent.inputSchema,
+                  ) as MCPAgent["inputSchema"])
                 : EMPTY_OBJECT_JSON_SCHEMA,
               outputSchema: agent.outputSchema
-                ? (zodToJsonSchema(agent.outputSchema) as Agent["outputSchema"])
+                ? (zodToJsonSchema(
+                    agent.outputSchema,
+                  ) as MCPAgent["outputSchema"])
                 : EMPTY_OBJECT_JSON_SCHEMA,
             };
           },
@@ -509,7 +514,9 @@ export class McpServer {
           );
         }
 
-        return await Promise.resolve(agent.runCallback(request, extra));
+        return {
+          output: await agent.runCallback(request, extra),
+        };
       },
     );
 
@@ -543,24 +550,24 @@ export class McpServer {
       ListAgentTemplatesRequestSchema,
       (): ListAgentTemplatesResult => ({
         agentTemplates: Object.entries(this._registeredAgentTemplates).map(
-          ([name, template]): AgentTemplate => {
+          ([name, template]): MCPAgentTemplate => {
             return {
               name,
               description: template.description,
               configSchema: template.configSchema
                 ? (zodToJsonSchema(
                     template.configSchema,
-                  ) as AgentTemplate["configSchema"])
+                  ) as MCPAgentTemplate["configSchema"])
                 : EMPTY_OBJECT_JSON_SCHEMA,
               inputSchema: template.inputSchema
                 ? (zodToJsonSchema(
                     template.configSchema,
-                  ) as AgentTemplate["inputSchema"])
+                  ) as MCPAgentTemplate["inputSchema"])
                 : EMPTY_OBJECT_JSON_SCHEMA,
               outputSchema: template.outputSchema
                 ? (zodToJsonSchema(
                     template.configSchema,
-                  ) as AgentTemplate["outputSchema"])
+                  ) as MCPAgentTemplate["outputSchema"])
                 : EMPTY_OBJECT_JSON_SCHEMA,
             };
           },
@@ -580,32 +587,32 @@ export class McpServer {
           );
         }
 
-        const { agent, ...rest } = await template.callback(request, extra);
+        const agent = await template.createCallback(request, extra);
 
-        const registeredAgent: RegisteredAgent = {
+        const registeredAgent: Agent = {
+          name: agent.name,
           description: agent.description,
           inputSchema: template.inputSchema,
           outputSchema: template.outputSchema,
-          runCallback: agent.run,
-          destroyCallback: agent.destroy,
+          runCallback: agent.runCallback,
+          destroyCallback: agent.destroyCallback,
         };
 
         this._registeredAgents[agent.name] = registeredAgent;
 
         return await Promise.resolve({
-          ...rest,
           agent: {
             name: agent.name,
             description: agent.description,
             inputSchema: agent.inputSchema
               ? (zodToJsonSchema(
                   registeredAgent.inputSchema,
-                ) as Agent["inputSchema"])
+                ) as MCPAgent["inputSchema"])
               : EMPTY_OBJECT_JSON_SCHEMA,
             outputSchema: agent.outputSchema
               ? (zodToJsonSchema(
                   registeredAgent.outputSchema,
-                ) as Agent["outputSchema"])
+                ) as MCPAgent["outputSchema"])
               : EMPTY_OBJECT_JSON_SCHEMA,
           },
         });
@@ -623,16 +630,20 @@ export class McpServer {
           );
         }
 
-        if (!agent.destroyCallback)
+        if (agent.destroyCallback === null)
           throw new McpError(
             ErrorCode.InvalidParams,
             `Agent ${request.params.name} cannot be destroyed`,
           );
 
-        const result = await agent.destroyCallback(extra);
-        delete this._registeredAgents[request.params.name];
-
-        return await Promise.resolve(result ?? {});
+        try {
+          if (agent.destroyCallback) await agent.destroyCallback(extra);
+        } catch {
+          // TODO log error
+        } finally {
+          delete this._registeredAgents[request.params.name];
+        }
+        return {};
       },
     );
 
@@ -825,30 +836,31 @@ export class McpServer {
    * Registers an agent template
    */
   agentTemplate<
-    Config extends ZodRawShape,
-    Input extends ZodRawShape,
-    Output extends ZodRawShape,
+    Config extends SomeZodObject,
+    Input extends SomeZodObject,
+    Output extends SomeZodObject,
   >(
     name: string,
     description: string,
     configSchema: Config,
     inputSchema: Input,
     outputSchema: Output,
-    callback: AgentCreateCallback<Config, Input, Output>,
+    createCallback: AgentCreateCallback<Config, Input, Output>,
   ): void {
     if (this._registeredAgentTemplates[name]) {
       throw new Error(`Agent template ${name} is already registered`);
     }
 
     this._registeredAgentTemplates[name] = {
+      name,
       description,
-      configSchema: z.object(configSchema),
-      inputSchema: z.object(inputSchema),
-      outputSchema: z.object(outputSchema),
-      callback: callback as AgentCreateCallback<
-        ZodRawShape,
-        ZodRawShape,
-        ZodRawShape
+      configSchema,
+      inputSchema,
+      outputSchema,
+      createCallback: createCallback as unknown as AgentCreateCallback<
+        SomeZodObject,
+        SomeZodObject,
+        SomeZodObject
       >,
     };
 
@@ -858,22 +870,26 @@ export class McpServer {
   /**
    * Registers an agent
    */
-  agent<Input extends ZodRawShape, Output extends ZodRawShape>(
+  agent<Input extends SomeZodObject, Output extends SomeZodObject>(
     name: string,
     description: string,
     inputSchema: Input,
     outputSchema: Output,
-    callback: AgentRunCallback<Input, Output>,
+    runCallback: AgentRunCallback<Input, Output>,
   ): void {
     if (this._registeredAgents[name]) {
       throw new Error(`Agent ${name} is already registered`);
     }
 
     this._registeredAgents[name] = {
+      name,
       description,
-      inputSchema: z.object(inputSchema),
-      outputSchema: z.object(outputSchema),
-      runCallback: callback as AgentRunCallback<ZodRawShape, ZodRawShape>,
+      inputSchema,
+      outputSchema,
+      runCallback: runCallback as unknown as AgentRunCallback<
+        SomeZodObject,
+        SomeZodObject
+      >,
       destroyCallback: null,
     };
 
@@ -961,64 +977,57 @@ type RegisteredTool = {
 };
 
 export type AgentCreateCallback<
-  Config extends ZodRawShape,
-  Input extends ZodRawShape,
-  Output extends ZodRawShape,
+  Config extends SomeZodObject,
+  Input extends SomeZodObject,
+  Output extends SomeZodObject,
 > = (
   request: CreateAgentRequest & {
     params: {
-      config: z.objectOutputType<Config, ZodTypeAny>;
+      config: z.infer<Config>;
     };
   },
   extra: RequestHandlerExtra,
-) =>
-  | (CreateAgentResult & {
-      agent: {
-        run: AgentRunCallback<Input, Output>;
-        destroy: AgentDestroyCallback;
-      };
-    })
-  | Promise<
-      CreateAgentResult & {
-        agent: {
-          run: AgentRunCallback<Input, Output>;
-          destroy: AgentDestroyCallback;
-        };
-      }
-    >;
+) => Agent<Input, Output> | Promise<Agent<Input, Output>>;
 
 export type AgentRunCallback<
-  Input extends ZodRawShape,
-  Output extends ZodRawShape,
+  Input extends SomeZodObject,
+  Output extends SomeZodObject,
 > = (
   request: RunAgentRequest & {
     params: {
-      input: z.objectOutputType<Input, ZodTypeAny>;
+      input: z.infer<Input>;
     };
   },
   extra: RequestHandlerExtra,
-) =>
-  | (RunAgentResult & { output: Output })
-  | Promise<RunAgentResult & { output: Output }>;
+) => z.infer<Output> | Promise<z.infer<Output>>;
 
 export type AgentDestroyCallback = (
   extra: RequestHandlerExtra,
-) => DestroyAgentResult | Promise<DestroyAgentResult>;
+) => void | Promise<void>;
 
-type RegisteredAgentTemplate = {
+export type AgentTemplate<
+  Config extends SomeZodObject = SomeZodObject,
+  Input extends SomeZodObject = SomeZodObject,
+  Output extends SomeZodObject = SomeZodObject,
+> = {
+  name: string;
   description?: string;
-  configSchema: AnyZodObject;
-  inputSchema: AnyZodObject;
-  outputSchema: AnyZodObject;
-  callback: AgentCreateCallback<ZodRawShape, ZodRawShape, ZodRawShape>;
+  configSchema: Config;
+  inputSchema: Input;
+  outputSchema: Output;
+  createCallback: AgentCreateCallback<Config, Input, Output>;
 };
 
-type RegisteredAgent = {
+export type Agent<
+  Input extends SomeZodObject = SomeZodObject,
+  Output extends SomeZodObject = SomeZodObject,
+> = {
+  name: string;
   description?: string;
-  inputSchema: AnyZodObject;
-  outputSchema: AnyZodObject;
-  runCallback: AgentRunCallback<ZodRawShape, ZodRawShape>;
-  destroyCallback: AgentDestroyCallback | null;
+  inputSchema: Input;
+  outputSchema: Output;
+  runCallback: AgentRunCallback<Input, Output>;
+  destroyCallback?: AgentDestroyCallback | null;
 };
 
 const EMPTY_OBJECT_JSON_SCHEMA = {
