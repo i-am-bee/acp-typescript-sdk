@@ -482,24 +482,30 @@ export class McpServer {
     this.server.setRequestHandler(
       ListAgentsRequestSchema,
       (): ListAgentsResult => ({
-        agents: Object.entries(this._registeredAgents).map(
-          ([name, agent]): MCPAgent => {
-            return {
-              name,
-              description: agent.description,
-              inputSchema: agent.inputSchema
-                ? (zodToJsonSchema(
-                    agent.inputSchema,
-                  ) as MCPAgent["inputSchema"])
-                : EMPTY_OBJECT_JSON_SCHEMA,
-              outputSchema: agent.outputSchema
-                ? (zodToJsonSchema(
-                    agent.outputSchema,
-                  ) as MCPAgent["outputSchema"])
-                : EMPTY_OBJECT_JSON_SCHEMA,
-            };
-          },
-        ),
+        agents: Object.values(this._registeredAgents).map((agent): MCPAgent => {
+          const {
+            name,
+            description,
+            inputSchema,
+            outputSchema,
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            runCallback,
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            destroyCallback,
+            ...rest
+          } = agent;
+          return {
+            ...rest,
+            name,
+            description,
+            inputSchema: zodToJsonSchema(
+              inputSchema,
+            ) as MCPAgent["inputSchema"],
+            outputSchema: zodToJsonSchema(
+              outputSchema,
+            ) as MCPAgent["outputSchema"],
+          };
+        }),
       }),
     );
 
@@ -549,26 +555,31 @@ export class McpServer {
     this.server.setRequestHandler(
       ListAgentTemplatesRequestSchema,
       (): ListAgentTemplatesResult => ({
-        agentTemplates: Object.entries(this._registeredAgentTemplates).map(
-          ([name, template]): MCPAgentTemplate => {
-            return {
+        agentTemplates: Object.values(this._registeredAgentTemplates).map(
+          (template): MCPAgentTemplate => {
+            const {
               name,
-              description: template.description,
-              configSchema: template.configSchema
-                ? (zodToJsonSchema(
-                    template.configSchema,
-                  ) as MCPAgentTemplate["configSchema"])
-                : EMPTY_OBJECT_JSON_SCHEMA,
-              inputSchema: template.inputSchema
-                ? (zodToJsonSchema(
-                    template.configSchema,
-                  ) as MCPAgentTemplate["inputSchema"])
-                : EMPTY_OBJECT_JSON_SCHEMA,
-              outputSchema: template.outputSchema
-                ? (zodToJsonSchema(
-                    template.configSchema,
-                  ) as MCPAgentTemplate["outputSchema"])
-                : EMPTY_OBJECT_JSON_SCHEMA,
+              description,
+              configSchema,
+              inputSchema,
+              outputSchema,
+              // eslint-disable-next-line @typescript-eslint/no-unused-vars
+              createCallback,
+              ...rest
+            } = template;
+            return {
+              ...rest,
+              name,
+              description,
+              configSchema: zodToJsonSchema(
+                configSchema,
+              ) as MCPAgentTemplate["configSchema"],
+              inputSchema: zodToJsonSchema(
+                inputSchema,
+              ) as MCPAgentTemplate["inputSchema"],
+              outputSchema: zodToJsonSchema(
+                outputSchema,
+              ) as MCPAgentTemplate["outputSchema"],
             };
           },
         ),
@@ -588,32 +599,30 @@ export class McpServer {
         }
 
         const agent = await template.createCallback(request, extra);
+        this._registeredAgents[agent.name] = agent;
 
-        const registeredAgent: Agent = {
-          name: agent.name,
-          description: agent.description,
-          inputSchema: template.inputSchema,
-          outputSchema: template.outputSchema,
-          runCallback: agent.runCallback,
-          destroyCallback: agent.destroyCallback,
-        };
-
-        this._registeredAgents[agent.name] = registeredAgent;
-
+        const {
+          name,
+          description,
+          inputSchema,
+          outputSchema,
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          runCallback,
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          destroyCallback,
+          ...rest
+        } = agent;
         return await Promise.resolve({
           agent: {
-            name: agent.name,
-            description: agent.description,
-            inputSchema: agent.inputSchema
-              ? (zodToJsonSchema(
-                  registeredAgent.inputSchema,
-                ) as MCPAgent["inputSchema"])
-              : EMPTY_OBJECT_JSON_SCHEMA,
-            outputSchema: agent.outputSchema
-              ? (zodToJsonSchema(
-                  registeredAgent.outputSchema,
-                ) as MCPAgent["outputSchema"])
-              : EMPTY_OBJECT_JSON_SCHEMA,
+            ...rest,
+            name: name,
+            description: description,
+            inputSchema: zodToJsonSchema(
+              inputSchema,
+            ) as MCPAgent["inputSchema"],
+            outputSchema: zodToJsonSchema(
+              outputSchema,
+            ) as MCPAgent["outputSchema"],
           },
         });
       },
@@ -846,12 +855,14 @@ export class McpServer {
     inputSchema: Input,
     outputSchema: Output,
     createCallback: AgentCreateCallback<Config, Input, Output>,
+    extra?: { [key in string]: unknown },
   ): void {
     if (this._registeredAgentTemplates[name]) {
       throw new Error(`Agent template ${name} is already registered`);
     }
 
     this._registeredAgentTemplates[name] = {
+      ...extra,
       name,
       description,
       configSchema,
@@ -876,12 +887,14 @@ export class McpServer {
     inputSchema: Input,
     outputSchema: Output,
     runCallback: AgentRunCallback<Input, Output>,
+    extra?: { [key in string]: unknown },
   ): void {
     if (this._registeredAgents[name]) {
       throw new Error(`Agent ${name} is already registered`);
     }
 
     this._registeredAgents[name] = {
+      ...extra,
       name,
       description,
       inputSchema,
